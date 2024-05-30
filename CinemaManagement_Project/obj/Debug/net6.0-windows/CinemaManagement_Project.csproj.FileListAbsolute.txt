@@ -1,0 +1,89 @@
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.exe
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.deps.json
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.runtimeconfig.json
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.dll
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.pdb
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.SelectMovieState.resources
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.GenerateResource.cache
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.AssemblyInfoInputs.cache
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.AssemblyInfo.cs
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.CoreCompileInputs.cache
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.dll
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\refint\CinemaManagement_Project.dll
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.pdb
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.genruntimeconfig.cache
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\ref\CinemaManagement_Project.dll
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Properties.Resources.resources
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\LAB1_22520412.Lab01_Bai5_P2_.resources
+E:\NAM 2\NNLT C#\DOAN\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Theater1.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.exe
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.deps.json
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.runtimeconfig.json
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\CinemaManagement_Project.pdb
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.SelectMovieState.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\LAB1_22520412.Lab01_Bai5_P2_.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Properties.Resources.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Theater1.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.GenerateResource.cache
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.AssemblyInfoInputs.cache
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.AssemblyInfo.cs
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.CoreCompileInputs.cache
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\refint\CinemaManagement_Project.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.pdb
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.genruntimeconfig.cache
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\ref\CinemaManagement_Project.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Form2.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.DangKy.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.DangNhap.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.QuenMatKhau.resources
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.AssemblyReference.cache
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\huynh\OneDrive\Documents\HK4-UIT\c#\CinemaManagement_Project\CinemaManagement_Project\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaMa.A9CCBEEC.Up2Date
