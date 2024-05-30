@@ -605,7 +605,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Security.AccessControl/6.0.0": {
+      "System.Security.AccessControl/6.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Security.AccessControl.dll": {
@@ -1750,10 +1750,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.AccessControl/6.0.0": {
-      "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
+    "System.Security.AccessControl/6.0.1": {
+      "sha512": "IQ4NXP/B3Ayzvw0rDQzVTYsCKyy0Jp9KI6aYcK7UnGVlR9+Awz++TIPCQtPYfLJfOpm8ajowMR09V7quD3sEHw==",
       "type": "package",
-      "path": "system.security.accesscontrol/6.0.0",
+      "path": "system.security.accesscontrol/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1774,7 +1774,7 @@
         "runtimes/win/lib/net6.0/System.Security.AccessControl.xml",
         "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.xml",
-        "system.security.accesscontrol.6.0.0.nupkg.sha512",
+        "system.security.accesscontrol.6.0.1.nupkg.sha512",
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2138,23 +2138,24 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Microsoft.Data.SqlClient >= 5.2.0"
+      "Microsoft.Data.SqlClient >= 5.2.0",
+      "System.Security.AccessControl >= 6.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huynh\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huynh\\OneDrive\\Documents\\HK4-UIT\\c#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
+      "projectUniqueName": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
       "projectName": "CinemaManagement_Project",
-      "projectPath": "C:\\Users\\huynh\\OneDrive\\Documents\\HK4-UIT\\c#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
-      "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huynh\\OneDrive\\Documents\\HK4-UIT\\c#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\obj\\",
+      "projectPath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2162,7 +2163,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -2188,6 +2190,10 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[5.2.0, )"
+          },
+          "System.Security.AccessControl": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [
@@ -2201,24 +2207,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.27, 6.0.27]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.27, 6.0.27]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.27, 6.0.27]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.27, 6.0.27]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -2227,7 +2215,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
