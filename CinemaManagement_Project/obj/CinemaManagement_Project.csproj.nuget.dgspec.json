@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj": {}
+    "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj": {}
   },
   "projects": {
-    "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj": {
+    "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
+        "projectUniqueName": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
         "projectName": "CinemaManagement_Project",
-        "projectPath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
+        "projectPath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\obj\\",
+        "outputPath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

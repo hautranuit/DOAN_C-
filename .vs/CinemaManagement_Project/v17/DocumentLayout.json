@@ -1,34 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\",
+  "WorkspaceRootPath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\quenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\theater1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\theater1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\cinemamanagement_project\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project\\cinemamanagement_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\cinemamanagement_project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\theater1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\theater1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,86 +70,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuenMatKhau.cs [Design]",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\QuenMatKhau.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\QuenMatKhau.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\QuenMatKhau.cs [Design]",
-              "RelativeToolTip": "CinemaManagement_Project\\QuenMatKhau.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:32:02.155Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Form1.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\Form1.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Form1.cs [Design]",
-              "RelativeToolTip": "CinemaManagement_Project\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:31:51.768Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Form2.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\Form2.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Form2.cs [Design]",
-              "RelativeToolTip": "CinemaManagement_Project\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:31:48.646Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Program.cs",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Program.cs",
               "RelativeDocumentMoniker": "CinemaManagement_Project\\Program.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\Program.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Program.cs",
               "RelativeToolTip": "CinemaManagement_Project\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:18:48.088Z",
+              "WhenOpened": "2024-05-31T09:52:16.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DangKy.cs [Design]",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\DangKy.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\DangKy.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\DangKy.cs [Design]",
-              "RelativeToolTip": "CinemaManagement_Project\\DangKy.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FoodAndDrink.cs",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T15:01:34.804Z"
+              "WhenOpened": "2024-05-31T09:51:05.447Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CinemaManagement_Project.csproj",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\CinemaManagement_Project.csproj",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
-              "RelativeToolTip": "CinemaManagement_Project\\CinemaManagement_Project.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-30T15:16:48.923Z"
+              "DocumentIndex": 2,
+              "Title": "Theater1.cs",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowNwBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:24:52.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FoodAndDrink.cs [Design]",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs [Design]",
+              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:26:50.304Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\DangNhap.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\DangNhap.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\DangNhap.cs [Design]",
-              "RelativeToolTip": "CinemaManagement_Project\\DangNhap.cs [Design]",
+              "Title": "Theater1.cs [Design]",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\Theater1.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\Theater1.cs [Design]",
+              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\Theater1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T14:58:58.294Z",
+              "WhenOpened": "2024-05-31T09:24:53.46Z",
               "EditorCaption": " [Design]"
             }
           ]

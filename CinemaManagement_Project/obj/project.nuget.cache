@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XZJiTKcvP4fzoxcXjkfJErawiQXhsfl2CSNt0o2Fa7vezJvF/k4+BTd3etWXNm09WcRkUIBZ5YB8k2PKCUSIQQ==",
+  "dgSpecHash": "fZWuXHtsa6UqvWOi47d8jU8308ncY2YKD/deUJl/K7ds03IZtRQpz7t/F0hAZhbe+l1P2nrDLQyRx78MN+LyeA==",
   "success": true,
-  "projectFilePath": "E:\\NAM 2\\NNLT C#\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
+  "projectFilePath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
