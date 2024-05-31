@@ -326,6 +326,7 @@ namespace CinemaManagement_Project
             A2.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "A2");
         }
 
         private void A3_Click_Click(object sender, EventArgs e)
@@ -333,6 +334,7 @@ namespace CinemaManagement_Project
             A3.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "A3");
         }
 
         private void A4_Click_Click(object sender, EventArgs e)
@@ -340,6 +342,7 @@ namespace CinemaManagement_Project
             A4.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "A4");
         }
 
         private void A5_Click_Click(object sender, EventArgs e)
@@ -347,6 +350,7 @@ namespace CinemaManagement_Project
             A5.BackColor = Color.Maroon;
             TongTien += priceEconomy;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "A5");
         }
 
         private void B1_Click_Click(object sender, EventArgs e)
@@ -354,6 +358,7 @@ namespace CinemaManagement_Project
             B1.BackColor = Color.Maroon;
             TongTien += priceEconomy;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "B1");
         }
 
         private void B2_Click_Click(object sender, EventArgs e)
@@ -361,6 +366,7 @@ namespace CinemaManagement_Project
             B2.BackColor = Color.Maroon;
             TongTien += priceVIP;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "B2");
         }
 
         private void B3_Click_Click(object sender, EventArgs e)
@@ -368,6 +374,7 @@ namespace CinemaManagement_Project
             B3.BackColor = Color.Maroon;
             TongTien += priceVIP;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "B3");
         }
 
         private void B4_Click_Click(object sender, EventArgs e)
@@ -375,6 +382,7 @@ namespace CinemaManagement_Project
             B4.BackColor = Color.Maroon;
             TongTien += priceVIP;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "B4");
         }
 
         private void B5_Click_Click(object sender, EventArgs e)
@@ -382,6 +390,7 @@ namespace CinemaManagement_Project
             B5.BackColor = Color.Maroon;
             TongTien += priceEconomy;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "B5");
         }
 
         private void C1_Click_Click(object sender, EventArgs e)
@@ -389,6 +398,7 @@ namespace CinemaManagement_Project
             C1.BackColor = Color.Maroon;
             TongTien += priceEconomy;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "C1");
         }
 
         private void C2_Click_Click(object sender, EventArgs e)
@@ -396,6 +406,7 @@ namespace CinemaManagement_Project
             C2.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "C2");
         }
 
         private void C3_Click_Click(object sender, EventArgs e)
@@ -403,6 +414,7 @@ namespace CinemaManagement_Project
             C3.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "C3");
         }
 
         private void C4_Click_Click(object sender, EventArgs e)
@@ -410,6 +422,7 @@ namespace CinemaManagement_Project
             C4.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "C4");
         }
 
         private void C5_Click_Click(object sender, EventArgs e)
@@ -417,6 +430,7 @@ namespace CinemaManagement_Project
             C5.BackColor = Color.Maroon;
             TongTien += priceEconomy;
             UpdateTotalMoney();
+            SaveSeatSelection(selectedMovie, selectedTheater, "C5");
         }
         public static string money = null;
         private void UpdateTotalMoney()

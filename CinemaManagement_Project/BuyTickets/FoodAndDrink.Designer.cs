@@ -38,12 +38,12 @@
             pictureBox7 = new PictureBox();
             lab_screen = new Label();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
+            lb_ComboSolo = new Label();
+            lb_ComboCouple = new Label();
+            lb_ComboParty = new Label();
+            lb_ComboSolo_2Ngan = new Label();
+            lb_ComboParty_2Ngan = new Label();
+            lb_ComboCouple_2Ngan = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
@@ -57,6 +57,9 @@
             lb_money_comboparty_2ngan = new Label();
             lb_money_combocouple_2ngan = new Label();
             panel1 = new Panel();
+            listView1 = new ListView();
+            Name = new ColumnHeader();
+            SoLuong = new ColumnHeader();
             lb_totalMoney = new Label();
             lb_total_money = new Label();
             btn_Buy = new Button();
@@ -172,77 +175,77 @@
             label1.TabIndex = 68;
             label1.Text = "COMBO 2 NGĂN";
             // 
-            // label2
+            // lb_ComboSolo
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(159, 360);
-            label2.Name = "label2";
-            label2.Size = new Size(189, 23);
-            label2.TabIndex = 69;
-            label2.Text = "COMBO SOLO - VOL 2";
+            lb_ComboSolo.AutoSize = true;
+            lb_ComboSolo.BackColor = Color.Transparent;
+            lb_ComboSolo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboSolo.ForeColor = Color.White;
+            lb_ComboSolo.Location = new Point(159, 360);
+            lb_ComboSolo.Name = "lb_ComboSolo";
+            lb_ComboSolo.Size = new Size(189, 23);
+            lb_ComboSolo.TabIndex = 69;
+            lb_ComboSolo.Text = "COMBO SOLO - VOL 2";
             // 
-            // label3
+            // lb_ComboCouple
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(547, 360);
-            label3.Name = "label3";
-            label3.Size = new Size(208, 23);
-            label3.TabIndex = 70;
-            label3.Text = "COMBO COUPLE - VOL 2";
+            lb_ComboCouple.AutoSize = true;
+            lb_ComboCouple.BackColor = Color.Transparent;
+            lb_ComboCouple.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboCouple.ForeColor = Color.White;
+            lb_ComboCouple.Location = new Point(547, 360);
+            lb_ComboCouple.Name = "lb_ComboCouple";
+            lb_ComboCouple.Size = new Size(208, 23);
+            lb_ComboCouple.TabIndex = 70;
+            lb_ComboCouple.Text = "COMBO COUPLE - VOL 2";
             // 
-            // label4
+            // lb_ComboParty
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(926, 360);
-            label4.Name = "label4";
-            label4.Size = new Size(196, 23);
-            label4.TabIndex = 71;
-            label4.Text = "COMBO PARTY - VOL 2";
+            lb_ComboParty.AutoSize = true;
+            lb_ComboParty.BackColor = Color.Transparent;
+            lb_ComboParty.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboParty.ForeColor = Color.White;
+            lb_ComboParty.Location = new Point(926, 360);
+            lb_ComboParty.Name = "lb_ComboParty";
+            lb_ComboParty.Size = new Size(196, 23);
+            lb_ComboParty.TabIndex = 71;
+            lb_ComboParty.Text = "COMBO PARTY - VOL 2";
             // 
-            // label5
+            // lb_ComboSolo_2Ngan
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(159, 657);
-            label5.Name = "label5";
-            label5.Size = new Size(194, 23);
-            label5.TabIndex = 72;
-            label5.Text = "COMBO SOLO 2 NGĂN";
+            lb_ComboSolo_2Ngan.AutoSize = true;
+            lb_ComboSolo_2Ngan.BackColor = Color.Transparent;
+            lb_ComboSolo_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboSolo_2Ngan.ForeColor = Color.White;
+            lb_ComboSolo_2Ngan.Location = new Point(159, 657);
+            lb_ComboSolo_2Ngan.Name = "lb_ComboSolo_2Ngan";
+            lb_ComboSolo_2Ngan.Size = new Size(194, 23);
+            lb_ComboSolo_2Ngan.TabIndex = 72;
+            lb_ComboSolo_2Ngan.Text = "COMBO SOLO 2 NGĂN";
             // 
-            // label6
+            // lb_ComboParty_2Ngan
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(547, 657);
-            label6.Name = "label6";
-            label6.Size = new Size(201, 23);
-            label6.TabIndex = 73;
-            label6.Text = "COMBO PARTY 2 NGĂN";
+            lb_ComboParty_2Ngan.AutoSize = true;
+            lb_ComboParty_2Ngan.BackColor = Color.Transparent;
+            lb_ComboParty_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboParty_2Ngan.ForeColor = Color.White;
+            lb_ComboParty_2Ngan.Location = new Point(547, 657);
+            lb_ComboParty_2Ngan.Name = "lb_ComboParty_2Ngan";
+            lb_ComboParty_2Ngan.Size = new Size(201, 23);
+            lb_ComboParty_2Ngan.TabIndex = 73;
+            lb_ComboParty_2Ngan.Text = "COMBO PARTY 2 NGĂN";
             // 
-            // label7
+            // lb_ComboCouple_2Ngan
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(926, 657);
-            label7.Name = "label7";
-            label7.Size = new Size(213, 23);
-            label7.TabIndex = 74;
-            label7.Text = "COMBO COUPLE 2 NGĂN";
+            lb_ComboCouple_2Ngan.AutoSize = true;
+            lb_ComboCouple_2Ngan.BackColor = Color.Transparent;
+            lb_ComboCouple_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_ComboCouple_2Ngan.ForeColor = Color.White;
+            lb_ComboCouple_2Ngan.Location = new Point(926, 657);
+            lb_ComboCouple_2Ngan.Name = "lb_ComboCouple_2Ngan";
+            lb_ComboCouple_2Ngan.Size = new Size(213, 23);
+            lb_ComboCouple_2Ngan.TabIndex = 74;
+            lb_ComboCouple_2Ngan.Text = "COMBO COUPLE 2 NGĂN";
             // 
             // label8
             // 
@@ -390,6 +393,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(listView1);
             panel1.Controls.Add(lb_totalMoney);
             panel1.Controls.Add(lb_total_money);
             panel1.Controls.Add(btn_Buy);
@@ -400,12 +404,32 @@
             panel1.Size = new Size(299, 233);
             panel1.TabIndex = 88;
             // 
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { Name, SoLuong });
+            listView1.Location = new Point(21, 13);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(259, 113);
+            listView1.TabIndex = 65;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
+            // Name
+            // 
+            Name.Text = "Sản Phẩm";
+            Name.Width = 175;
+            // 
+            // SoLuong
+            // 
+            SoLuong.Text = "Số Lượng";
+            SoLuong.Width = 100;
+            // 
             // lb_totalMoney
             // 
             lb_totalMoney.AutoSize = true;
             lb_totalMoney.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lb_totalMoney.ForeColor = Color.Firebrick;
-            lb_totalMoney.Location = new Point(180, 129);
+            lb_totalMoney.Location = new Point(186, 139);
             lb_totalMoney.Name = "lb_totalMoney";
             lb_totalMoney.Size = new Size(0, 17);
             lb_totalMoney.TabIndex = 64;
@@ -426,7 +450,7 @@
             btn_Buy.Cursor = Cursors.Hand;
             btn_Buy.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Buy.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Buy.Location = new Point(71, 159);
+            btn_Buy.Location = new Point(72, 168);
             btn_Buy.Name = "btn_Buy";
             btn_Buy.Size = new Size(162, 50);
             btn_Buy.TabIndex = 56;
@@ -447,7 +471,7 @@
             lb_TongTien.AutoSize = true;
             lb_TongTien.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lb_TongTien.ForeColor = Color.Firebrick;
-            lb_TongTien.Location = new Point(18, 129);
+            lb_TongTien.Location = new Point(18, 139);
             lb_TongTien.Name = "lb_TongTien";
             lb_TongTien.Size = new Size(162, 17);
             lb_TongTien.TabIndex = 54;
@@ -539,12 +563,12 @@
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lb_ComboCouple_2Ngan);
+            Controls.Add(lb_ComboParty_2Ngan);
+            Controls.Add(lb_ComboSolo_2Ngan);
+            Controls.Add(lb_ComboParty);
+            Controls.Add(lb_ComboCouple);
+            Controls.Add(lb_ComboSolo);
             Controls.Add(label1);
             Controls.Add(lab_screen);
             Controls.Add(pictureBox7);
@@ -581,12 +605,12 @@
         private PictureBox pictureBox7;
         private Label lab_screen;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
+        private Label lb_ComboSolo;
+        private Label lb_ComboCouple;
+        private Label lb_ComboParty;
+        private Label lb_ComboSolo_2Ngan;
+        private Label lb_ComboParty_2Ngan;
+        private Label lb_ComboCouple_2Ngan;
         private Label label8;
         private Label label9;
         private Label label10;
@@ -611,5 +635,8 @@
         private DomainUpDown dUD_ComboParty_2ngan;
         private DomainUpDown dUD_ComboCouple_2ngan;
         private Label lb_totalMoney;
+        private ListView listView1;
+        private ColumnHeader Name;
+        private ColumnHeader SoLuong;
     }
 }

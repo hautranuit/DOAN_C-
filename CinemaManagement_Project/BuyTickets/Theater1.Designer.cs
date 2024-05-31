@@ -816,7 +816,7 @@
             button2.Name = "button2";
             button2.Size = new Size(162, 50);
             button2.TabIndex = 56;
-            button2.Text = "ĐẶT VÉ";
+            button2.Text = "TIẾP THEO";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 

@@ -62,6 +62,13 @@ namespace CinemaManagement_Project.BuyTickets
             dUD_ComboSolo_2ngan.SelectedItemChanged += new EventHandler(UpdateTotalMoney);
             dUD_ComboParty_2ngan.SelectedItemChanged += new EventHandler(UpdateTotalMoney);
             dUD_ComboCouple_2ngan.SelectedItemChanged += new EventHandler(UpdateTotalMoney);
+
+            dUD_ComboSolo.SelectedItemChanged += new EventHandler(UpdateListView);
+            dUD_ComboCouple.SelectedItemChanged += new EventHandler(UpdateListView);
+            dUD_ComboParty.SelectedItemChanged += new EventHandler(UpdateListView);
+            dUD_ComboSolo_2ngan.SelectedItemChanged += new EventHandler(UpdateListView);
+            dUD_ComboParty_2ngan.SelectedItemChanged += new EventHandler(UpdateListView);
+            dUD_ComboCouple_2ngan.SelectedItemChanged += new EventHandler(UpdateListView);
         }
 
         private void UpdateTotalMoney(object sender, EventArgs e)
@@ -107,6 +114,50 @@ namespace CinemaManagement_Project.BuyTickets
         {
             // Remove "VND" and convert to decimal
             return decimal.Parse(priceText.Replace("VND", "").Trim());
+        }
+
+        private void UpdateListView(object sender, EventArgs e)
+        {
+            // Clear existing items in ListView
+            listView1.Items.Clear();
+
+            // Add items to ListView
+            AddListViewItem(lb_ComboSolo.Text, dUD_ComboSolo.SelectedItem.ToString());
+            AddListViewItem(lb_ComboCouple.Text, dUD_ComboCouple.SelectedItem.ToString());
+            AddListViewItem(lb_ComboParty.Text, dUD_ComboParty.SelectedItem.ToString());
+            AddListViewItem(lb_ComboSolo_2Ngan.Text, dUD_ComboSolo_2ngan.SelectedItem.ToString());
+            AddListViewItem(lb_ComboParty_2Ngan.Text, dUD_ComboParty_2ngan.SelectedItem.ToString());
+            AddListViewItem(lb_ComboCouple_2Ngan.Text, dUD_ComboCouple_2ngan.SelectedItem.ToString());
+
+            HideRowsWithSoLuongOne();
+        }
+        private void AddListViewItem(string name, string quantity)
+        {
+            ListViewItem item = new ListViewItem(name);
+            item.SubItems.Add(quantity);
+            listView1.Items.Add(item);
+        }
+        private void HideRowsWithSoLuongOne()
+        {
+            // Create a list to store the items to be removed
+            List<ListViewItem> itemsToRemove = new List<ListViewItem>();
+
+            // Iterate through the items in the ListView
+            foreach (ListViewItem item in listView1.Items)
+            {
+                // Check if the value of the SoLuong column is equal to 0
+                if (item.SubItems[1].Text == "0") // Assuming SoLuong is the second column
+                {
+                    // Add the item to the list of items to be removed
+                    itemsToRemove.Add(item);
+                }
+            }
+
+            // Remove the items from the ListView
+            foreach (ListViewItem itemToRemove in itemsToRemove)
+            {
+                listView1.Items.Remove(itemToRemove);
+            }
         }
     }
 }
