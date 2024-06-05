@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuenMatKhau));
             button2 = new Button();
             label2 = new Label();
             label1 = new Label();
@@ -40,7 +41,7 @@
             button2.BackColor = Color.DarkSlateBlue;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.ForeColor = Color.AliceBlue;
             button2.Location = new Point(258, 463);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
@@ -53,8 +54,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.Silver;
+            label2.ForeColor = Color.AliceBlue;
             label2.Location = new Point(177, 297);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.Yes;
@@ -76,8 +78,9 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("MS UI Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.Navy;
+            label6.ForeColor = Color.AliceBlue;
             label6.Location = new Point(415, 108);
             label6.Name = "label6";
             label6.Size = new Size(173, 30);
@@ -98,6 +101,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(986, 600);
             Controls.Add(Email_Dang_Ky);
             Controls.Add(label6);

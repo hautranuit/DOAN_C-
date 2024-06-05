@@ -9,15 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Security.Cryptography;
+using CinemaManagement_Project.BuyTickets;
+using System.Diagnostics.Eventing.Reader;
 
 namespace CinemaManagement_Project
 {
     public partial class SelectMovieState : Form
     {
-        public SelectMovieState()
+        private string Role;
+        public SelectMovieState(string role)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            Role = role;
         }
 
         private void panel_Movie1_MouseHover(object sender, EventArgs e)
@@ -118,6 +123,17 @@ namespace CinemaManagement_Project
 
             btn_cancel.Parent = pn_SelectTheater;
             lb_SelectTheater.BackColor = Color.Transparent;
+
+            //check quyen dang nhap
+            if(Role == "admin")
+            {
+                btn_Book1.Visible = false;
+                btn_Book2.Visible = false;
+                btn_Book3.Visible = false;
+                btn_Book4.Visible = false;
+
+                btn_Edit_Movie.Visible = true;
+            }
         }
 
         private void btn_Edit_Movie_Click(object sender, EventArgs e)
@@ -405,10 +421,16 @@ namespace CinemaManagement_Project
             price_film3 = lab_Detail3_Money.Text.Replace(" đ", "");
             price_film4 = lab_Detail4_Money.Text.Replace(" đ", "");
 
-            if (selectedTheater != null)
+            if (selectedTheater == "1")
             {
                 Theater1 theater1 = new Theater1();
                 theater1.Show();
+                this.Hide();
+            }
+            else if (selectedTheater == "2")
+            {
+                Theater2 theater2 = new Theater2();
+                theater2.Show();
                 this.Hide();
             }
         }

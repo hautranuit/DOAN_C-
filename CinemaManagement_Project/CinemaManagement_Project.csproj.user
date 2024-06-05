@@ -7,6 +7,9 @@
     <Compile Update="BuyTickets\SelectMovieState.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BuyTickets\Theater2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>

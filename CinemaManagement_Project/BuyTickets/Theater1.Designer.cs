@@ -92,6 +92,7 @@
             label4 = new Label();
             lb_Theater = new Label();
             pic_return = new PictureBox();
+            pn_Theater1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pic_Screen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)A1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)A2).BeginInit();
@@ -114,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)pic_Background).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pic_return).BeginInit();
+            pn_Theater1.SuspendLayout();
             SuspendLayout();
             // 
             // pic_Screen
@@ -133,7 +135,7 @@
             lab_seatA.BackColor = SystemColors.ControlDarkDark;
             lab_seatA.Font = new Font("Arial Narrow", 25.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_seatA.ForeColor = Color.White;
-            lab_seatA.Location = new Point(371, 224);
+            lab_seatA.Location = new Point(6, 84);
             lab_seatA.Name = "lab_seatA";
             lab_seatA.Size = new Size(47, 52);
             lab_seatA.TabIndex = 32;
@@ -145,7 +147,7 @@
             lab_seatB.BackColor = SystemColors.ControlDarkDark;
             lab_seatB.Font = new Font("Arial Narrow", 25.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_seatB.ForeColor = Color.White;
-            lab_seatB.Location = new Point(371, 321);
+            lab_seatB.Location = new Point(6, 179);
             lab_seatB.Name = "lab_seatB";
             lab_seatB.Size = new Size(47, 52);
             lab_seatB.TabIndex = 33;
@@ -157,7 +159,7 @@
             lab_seatC.BackColor = SystemColors.ControlDarkDark;
             lab_seatC.Font = new Font("Arial Narrow", 25.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_seatC.ForeColor = Color.White;
-            lab_seatC.Location = new Point(371, 417);
+            lab_seatC.Location = new Point(3, 275);
             lab_seatC.Name = "lab_seatC";
             lab_seatC.Size = new Size(47, 52);
             lab_seatC.TabIndex = 34;
@@ -167,7 +169,7 @@
             // 
             A1.BackColor = Color.SteelBlue;
             A1.Image = (Image)resources.GetObject("A1.Image");
-            A1.Location = new Point(488, 222);
+            A1.Location = new Point(91, 82);
             A1.Name = "A1";
             A1.Size = new Size(62, 54);
             A1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -181,7 +183,7 @@
             A1_Click.Cursor = Cursors.Hand;
             A1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A1_Click.ForeColor = Color.Black;
-            A1_Click.Location = new Point(488, 222);
+            A1_Click.Location = new Point(91, 82);
             A1_Click.Name = "A1_Click";
             A1_Click.Size = new Size(62, 54);
             A1_Click.TabIndex = 36;
@@ -195,7 +197,7 @@
             // 
             A2.BackColor = Color.Transparent;
             A2.Image = (Image)resources.GetObject("A2.Image");
-            A2.Location = new Point(624, 222);
+            A2.Location = new Point(227, 82);
             A2.Name = "A2";
             A2.Size = new Size(62, 54);
             A2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -209,7 +211,7 @@
             A2_Click.Cursor = Cursors.Hand;
             A2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A2_Click.ForeColor = Color.Black;
-            A2_Click.Location = new Point(624, 222);
+            A2_Click.Location = new Point(227, 82);
             A2_Click.Name = "A2_Click";
             A2_Click.Size = new Size(62, 54);
             A2_Click.TabIndex = 38;
@@ -223,7 +225,7 @@
             // 
             A3.BackColor = Color.Transparent;
             A3.Image = (Image)resources.GetObject("A3.Image");
-            A3.Location = new Point(762, 222);
+            A3.Location = new Point(367, 82);
             A3.Name = "A3";
             A3.Size = new Size(62, 54);
             A3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -237,7 +239,7 @@
             A3_Click.Cursor = Cursors.Hand;
             A3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A3_Click.ForeColor = Color.Black;
-            A3_Click.Location = new Point(762, 222);
+            A3_Click.Location = new Point(367, 82);
             A3_Click.Name = "A3_Click";
             A3_Click.Size = new Size(62, 54);
             A3_Click.TabIndex = 40;
@@ -251,7 +253,7 @@
             // 
             A4.BackColor = Color.Transparent;
             A4.Image = (Image)resources.GetObject("A4.Image");
-            A4.Location = new Point(903, 222);
+            A4.Location = new Point(506, 84);
             A4.Name = "A4";
             A4.Size = new Size(62, 54);
             A4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -265,7 +267,7 @@
             A4_Click.Cursor = Cursors.Hand;
             A4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A4_Click.ForeColor = Color.Black;
-            A4_Click.Location = new Point(903, 222);
+            A4_Click.Location = new Point(506, 84);
             A4_Click.Name = "A4_Click";
             A4_Click.Size = new Size(62, 54);
             A4_Click.TabIndex = 42;
@@ -279,7 +281,7 @@
             // 
             A5.BackColor = Color.SteelBlue;
             A5.Image = (Image)resources.GetObject("A5.Image");
-            A5.Location = new Point(1036, 222);
+            A5.Location = new Point(639, 82);
             A5.Name = "A5";
             A5.Size = new Size(62, 54);
             A5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -293,7 +295,7 @@
             A5_Click.Cursor = Cursors.Hand;
             A5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A5_Click.ForeColor = Color.Black;
-            A5_Click.Location = new Point(1036, 222);
+            A5_Click.Location = new Point(639, 82);
             A5_Click.Name = "A5_Click";
             A5_Click.Size = new Size(62, 54);
             A5_Click.TabIndex = 44;
@@ -307,7 +309,7 @@
             // 
             B1.BackColor = Color.SteelBlue;
             B1.Image = (Image)resources.GetObject("B1.Image");
-            B1.Location = new Point(488, 321);
+            B1.Location = new Point(91, 181);
             B1.Name = "B1";
             B1.Size = new Size(62, 54);
             B1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -321,7 +323,7 @@
             B1_Click.Cursor = Cursors.Hand;
             B1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B1_Click.ForeColor = Color.Black;
-            B1_Click.Location = new Point(488, 321);
+            B1_Click.Location = new Point(91, 181);
             B1_Click.Name = "B1_Click";
             B1_Click.Size = new Size(62, 54);
             B1_Click.TabIndex = 46;
@@ -335,7 +337,7 @@
             // 
             B2.BackColor = Color.Moccasin;
             B2.Image = (Image)resources.GetObject("B2.Image");
-            B2.Location = new Point(624, 321);
+            B2.Location = new Point(227, 181);
             B2.Name = "B2";
             B2.Size = new Size(62, 54);
             B2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -349,7 +351,7 @@
             B2_Click.Cursor = Cursors.Hand;
             B2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B2_Click.ForeColor = Color.Black;
-            B2_Click.Location = new Point(624, 321);
+            B2_Click.Location = new Point(227, 181);
             B2_Click.Name = "B2_Click";
             B2_Click.Size = new Size(62, 54);
             B2_Click.TabIndex = 48;
@@ -363,7 +365,7 @@
             // 
             B3.BackColor = Color.Moccasin;
             B3.Image = (Image)resources.GetObject("B3.Image");
-            B3.Location = new Point(762, 321);
+            B3.Location = new Point(365, 181);
             B3.Name = "B3";
             B3.Size = new Size(62, 54);
             B3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -377,7 +379,7 @@
             B3_Click.Cursor = Cursors.Hand;
             B3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B3_Click.ForeColor = Color.Black;
-            B3_Click.Location = new Point(762, 321);
+            B3_Click.Location = new Point(365, 181);
             B3_Click.Name = "B3_Click";
             B3_Click.Size = new Size(62, 54);
             B3_Click.TabIndex = 50;
@@ -391,7 +393,7 @@
             // 
             B4.BackColor = Color.Moccasin;
             B4.Image = (Image)resources.GetObject("B4.Image");
-            B4.Location = new Point(903, 321);
+            B4.Location = new Point(506, 181);
             B4.Name = "B4";
             B4.Size = new Size(62, 54);
             B4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -405,7 +407,7 @@
             B4_Click.Cursor = Cursors.Hand;
             B4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B4_Click.ForeColor = Color.Black;
-            B4_Click.Location = new Point(903, 321);
+            B4_Click.Location = new Point(506, 181);
             B4_Click.Name = "B4_Click";
             B4_Click.Size = new Size(62, 54);
             B4_Click.TabIndex = 52;
@@ -419,7 +421,7 @@
             // 
             B5.BackColor = Color.SteelBlue;
             B5.Image = (Image)resources.GetObject("B5.Image");
-            B5.Location = new Point(1036, 321);
+            B5.Location = new Point(639, 181);
             B5.Name = "B5";
             B5.Size = new Size(62, 54);
             B5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -433,7 +435,7 @@
             B5_Click.Cursor = Cursors.Hand;
             B5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B5_Click.ForeColor = Color.Black;
-            B5_Click.Location = new Point(1036, 321);
+            B5_Click.Location = new Point(639, 181);
             B5_Click.Name = "B5_Click";
             B5_Click.Size = new Size(62, 54);
             B5_Click.TabIndex = 54;
@@ -447,7 +449,7 @@
             // 
             C1.BackColor = Color.SteelBlue;
             C1.Image = (Image)resources.GetObject("C1.Image");
-            C1.Location = new Point(488, 415);
+            C1.Location = new Point(91, 275);
             C1.Name = "C1";
             C1.Size = new Size(62, 54);
             C1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -459,7 +461,7 @@
             // 
             C2.BackColor = Color.Transparent;
             C2.Image = (Image)resources.GetObject("C2.Image");
-            C2.Location = new Point(624, 415);
+            C2.Location = new Point(227, 275);
             C2.Name = "C2";
             C2.Size = new Size(62, 54);
             C2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -471,7 +473,7 @@
             // 
             C3.BackColor = Color.Transparent;
             C3.Image = (Image)resources.GetObject("C3.Image");
-            C3.Location = new Point(762, 415);
+            C3.Location = new Point(367, 277);
             C3.Name = "C3";
             C3.Size = new Size(62, 54);
             C3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -483,7 +485,7 @@
             // 
             C4.BackColor = Color.Transparent;
             C4.Image = (Image)resources.GetObject("C4.Image");
-            C4.Location = new Point(903, 417);
+            C4.Location = new Point(506, 277);
             C4.Name = "C4";
             C4.Size = new Size(62, 54);
             C4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -495,7 +497,7 @@
             // 
             C5.BackColor = Color.SteelBlue;
             C5.Image = (Image)resources.GetObject("C5.Image");
-            C5.Location = new Point(1036, 417);
+            C5.Location = new Point(639, 277);
             C5.Name = "C5";
             C5.Size = new Size(62, 54);
             C5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -509,7 +511,7 @@
             C1_Click.Cursor = Cursors.Hand;
             C1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C1_Click.ForeColor = Color.Black;
-            C1_Click.Location = new Point(488, 415);
+            C1_Click.Location = new Point(91, 275);
             C1_Click.Name = "C1_Click";
             C1_Click.Size = new Size(62, 54);
             C1_Click.TabIndex = 60;
@@ -525,7 +527,7 @@
             C2_Click.Cursor = Cursors.Hand;
             C2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C2_Click.ForeColor = Color.Black;
-            C2_Click.Location = new Point(624, 415);
+            C2_Click.Location = new Point(227, 275);
             C2_Click.Name = "C2_Click";
             C2_Click.Size = new Size(62, 54);
             C2_Click.TabIndex = 61;
@@ -541,7 +543,7 @@
             C3_Click.Cursor = Cursors.Hand;
             C3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C3_Click.ForeColor = Color.Black;
-            C3_Click.Location = new Point(762, 415);
+            C3_Click.Location = new Point(367, 277);
             C3_Click.Name = "C3_Click";
             C3_Click.Size = new Size(62, 54);
             C3_Click.TabIndex = 62;
@@ -557,7 +559,7 @@
             C4_Click.Cursor = Cursors.Hand;
             C4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C4_Click.ForeColor = Color.Black;
-            C4_Click.Location = new Point(903, 417);
+            C4_Click.Location = new Point(506, 277);
             C4_Click.Name = "C4_Click";
             C4_Click.Size = new Size(62, 54);
             C4_Click.TabIndex = 63;
@@ -573,7 +575,7 @@
             C5_Click.Cursor = Cursors.Hand;
             C5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C5_Click.ForeColor = Color.Black;
-            C5_Click.Location = new Point(1036, 417);
+            C5_Click.Location = new Point(639, 277);
             C5_Click.Name = "C5_Click";
             C5_Click.Size = new Size(62, 54);
             C5_Click.TabIndex = 64;
@@ -589,11 +591,11 @@
             btn_delete.Cursor = Cursors.Hand;
             btn_delete.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = SystemColors.ActiveCaptionText;
-            btn_delete.Location = new Point(1140, 282);
+            btn_delete.Location = new Point(1172, 282);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(112, 138);
             btn_delete.TabIndex = 65;
-            btn_delete.Text = "Xóa các ghế đã chọn";
+            btn_delete.Text = "xóa các ghế đã chọn";
             btn_delete.UseVisualStyleBackColor = false;
             btn_delete.Click += btn_delete_Click;
             // 
@@ -611,7 +613,7 @@
             // 
             // pic_white
             // 
-            pic_white.Location = new Point(488, 570);
+            pic_white.Location = new Point(488, 601);
             pic_white.Name = "pic_white";
             pic_white.Size = new Size(51, 41);
             pic_white.TabIndex = 67;
@@ -623,7 +625,7 @@
             standard.BackColor = Color.Transparent;
             standard.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             standard.ForeColor = Color.White;
-            standard.Location = new Point(557, 588);
+            standard.Location = new Point(557, 619);
             standard.Name = "standard";
             standard.Size = new Size(115, 23);
             standard.TabIndex = 68;
@@ -632,7 +634,7 @@
             // pic_blue
             // 
             pic_blue.BackColor = Color.SteelBlue;
-            pic_blue.Location = new Point(762, 570);
+            pic_blue.Location = new Point(762, 601);
             pic_blue.Name = "pic_blue";
             pic_blue.Size = new Size(51, 41);
             pic_blue.TabIndex = 69;
@@ -644,7 +646,7 @@
             economy.BackColor = Color.Transparent;
             economy.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             economy.ForeColor = Color.White;
-            economy.Location = new Point(832, 588);
+            economy.Location = new Point(832, 619);
             economy.Name = "economy";
             economy.Size = new Size(113, 23);
             economy.TabIndex = 70;
@@ -653,7 +655,7 @@
             // pic_yellow
             // 
             pic_yellow.BackColor = Color.Moccasin;
-            pic_yellow.Location = new Point(1036, 570);
+            pic_yellow.Location = new Point(1036, 601);
             pic_yellow.Name = "pic_yellow";
             pic_yellow.Size = new Size(51, 41);
             pic_yellow.TabIndex = 71;
@@ -665,7 +667,7 @@
             vip.BackColor = Color.Transparent;
             vip.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             vip.ForeColor = Color.White;
-            vip.Location = new Point(1106, 588);
+            vip.Location = new Point(1106, 619);
             vip.Name = "vip";
             vip.Size = new Size(42, 23);
             vip.TabIndex = 72;
@@ -688,7 +690,7 @@
             lb_PriceStandard.BackColor = Color.Transparent;
             lb_PriceStandard.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceStandard.ForeColor = Color.White;
-            lb_PriceStandard.Location = new Point(557, 554);
+            lb_PriceStandard.Location = new Point(557, 585);
             lb_PriceStandard.Name = "lb_PriceStandard";
             lb_PriceStandard.Size = new Size(109, 25);
             lb_PriceStandard.TabIndex = 73;
@@ -700,7 +702,7 @@
             lb_PriceEconomy.BackColor = Color.Transparent;
             lb_PriceEconomy.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceEconomy.ForeColor = Color.White;
-            lb_PriceEconomy.Location = new Point(832, 554);
+            lb_PriceEconomy.Location = new Point(832, 585);
             lb_PriceEconomy.Name = "lb_PriceEconomy";
             lb_PriceEconomy.Size = new Size(109, 25);
             lb_PriceEconomy.TabIndex = 74;
@@ -712,7 +714,7 @@
             lb_PriceVIP.BackColor = Color.Transparent;
             lb_PriceVIP.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceVIP.ForeColor = Color.White;
-            lb_PriceVIP.Location = new Point(1106, 554);
+            lb_PriceVIP.Location = new Point(1106, 585);
             lb_PriceVIP.Name = "lb_PriceVIP";
             lb_PriceVIP.Size = new Size(109, 25);
             lb_PriceVIP.TabIndex = 75;
@@ -895,6 +897,47 @@
             pic_return.TabStop = false;
             pic_return.Click += pic_return_Click;
             // 
+            // pn_Theater1
+            // 
+            pn_Theater1.BackColor = Color.Transparent;
+            pn_Theater1.Controls.Add(C3_Click);
+            pn_Theater1.Controls.Add(C4_Click);
+            pn_Theater1.Controls.Add(A1_Click);
+            pn_Theater1.Controls.Add(lab_seatA);
+            pn_Theater1.Controls.Add(lab_seatB);
+            pn_Theater1.Controls.Add(lab_seatC);
+            pn_Theater1.Controls.Add(A2_Click);
+            pn_Theater1.Controls.Add(A3_Click);
+            pn_Theater1.Controls.Add(A4_Click);
+            pn_Theater1.Controls.Add(A5_Click);
+            pn_Theater1.Controls.Add(B1_Click);
+            pn_Theater1.Controls.Add(B2_Click);
+            pn_Theater1.Controls.Add(B3_Click);
+            pn_Theater1.Controls.Add(B4_Click);
+            pn_Theater1.Controls.Add(A4);
+            pn_Theater1.Controls.Add(B5_Click);
+            pn_Theater1.Controls.Add(A3);
+            pn_Theater1.Controls.Add(C1_Click);
+            pn_Theater1.Controls.Add(A2);
+            pn_Theater1.Controls.Add(C5_Click);
+            pn_Theater1.Controls.Add(C5);
+            pn_Theater1.Controls.Add(C2_Click);
+            pn_Theater1.Controls.Add(C2);
+            pn_Theater1.Controls.Add(A1);
+            pn_Theater1.Controls.Add(C1);
+            pn_Theater1.Controls.Add(B5);
+            pn_Theater1.Controls.Add(B4);
+            pn_Theater1.Controls.Add(B3);
+            pn_Theater1.Controls.Add(A5);
+            pn_Theater1.Controls.Add(B2);
+            pn_Theater1.Controls.Add(B1);
+            pn_Theater1.Controls.Add(C3);
+            pn_Theater1.Controls.Add(C4);
+            pn_Theater1.Location = new Point(417, 145);
+            pn_Theater1.Name = "pn_Theater1";
+            pn_Theater1.Size = new Size(731, 424);
+            pn_Theater1.TabIndex = 79;
+            // 
             // Theater1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -914,39 +957,7 @@
             Controls.Add(pic_white);
             Controls.Add(lab_screen);
             Controls.Add(btn_delete);
-            Controls.Add(C5_Click);
-            Controls.Add(C4_Click);
-            Controls.Add(C3_Click);
-            Controls.Add(C2_Click);
-            Controls.Add(C1_Click);
-            Controls.Add(C5);
-            Controls.Add(C4);
-            Controls.Add(C3);
-            Controls.Add(C2);
-            Controls.Add(C1);
-            Controls.Add(B5_Click);
-            Controls.Add(B5);
-            Controls.Add(B4_Click);
-            Controls.Add(B4);
-            Controls.Add(B3_Click);
-            Controls.Add(B3);
-            Controls.Add(B2_Click);
-            Controls.Add(B2);
-            Controls.Add(B1_Click);
-            Controls.Add(B1);
-            Controls.Add(A5_Click);
-            Controls.Add(A5);
-            Controls.Add(A4_Click);
-            Controls.Add(A4);
-            Controls.Add(A3_Click);
-            Controls.Add(A3);
-            Controls.Add(A2_Click);
-            Controls.Add(A2);
-            Controls.Add(A1_Click);
-            Controls.Add(A1);
-            Controls.Add(lab_seatC);
-            Controls.Add(lab_seatB);
-            Controls.Add(lab_seatA);
+            Controls.Add(pn_Theater1);
             Controls.Add(pic_Screen);
             Controls.Add(pic_Background);
             FormBorderStyle = FormBorderStyle.None;
@@ -976,6 +987,8 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_return).EndInit();
+            pn_Theater1.ResumeLayout(false);
+            pn_Theater1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1044,5 +1057,6 @@
         private Label label4;
         private Label lb_Theater;
         private PictureBox pic_return;
+        private Panel pn_Theater1;
     }
 }

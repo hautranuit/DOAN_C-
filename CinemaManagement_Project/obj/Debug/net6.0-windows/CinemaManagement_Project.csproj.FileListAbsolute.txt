@@ -215,6 +215,7 @@ E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.BuyTickets.FoodAndDrink.resources
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.SelectMovieState.resources
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Theater1.resources
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.BuyTickets.Theater2.resources
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Form2.resources
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Properties.Resources.resources
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.DangKy.resources

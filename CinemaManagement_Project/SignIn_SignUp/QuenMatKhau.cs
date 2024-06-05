@@ -17,6 +17,7 @@ namespace CinemaManagement_Project
         public QuenMatKhau()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void button2_Click(object sender, EventArgs e)
         {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangKy));
             label1 = new Label();
             label5 = new Label();
             text_email = new TextBox();
@@ -43,95 +44,108 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(352, 44);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.AliceBlue;
+            label1.Location = new Point(402, 59);
             label1.Name = "label1";
-            label1.Size = new Size(107, 37);
+            label1.Size = new Size(142, 46);
             label1.TabIndex = 14;
             label1.Text = "Sign up";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F);
-            label5.ForeColor = Color.Silver;
-            label5.Location = new Point(166, 291);
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.AliceBlue;
+            label5.Location = new Point(190, 388);
             label5.Name = "label5";
             label5.RightToLeft = RightToLeft.Yes;
-            label5.Size = new Size(48, 21);
+            label5.Size = new Size(59, 28);
             label5.TabIndex = 33;
             label5.Text = "Email";
             // 
             // text_email
             // 
-            text_email.Location = new Point(251, 285);
+            text_email.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            text_email.Location = new Point(287, 380);
+            text_email.Margin = new Padding(3, 4, 3, 4);
             text_email.Multiline = true;
             text_email.Name = "text_email";
-            text_email.Size = new Size(322, 36);
+            text_email.Size = new Size(367, 47);
             text_email.TabIndex = 32;
             text_email.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F);
-            label4.ForeColor = Color.Silver;
-            label4.Location = new Point(73, 231);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.AliceBlue;
+            label4.Location = new Point(83, 308);
             label4.Name = "label4";
             label4.RightToLeft = RightToLeft.Yes;
-            label4.Size = new Size(143, 21);
+            label4.Size = new Size(178, 28);
             label4.TabIndex = 31;
             label4.Text = "Enter the password";
             // 
             // text_repassword
             // 
-            text_repassword.Location = new Point(251, 228);
+            text_repassword.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            text_repassword.Location = new Point(287, 304);
+            text_repassword.Margin = new Padding(3, 4, 3, 4);
             text_repassword.Multiline = true;
             text_repassword.Name = "text_repassword";
-            text_repassword.Size = new Size(322, 36);
+            text_repassword.Size = new Size(367, 47);
             text_repassword.TabIndex = 30;
             text_repassword.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F);
-            label3.ForeColor = Color.Silver;
-            label3.Location = new Point(138, 172);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.AliceBlue;
+            label3.Location = new Point(158, 229);
             label3.Name = "label3";
             label3.RightToLeft = RightToLeft.Yes;
-            label3.Size = new Size(76, 21);
+            label3.Size = new Size(93, 28);
             label3.TabIndex = 29;
             label3.Text = "Password";
             // 
             // text_password
             // 
-            text_password.Location = new Point(251, 172);
+            text_password.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            text_password.Location = new Point(287, 229);
+            text_password.Margin = new Padding(3, 4, 3, 4);
             text_password.Multiline = true;
             text_password.Name = "text_password";
-            text_password.Size = new Size(322, 36);
+            text_password.Size = new Size(367, 47);
             text_password.TabIndex = 28;
             text_password.TextAlign = HorizontalAlignment.Center;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.ForeColor = Color.Silver;
-            label2.Location = new Point(135, 118);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.AliceBlue;
+            label2.Location = new Point(154, 157);
             label2.Name = "label2";
             label2.RightToLeft = RightToLeft.Yes;
-            label2.Size = new Size(81, 21);
+            label2.Size = new Size(99, 28);
             label2.TabIndex = 27;
             label2.Text = "Username";
             // 
             // text_username
             // 
-            text_username.Location = new Point(251, 111);
+            text_username.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            text_username.Location = new Point(287, 148);
+            text_username.Margin = new Padding(3, 4, 3, 4);
             text_username.Multiline = true;
             text_username.Name = "text_username";
-            text_username.Size = new Size(322, 36);
+            text_username.Size = new Size(367, 47);
             text_username.TabIndex = 26;
             text_username.TextAlign = HorizontalAlignment.Center;
             // 
@@ -139,11 +153,12 @@
             // 
             button2.BackColor = Color.DarkSlateBlue;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(184, 366);
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.AliceBlue;
+            button2.Location = new Point(210, 488);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(419, 33);
+            button2.Size = new Size(479, 44);
             button2.TabIndex = 25;
             button2.Text = "Sign up";
             button2.UseVisualStyleBackColor = false;
@@ -151,9 +166,11 @@
             // 
             // DangKy
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(914, 600);
             Controls.Add(label5);
             Controls.Add(text_email);
             Controls.Add(label4);
@@ -164,6 +181,8 @@
             Controls.Add(text_username);
             Controls.Add(button2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "DangKy";
             Text = "Form1";
             Load += DangKy_Load;

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace CinemaManagement_Project
         public DangNhap()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void DangKy_Click(object sender, EventArgs e)
         {
@@ -28,31 +30,42 @@ namespace CinemaManagement_Project
             quenMatKhau.ShowDialog();
         }
         private void Click_DangNhap_Click(object sender, EventArgs e)
-        {
-            SqlConnection connect = new SqlConnection(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
-            try
+        {   
+            //Check quyen admin
+            if (username.Text == "admin" && password.Text == "adminadminadmin")
             {
-                connect.Open();
-                string tk = username.Text;
-                string mk = password.Text;
-                string sql = "select * from Thong_Tin_Dang_Nhap where TenTk='" + tk + "' and MatKhau='" + mk + "'";
-                SqlCommand sqlcommand = new SqlCommand(sql, connect);
-                SqlDataReader reader = sqlcommand.ExecuteReader();
-                if (reader.Read() == true)
-                {
-
-                    this.Hide();
-                    SelectMovieState selectMovieState = new SelectMovieState();
-                    selectMovieState.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Sai thông tin đăng nhập");
-                }
+                this.Hide();
+                SelectMovieState selectMovieState = new SelectMovieState("admin");
+                selectMovieState.Show();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Lỗi kết nối");
+                SqlConnection connect = new SqlConnection(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+                try
+                {
+                    connect.Open();
+                    string tk = username.Text;
+                    string mk = password.Text;
+                    string sql = "select * from Thong_Tin_Dang_Nhap where TenTk='" + tk + "' and MatKhau='" + mk + "'";
+                    SqlCommand sqlcommand = new SqlCommand(sql, connect);
+                    SqlDataReader reader = sqlcommand.ExecuteReader();
+                    if (reader.Read() == true)
+                    {
+
+                        this.Hide();
+                        //dang nhap voi tu cach khach
+                        SelectMovieState selectMovieState = new SelectMovieState("guest");
+                        selectMovieState.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai thông tin đăng nhập");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi kết nối");
+                }
             }
 
         }
@@ -63,6 +76,12 @@ namespace CinemaManagement_Project
                 password.PasswordChar = '\0';
             }
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
 

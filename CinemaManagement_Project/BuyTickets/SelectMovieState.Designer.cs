@@ -747,6 +747,7 @@
             btn_Edit_Movie.TabIndex = 30;
             btn_Edit_Movie.Text = "CHỈNH SỬA DANH SÁCH PHIM";
             btn_Edit_Movie.UseVisualStyleBackColor = false;
+            btn_Edit_Movie.Visible = false;
             btn_Edit_Movie.Click += btn_Edit_Movie_Click;
             // 
             // btn_Apply

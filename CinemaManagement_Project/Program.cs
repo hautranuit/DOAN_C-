@@ -12,7 +12,7 @@ namespace CinemaManagement_Project
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new DangNhap());
-            Application.Run(new SelectMovieState());
+            Application.Run(new SelectMovieState("guest"));
             //Application.Run(new Theater1());
         }
     }

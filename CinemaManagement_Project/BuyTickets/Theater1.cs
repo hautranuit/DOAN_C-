@@ -220,6 +220,8 @@ namespace CinemaManagement_Project
         {
             LoadBookedSeats();
 
+            pn_Theater1.Parent = pic_Background;
+
             pic_return.Parent = pic_Background;
             pic_return.BackColor = Color.Transparent;
             standard.Parent = pic_Background;
@@ -229,22 +231,22 @@ namespace CinemaManagement_Project
             economy.BackColor = Color.Transparent;
             vip.BackColor = Color.Transparent;
 
-            A2.Parent = pic_Background;
+            A2.Parent = pn_Theater1;
             A2.BackColor = Color.Transparent;
 
-            A3.Parent = pic_Background;
+            A3.Parent = pn_Theater1;
             A3.BackColor = Color.Transparent;
 
-            A4.Parent = pic_Background;
+            A4.Parent = pn_Theater1;
             A4.BackColor = Color.Transparent;
 
-            C2.Parent = pic_Background;
+            C2.Parent = pn_Theater1;
             C2.BackColor = Color.Transparent;
 
-            C3.Parent = pic_Background;
+            C3.Parent = pn_Theater1;
             C3.BackColor = Color.Transparent;
 
-            C4.Parent = pic_Background;
+            C4.Parent = pn_Theater1;
             C4.BackColor = Color.Transparent;
 
             pic_Screen.Parent = pic_Background;
@@ -480,7 +482,7 @@ namespace CinemaManagement_Project
         private void pic_return_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SelectMovieState selectMovieState = new SelectMovieState();
+            SelectMovieState selectMovieState = new SelectMovieState("guest");
             selectMovieState.Show();
         }
 

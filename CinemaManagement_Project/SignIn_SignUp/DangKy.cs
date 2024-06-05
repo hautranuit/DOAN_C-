@@ -17,6 +17,7 @@ namespace CinemaManagement_Project
         public DangKy()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void DangKy_Load(object sender, EventArgs e)
