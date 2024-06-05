@@ -227,6 +227,10 @@ namespace CinemaManagement_Project.BuyTickets
             B2.BackColor = Color.Moccasin;
             B3.BackColor = Color.Moccasin;
             B4.BackColor = Color.Moccasin;
+
+            D1.BackColor = Color.Transparent;
+            D2.BackColor = Color.Transparent;
+            D3.BackColor = Color.Transparent;
         }
 
         private void A1_Click_Click(object sender, EventArgs e)

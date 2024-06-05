@@ -34,6 +34,7 @@
             label1 = new Label();
             label6 = new Label();
             Email_Dang_Ky = new TextBox();
+            btn_SignIn = new Button();
             SuspendLayout();
             // 
             // button2
@@ -42,7 +43,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.AliceBlue;
-            button2.Location = new Point(258, 463);
+            button2.Location = new Point(247, 388);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(493, 65);
@@ -67,6 +68,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(346, 200);
@@ -93,9 +95,23 @@
             Email_Dang_Ky.Margin = new Padding(3, 4, 3, 4);
             Email_Dang_Ky.Multiline = true;
             Email_Dang_Ky.Name = "Email_Dang_Ky";
-            Email_Dang_Ky.PasswordChar = '*';
             Email_Dang_Ky.Size = new Size(367, 47);
             Email_Dang_Ky.TabIndex = 38;
+            // 
+            // btn_SignIn
+            // 
+            btn_SignIn.BackColor = Color.Indigo;
+            btn_SignIn.FlatStyle = FlatStyle.Flat;
+            btn_SignIn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_SignIn.ForeColor = Color.AliceBlue;
+            btn_SignIn.Location = new Point(336, 488);
+            btn_SignIn.Margin = new Padding(3, 4, 3, 4);
+            btn_SignIn.Name = "btn_SignIn";
+            btn_SignIn.Size = new Size(317, 44);
+            btn_SignIn.TabIndex = 39;
+            btn_SignIn.Text = "Sign In";
+            btn_SignIn.UseVisualStyleBackColor = false;
+            btn_SignIn.Click += btn_SignIn_Click;
             // 
             // QuenMatKhau
             // 
@@ -104,11 +120,13 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(986, 600);
+            Controls.Add(btn_SignIn);
             Controls.Add(Email_Dang_Ky);
             Controls.Add(label6);
             Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "QuenMatKhau";
             Text = "Form1";
@@ -123,5 +141,6 @@
         private Label label1;
         private Label label6;
         private TextBox Email_Dang_Ky;
+        private Button btn_SignIn;
     }
 }

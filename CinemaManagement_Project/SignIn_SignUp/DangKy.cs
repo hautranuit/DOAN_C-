@@ -81,5 +81,12 @@ namespace CinemaManagement_Project
             }
 
         }
+
+        private void btn_SignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangNhap dn = new DangNhap();
+            dn.Show();
+        }
     }
 }

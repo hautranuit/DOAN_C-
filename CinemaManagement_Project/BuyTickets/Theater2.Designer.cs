@@ -62,6 +62,7 @@
             B3_Click = new Button();
             lb_Theater = new Label();
             pn_Theater1 = new Panel();
+            panel2 = new Panel();
             D3_Click = new Button();
             D2_Click = new Button();
             D1_Click = new Button();
@@ -167,7 +168,7 @@
             B2_Click.Cursor = Cursors.Hand;
             B2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B2_Click.ForeColor = Color.Black;
-            B2_Click.Location = new Point(229, 131);
+            B2_Click.Location = new Point(240, 131);
             B2_Click.Name = "B2_Click";
             B2_Click.Size = new Size(62, 54);
             B2_Click.TabIndex = 48;
@@ -193,7 +194,7 @@
             C3_Click.Cursor = Cursors.Hand;
             C3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C3_Click.ForeColor = Color.Black;
-            C3_Click.Location = new Point(369, 227);
+            C3_Click.Location = new Point(367, 227);
             C3_Click.Name = "C3_Click";
             C3_Click.Size = new Size(62, 54);
             C3_Click.TabIndex = 62;
@@ -241,7 +242,7 @@
             B1_Click.Cursor = Cursors.Hand;
             B1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B1_Click.ForeColor = Color.Black;
-            B1_Click.Location = new Point(93, 131);
+            B1_Click.Location = new Point(111, 131);
             B1_Click.Name = "B1_Click";
             B1_Click.Size = new Size(62, 54);
             B1_Click.TabIndex = 46;
@@ -300,7 +301,7 @@
             A2_Click.Cursor = Cursors.Hand;
             A2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A2_Click.ForeColor = Color.Black;
-            A2_Click.Location = new Point(229, 32);
+            A2_Click.Location = new Point(240, 32);
             A2_Click.Name = "A2_Click";
             A2_Click.Size = new Size(62, 54);
             A2_Click.TabIndex = 38;
@@ -402,7 +403,7 @@
             A1_Click.Cursor = Cursors.Hand;
             A1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A1_Click.ForeColor = Color.Black;
-            A1_Click.Location = new Point(93, 34);
+            A1_Click.Location = new Point(111, 34);
             A1_Click.Name = "A1_Click";
             A1_Click.Size = new Size(62, 54);
             A1_Click.TabIndex = 36;
@@ -478,7 +479,7 @@
             A3_Click.Cursor = Cursors.Hand;
             A3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A3_Click.ForeColor = Color.Black;
-            A3_Click.Location = new Point(369, 32);
+            A3_Click.Location = new Point(367, 32);
             A3_Click.Name = "A3_Click";
             A3_Click.Size = new Size(62, 54);
             A3_Click.TabIndex = 40;
@@ -506,7 +507,7 @@
             B3_Click.Cursor = Cursors.Hand;
             B3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B3_Click.ForeColor = Color.Black;
-            B3_Click.Location = new Point(367, 131);
+            B3_Click.Location = new Point(365, 131);
             B3_Click.Name = "B3_Click";
             B3_Click.Size = new Size(62, 54);
             B3_Click.TabIndex = 50;
@@ -531,6 +532,7 @@
             // pn_Theater1
             // 
             pn_Theater1.BackColor = Color.Transparent;
+            pn_Theater1.Controls.Add(panel2);
             pn_Theater1.Controls.Add(D3_Click);
             pn_Theater1.Controls.Add(D2_Click);
             pn_Theater1.Controls.Add(D1_Click);
@@ -575,6 +577,14 @@
             pn_Theater1.Size = new Size(731, 424);
             pn_Theater1.TabIndex = 96;
             pn_Theater1.Paint += pn_Theater1_Paint;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(128, 128, 255);
+            panel2.Location = new Point(451, 16);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(37, 291);
+            panel2.TabIndex = 75;
             // 
             // D3_Click
             // 
@@ -698,7 +708,7 @@
             C1_Click.Cursor = Cursors.Hand;
             C1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C1_Click.ForeColor = Color.Black;
-            C1_Click.Location = new Point(93, 225);
+            C1_Click.Location = new Point(111, 225);
             C1_Click.Name = "C1_Click";
             C1_Click.Size = new Size(62, 54);
             C1_Click.TabIndex = 60;
@@ -730,7 +740,7 @@
             C2_Click.Cursor = Cursors.Hand;
             C2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C2_Click.ForeColor = Color.Black;
-            C2_Click.Location = new Point(229, 225);
+            C2_Click.Location = new Point(240, 225);
             C2_Click.Name = "C2_Click";
             C2_Click.Size = new Size(62, 54);
             C2_Click.TabIndex = 61;
@@ -744,7 +754,7 @@
             // 
             A1.BackColor = Color.SteelBlue;
             A1.Image = (Image)resources.GetObject("A1.Image");
-            A1.Location = new Point(93, 34);
+            A1.Location = new Point(111, 34);
             A1.Name = "A1";
             A1.Size = new Size(62, 54);
             A1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -756,7 +766,7 @@
             // 
             A2.BackColor = Color.Transparent;
             A2.Image = (Image)resources.GetObject("A2.Image");
-            A2.Location = new Point(229, 32);
+            A2.Location = new Point(240, 32);
             A2.Name = "A2";
             A2.Size = new Size(62, 54);
             A2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -781,7 +791,7 @@
             // 
             A3.BackColor = Color.Transparent;
             A3.Image = (Image)resources.GetObject("A3.Image");
-            A3.Location = new Point(369, 32);
+            A3.Location = new Point(367, 32);
             A3.Name = "A3";
             A3.Size = new Size(62, 54);
             A3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -806,7 +816,7 @@
             // 
             C2.BackColor = Color.Transparent;
             C2.Image = (Image)resources.GetObject("C2.Image");
-            C2.Location = new Point(229, 225);
+            C2.Location = new Point(240, 225);
             C2.Name = "C2";
             C2.Size = new Size(62, 54);
             C2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -819,7 +829,7 @@
             // 
             C1.BackColor = Color.SteelBlue;
             C1.Image = (Image)resources.GetObject("C1.Image");
-            C1.Location = new Point(93, 225);
+            C1.Location = new Point(111, 225);
             C1.Name = "C1";
             C1.Size = new Size(62, 54);
             C1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -858,7 +868,7 @@
             // 
             B3.BackColor = Color.Moccasin;
             B3.Image = (Image)resources.GetObject("B3.Image");
-            B3.Location = new Point(367, 131);
+            B3.Location = new Point(365, 131);
             B3.Name = "B3";
             B3.Size = new Size(62, 54);
             B3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -884,7 +894,7 @@
             // 
             B2.BackColor = Color.Moccasin;
             B2.Image = (Image)resources.GetObject("B2.Image");
-            B2.Location = new Point(229, 131);
+            B2.Location = new Point(240, 131);
             B2.Name = "B2";
             B2.Size = new Size(62, 54);
             B2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -897,7 +907,7 @@
             // 
             B1.BackColor = Color.SteelBlue;
             B1.Image = (Image)resources.GetObject("B1.Image");
-            B1.Location = new Point(93, 131);
+            B1.Location = new Point(111, 131);
             B1.Name = "B1";
             B1.Size = new Size(62, 54);
             B1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -910,7 +920,7 @@
             // 
             C3.BackColor = Color.Transparent;
             C3.Image = (Image)resources.GetObject("C3.Image");
-            C3.Location = new Point(369, 227);
+            C3.Location = new Point(367, 227);
             C3.Name = "C3";
             C3.Size = new Size(62, 54);
             C3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -1223,5 +1233,6 @@
         private Label couple;
         private PictureBox pictureBox1;
         private PictureBox pic_yellow;
+        private Panel panel2;
     }
 }

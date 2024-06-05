@@ -40,7 +40,7 @@ namespace CinemaManagement_Project
             }
             else
             {
-                SqlConnection connect = new SqlConnection(@"Data Source=MSI\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+                SqlConnection connect = new SqlConnection(@"Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
                 try
                 {
                     connect.Open();

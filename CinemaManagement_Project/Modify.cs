@@ -17,7 +17,7 @@ namespace CinemaManagement_Project
     {
         public bool check(string tmp)
         {
-            string connectionString = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             string check = tmp;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -40,7 +40,7 @@ namespace CinemaManagement_Project
         }
         public void Add(string query)
         {
-            string connectionString = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -52,7 +52,7 @@ namespace CinemaManagement_Project
         }
         public void Connect_Sql(string query, int Mat_Khau_Moi, string Email_Dang_Ky)
         {
-            string connectionString = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();

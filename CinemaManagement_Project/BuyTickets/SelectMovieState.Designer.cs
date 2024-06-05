@@ -111,6 +111,7 @@
             btn_Book = new Button();
             comboBox1 = new ComboBox();
             lb_SelectTheater = new Label();
+            btn_SignOut = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_background).BeginInit();
             panel_Movie1.SuspendLayout();
             panel_Movie2.SuspendLayout();
@@ -1071,11 +1072,26 @@
             lb_SelectTheater.TabIndex = 6;
             lb_SelectTheater.Text = "CHỌN RẠP";
             // 
+            // btn_SignOut
+            // 
+            btn_SignOut.BackColor = Color.DarkSlateBlue;
+            btn_SignOut.Cursor = Cursors.Hand;
+            btn_SignOut.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SignOut.ForeColor = SystemColors.ActiveCaptionText;
+            btn_SignOut.Location = new Point(31, 22);
+            btn_SignOut.Name = "btn_SignOut";
+            btn_SignOut.Size = new Size(180, 39);
+            btn_SignOut.TabIndex = 48;
+            btn_SignOut.Text = "ĐĂNG XUẤT";
+            btn_SignOut.UseVisualStyleBackColor = false;
+            btn_SignOut.Click += btn_SignOut_Click;
+            // 
             // SelectMovieState
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1294, 664);
+            Controls.Add(btn_SignOut);
             Controls.Add(pn_SelectTheater);
             Controls.Add(panel_Movie1);
             Controls.Add(btn_Edit_Movie);
@@ -1220,5 +1236,6 @@
         private Button btn_Book;
         private ComboBox comboBox1;
         private Button btn_cancel;
+        private Button btn_SignOut;
     }
 }

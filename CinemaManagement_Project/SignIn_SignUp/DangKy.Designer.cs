@@ -39,6 +39,7 @@
             label2 = new Label();
             text_username = new TextBox();
             button2 = new Button();
+            btn_SignIn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -75,7 +76,6 @@
             text_email.Name = "text_email";
             text_email.Size = new Size(367, 47);
             text_email.TabIndex = 32;
-            text_email.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -97,9 +97,9 @@
             text_repassword.Margin = new Padding(3, 4, 3, 4);
             text_repassword.Multiline = true;
             text_repassword.Name = "text_repassword";
+            text_repassword.PasswordChar = '*';
             text_repassword.Size = new Size(367, 47);
             text_repassword.TabIndex = 30;
-            text_repassword.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -121,9 +121,9 @@
             text_password.Margin = new Padding(3, 4, 3, 4);
             text_password.Multiline = true;
             text_password.Name = "text_password";
+            text_password.PasswordChar = '*';
             text_password.Size = new Size(367, 47);
             text_password.TabIndex = 28;
-            text_password.TextAlign = HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -147,7 +147,6 @@
             text_username.Name = "text_username";
             text_username.Size = new Size(367, 47);
             text_username.TabIndex = 26;
-            text_username.TextAlign = HorizontalAlignment.Center;
             // 
             // button2
             // 
@@ -155,7 +154,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.AliceBlue;
-            button2.Location = new Point(210, 488);
+            button2.Location = new Point(218, 460);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(479, 44);
@@ -164,6 +163,21 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // btn_SignIn
+            // 
+            btn_SignIn.BackColor = Color.Indigo;
+            btn_SignIn.FlatStyle = FlatStyle.Flat;
+            btn_SignIn.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_SignIn.ForeColor = Color.AliceBlue;
+            btn_SignIn.Location = new Point(307, 533);
+            btn_SignIn.Margin = new Padding(3, 4, 3, 4);
+            btn_SignIn.Name = "btn_SignIn";
+            btn_SignIn.Size = new Size(317, 44);
+            btn_SignIn.TabIndex = 40;
+            btn_SignIn.Text = "Sign In";
+            btn_SignIn.UseVisualStyleBackColor = false;
+            btn_SignIn.Click += btn_SignIn_Click;
+            // 
             // DangKy
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -171,6 +185,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(914, 600);
+            Controls.Add(btn_SignIn);
             Controls.Add(label5);
             Controls.Add(text_email);
             Controls.Add(label4);
@@ -202,5 +217,6 @@
         private Label label2;
         private TextBox text_username;
         private Button button2;
+        private Button btn_SignIn;
     }
 }

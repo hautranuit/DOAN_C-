@@ -125,7 +125,7 @@ namespace CinemaManagement_Project
             lb_SelectTheater.BackColor = Color.Transparent;
 
             //check quyen dang nhap
-            if(Role == "admin")
+            if (Role == "admin")
             {
                 btn_Book1.Visible = false;
                 btn_Book2.Visible = false;
@@ -137,7 +137,8 @@ namespace CinemaManagement_Project
         }
 
         private void btn_Edit_Movie_Click(object sender, EventArgs e)
-        {
+        {   
+            btn_SignOut.Visible = false;
             btn_Book1.Visible = false;
             btn_Book2.Visible = false;
             btn_Book3.Visible = false;
@@ -252,7 +253,7 @@ namespace CinemaManagement_Project
         private void btn_Apply_Click(object sender, EventArgs e)
         {
             btn_Edit_Movie.Visible = true;
-
+            btn_SignOut.Visible = true;
             lab_NameOfMovie1.Text = tbx_1.Text;
             lab_NameOfMovie2.Text = tbx_2.Text;
             lab_NameOfMovie3.Text = tbx_3.Text;
@@ -433,6 +434,19 @@ namespace CinemaManagement_Project
                 theater2.Show();
                 this.Hide();
             }
+            else if (selectedTheater == "3")
+            {
+                Theater3 theater3 = new Theater3();
+                theater3.Show();
+                this.Hide();
+            }
+        }
+
+        private void btn_SignOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangNhap dn = new DangNhap();
+            dn.Show();
         }
     }
 }

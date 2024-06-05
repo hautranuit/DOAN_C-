@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static CinemaManagement_Project.Theater1;
+//using static CinemaManagement_Project.Theater2;
+//using static CinemaManagement_Project.Theater3;
 
 namespace CinemaManagement_Project.BuyTickets
 {   
