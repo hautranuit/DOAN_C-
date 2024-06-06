@@ -22,7 +22,8 @@ namespace CinemaManagement_Project
         private int priceTicket;
         private double priceEconomy;
         private double priceVIP;
-        public static double TongTien = 0;
+        public static double TongTien;
+        private int count;
         public Theater1()
         {
             InitializeComponent();
@@ -187,39 +188,80 @@ namespace CinemaManagement_Project
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            A2.Parent = pic_Background;
-            A2.BackColor = Color.Transparent;
+            List<PictureBox> bookedSeats = new List<PictureBox>
+            {
+                A1, A2, A3, A4, A5,
+                B1, B2, B3, B4, B5,
+                C1, C2, C3, C4, C5
+            };
 
-            A3.Parent = pic_Background;
-            A3.BackColor = Color.Transparent;
+            // Duyệt qua các ghế và khôi phục trạng thái ban đầu cho các ghế có tag "booked"
+            foreach (var seat in bookedSeats)
+            {
+                if (seat.Tag != null && seat.Tag.ToString() == "booked")
+                {
+                    // Đặt màu sắc ban đầu cho từng ghế
+                    if (seat == A1 || seat == A5 || seat == B1 || seat == B5 || seat == C1 || seat == C5)
+                    {
+                        seat.BackColor = Color.SteelBlue;
+                    }
+                    else if (seat == B2 || seat == B3 || seat == B4)
+                    {
+                        seat.BackColor = Color.Moccasin;
+                    }
+                    else
+                    {
+                        seat.BackColor = Color.Transparent;
+                    }
 
-            A4.Parent = pic_Background;
-            A4.BackColor = Color.Transparent;
+                    seat.Tag = null; // Xóa tag
+                    seat.Enabled = true;
 
-            C2.Parent = pic_Background;
-            C2.BackColor = Color.Transparent;
+                    // Xóa dòng tương ứng trong file BookedSeats.txt
+                    RemoveSeatFromFile(selectedMovie, selectedTheater, seat.Name);
+                }
+            }
 
-            C3.Parent = pic_Background;
-            C3.BackColor = Color.Transparent;
+            // Cập nhật lại tổng tiền
+            count = 0;
+            TongTien = 0;
+            UpdateTotalMoney();
+        }
+        private void RemoveSeatFromFile(string movieId, string theaterId, string seatId)
+        {
+            string filePath = "BookedSeats.txt";
+            string[] lines = File.ReadAllLines(filePath);
+            List<string> updatedLines = new List<string>();
 
-            C4.Parent = pic_Background;
-            C4.BackColor = Color.Transparent;
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                if (parts.Length == 3)
+                {
+                    string lineMovieId = parts[0];
+                    string lineTheaterId = parts[1];
+                    string lineSeatId = parts[2];
 
-            A1.BackColor = Color.SteelBlue;
-            A5.BackColor = Color.SteelBlue;
-            B1.BackColor = Color.SteelBlue;
-            B5.BackColor = Color.SteelBlue;
-            C1.BackColor = Color.SteelBlue;
-            C5.BackColor = Color.SteelBlue;
+                    if (lineMovieId == movieId && lineTheaterId == theaterId && lineSeatId == seatId)
+                    {
+                        // Không thêm dòng này vào danh sách updatedLines (nghĩa là xóa dòng này)
+                        continue;
+                    }
+                    else
+                    {
+                        updatedLines.Add(line);
+                    }
+                }
+            }
 
-            B2.BackColor = Color.Moccasin;
-            B3.BackColor = Color.Moccasin;
-            B4.BackColor = Color.Moccasin;
+            File.WriteAllLines(filePath, updatedLines);
         }
         private void Theater1_Load_1(object sender, EventArgs e)
         {
+            count = 0;
+            TongTien = 0;
             LoadBookedSeats();
-
+            lb_total_money.Text = "";
             pn_Theater1.Parent = pic_Background;
 
             pic_return.Parent = pic_Background;
@@ -232,22 +274,16 @@ namespace CinemaManagement_Project
             vip.BackColor = Color.Transparent;
 
             A2.Parent = pn_Theater1;
-            A2.BackColor = Color.Transparent;
 
             A3.Parent = pn_Theater1;
-            A3.BackColor = Color.Transparent;
 
             A4.Parent = pn_Theater1;
-            A4.BackColor = Color.Transparent;
 
             C2.Parent = pn_Theater1;
-            C2.BackColor = Color.Transparent;
 
             C3.Parent = pn_Theater1;
-            C3.BackColor = Color.Transparent;
 
             C4.Parent = pn_Theater1;
-            C4.BackColor = Color.Transparent;
 
             pic_Screen.Parent = pic_Background;
             pic_Screen.BackColor = Color.Transparent;
@@ -291,8 +327,6 @@ namespace CinemaManagement_Project
                 lb_PriceStandard.Text = priceTicket.ToString() + " đ";
                 lb_PriceEconomy.Text = priceEconomy.ToString("F0") + " đ";  // "F0" để làm tròn xuống số nguyên
                 lb_PriceVIP.Text = priceVIP.ToString("F0") + " đ";  // "F0" để làm tròn xuống số nguyên
-
-                UpdateTotalMoney(); // Cập nhật lb_total_money khi tải form
             }
             else
             {
@@ -321,6 +355,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "A1");
+            count++;
+            A1.Tag = "booked";
         }
 
         private void A2_Click_Click(object sender, EventArgs e)
@@ -329,6 +365,8 @@ namespace CinemaManagement_Project
             TongTien += priceTicket;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "A2");
+            count++;
+            A2.Tag = "booked";
         }
 
         private void A3_Click_Click(object sender, EventArgs e)
@@ -336,7 +374,9 @@ namespace CinemaManagement_Project
             A3.BackColor = Color.Maroon;
             TongTien += priceTicket;
             UpdateTotalMoney();
-            SaveSeatSelection(selectedMovie, selectedTheater, "A3");
+            SaveSeatSelection(selectedMovie, selectedTheater, "A3"); 
+            count++;
+            A3.Tag = "booked";
         }
 
         private void A4_Click_Click(object sender, EventArgs e)
@@ -345,6 +385,8 @@ namespace CinemaManagement_Project
             TongTien += priceTicket;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "A4");
+            count++;
+            A4.Tag = "booked";
         }
 
         private void A5_Click_Click(object sender, EventArgs e)
@@ -353,6 +395,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "A5");
+            count++;
+            A5.Tag = "booked";
         }
 
         private void B1_Click_Click(object sender, EventArgs e)
@@ -361,6 +405,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "B1");
+            count++;
+            B1.Tag = "booked";
         }
 
         private void B2_Click_Click(object sender, EventArgs e)
@@ -369,6 +415,8 @@ namespace CinemaManagement_Project
             TongTien += priceVIP;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "B2");
+            count++;
+            B2.Tag = "booked";
         }
 
         private void B3_Click_Click(object sender, EventArgs e)
@@ -377,6 +425,8 @@ namespace CinemaManagement_Project
             TongTien += priceVIP;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "B3");
+            count++;
+            B3.Tag = "booked";
         }
 
         private void B4_Click_Click(object sender, EventArgs e)
@@ -385,6 +435,8 @@ namespace CinemaManagement_Project
             TongTien += priceVIP;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "B4");
+            count++;
+            B4.Tag = "booked";
         }
 
         private void B5_Click_Click(object sender, EventArgs e)
@@ -393,6 +445,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "B5");
+            count++;
+            B5.Tag = "booked";
         }
 
         private void C1_Click_Click(object sender, EventArgs e)
@@ -401,6 +455,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "C1");
+            count++;
+            C1.Tag = "booked";
         }
 
         private void C2_Click_Click(object sender, EventArgs e)
@@ -409,6 +465,8 @@ namespace CinemaManagement_Project
             TongTien += priceTicket;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "C2");
+            count++;
+            C2.Tag = "booked";
         }
 
         private void C3_Click_Click(object sender, EventArgs e)
@@ -417,6 +475,8 @@ namespace CinemaManagement_Project
             TongTien += priceTicket;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "C3");
+            count++;
+            C3.Tag = "booked";
         }
 
         private void C4_Click_Click(object sender, EventArgs e)
@@ -425,6 +485,8 @@ namespace CinemaManagement_Project
             TongTien += priceTicket;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "C4");
+            count++;
+            C4.Tag = "booked";
         }
 
         private void C5_Click_Click(object sender, EventArgs e)
@@ -433,6 +495,8 @@ namespace CinemaManagement_Project
             TongTien += priceEconomy;
             UpdateTotalMoney();
             SaveSeatSelection(selectedMovie, selectedTheater, "C5");
+            count++;
+            C5.Tag = "booked";
         }
         public static string money = null;
         private void UpdateTotalMoney()
@@ -488,7 +552,7 @@ namespace CinemaManagement_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FoodAndDrink FandD = new FoodAndDrink();
+            FoodAndDrink FandD = new FoodAndDrink(money, count);
             this.Hide();
             FandD.Show();
         }

@@ -100,9 +100,18 @@ namespace CinemaManagement_Project
             UpdateComboBoxWithTheaters(lab_Detail1_NumCinema.Text);
             selectedMovie = "1";
         }
-
+        public static string NameOfMovie1 = null;
+        public static string NameOfMovie2 = null;
+        public static string NameOfMovie3 = null;
+        public static string NameOfMovie4 = null;
         private void SelectMovieState_Load(object sender, EventArgs e)
         {
+            NameOfMovie1 = lab_NameOfMovie1.Text;
+            NameOfMovie2 = lab_NameOfMovie2.Text;
+            NameOfMovie3 = lab_NameOfMovie3.Text;
+            NameOfMovie4 = lab_NameOfMovie4.Text;
+
+
             lab_NameOfMovie1.Parent = pic_background;
             lab_NameOfMovie1.BackColor = Color.Transparent;
 

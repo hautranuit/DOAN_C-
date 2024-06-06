@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,10 +49,6 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FoodAndDrink.cs",
@@ -64,22 +56,10 @@
               "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
               "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
               "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "ViewState": "AQIAAKkAAAAAAAAAAIA1wMYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:21:43.13Z",
+              "WhenOpened": "2024-06-06T07:25:26.491Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Program.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\Program.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Program.cs",
-              "RelativeToolTip": "CinemaManagement_Project\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:20:22.444Z"
             }
           ]
         }

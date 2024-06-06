@@ -900,13 +900,14 @@
             // pn_Theater1
             // 
             pn_Theater1.BackColor = Color.Transparent;
+            pn_Theater1.Controls.Add(A2_Click);
+            pn_Theater1.Controls.Add(A2);
             pn_Theater1.Controls.Add(C3_Click);
             pn_Theater1.Controls.Add(C4_Click);
             pn_Theater1.Controls.Add(A1_Click);
             pn_Theater1.Controls.Add(lab_seatA);
             pn_Theater1.Controls.Add(lab_seatB);
             pn_Theater1.Controls.Add(lab_seatC);
-            pn_Theater1.Controls.Add(A2_Click);
             pn_Theater1.Controls.Add(A3_Click);
             pn_Theater1.Controls.Add(A4_Click);
             pn_Theater1.Controls.Add(A5_Click);
@@ -918,7 +919,6 @@
             pn_Theater1.Controls.Add(B5_Click);
             pn_Theater1.Controls.Add(A3);
             pn_Theater1.Controls.Add(C1_Click);
-            pn_Theater1.Controls.Add(A2);
             pn_Theater1.Controls.Add(C5_Click);
             pn_Theater1.Controls.Add(C5);
             pn_Theater1.Controls.Add(C2_Click);

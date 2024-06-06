@@ -102,6 +102,7 @@
             label7 = new Label();
             label6 = new Label();
             textBox3 = new TextBox();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pic_yellow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pn_Theater1.SuspendLayout();
@@ -170,9 +171,9 @@
             couple.ForeColor = Color.White;
             couple.Location = new Point(1169, 620);
             couple.Name = "couple";
-            couple.Size = new Size(42, 23);
+            couple.Size = new Size(50, 23);
             couple.TabIndex = 118;
-            couple.Text = "VIP";
+            couple.Text = "BED";
             // 
             // pictureBox1
             // 
@@ -234,6 +235,7 @@
             // pn_Theater1
             // 
             pn_Theater1.BackColor = Color.Transparent;
+            pn_Theater1.Controls.Add(panel2);
             pn_Theater1.Controls.Add(D3_Click);
             pn_Theater1.Controls.Add(D2_Click);
             pn_Theater1.Controls.Add(D1_Click);
@@ -1074,6 +1076,14 @@
             textBox3.Size = new Size(244, 27);
             textBox3.TabIndex = 51;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(128, 128, 255);
+            panel2.Location = new Point(451, 41);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(37, 373);
+            panel2.TabIndex = 76;
+            // 
             // Theater3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1210,5 +1220,6 @@
         private Button D3_Click;
         private Button D2_Click;
         private Button D1_Click;
+        private Panel panel2;
     }
 }

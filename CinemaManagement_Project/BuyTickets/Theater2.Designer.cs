@@ -1075,9 +1075,9 @@
             couple.ForeColor = Color.White;
             couple.Location = new Point(1169, 620);
             couple.Name = "couple";
-            couple.Size = new Size(42, 23);
+            couple.Size = new Size(90, 23);
             couple.TabIndex = 98;
-            couple.Text = "VIP";
+            couple.Text = "COUPLE";
             // 
             // pictureBox1
             // 

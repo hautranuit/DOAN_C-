@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CinemaManagement_Project.Pay;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,19 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static CinemaManagement_Project.Theater1;
-//using static CinemaManagement_Project.Theater2;
-//using static CinemaManagement_Project.Theater3;
+using static CinemaManagement_Project.SelectMovieState;
 
 namespace CinemaManagement_Project.BuyTickets
-{   
+{
     public partial class FoodAndDrink : Form
     {
         private decimal Total_FoodAndDrink_Money = 0m;
         private decimal initialMoney = 0m; // Store initial money from Theater1
-
-        public FoodAndDrink()
+        private int countTickets = 0;
+        public FoodAndDrink(string money, int count)
         {
+            countTickets = count;
             InitializeComponent();
             if (money != null)
             {
@@ -121,32 +121,37 @@ namespace CinemaManagement_Project.BuyTickets
         private void UpdateListView(object sender, EventArgs e)
         {
             // Clear existing items in ListView
-            listView1.Items.Clear();
+            while (listView1.Items.Count > 1)
+            {
+                listView1.Items.RemoveAt(1);
+            }
 
-            // Add items to ListView
-            AddListViewItem(lb_ComboSolo.Text, dUD_ComboSolo.SelectedItem.ToString());
-            AddListViewItem(lb_ComboCouple.Text, dUD_ComboCouple.SelectedItem.ToString());
-            AddListViewItem(lb_ComboParty.Text, dUD_ComboParty.SelectedItem.ToString());
-            AddListViewItem(lb_ComboSolo_2Ngan.Text, dUD_ComboSolo_2ngan.SelectedItem.ToString());
-            AddListViewItem(lb_ComboParty_2Ngan.Text, dUD_ComboParty_2ngan.SelectedItem.ToString());
-            AddListViewItem(lb_ComboCouple_2Ngan.Text, dUD_ComboCouple_2ngan.SelectedItem.ToString());
+            // Add items to ListView with their respective prices
+            AddListViewItem(lb_ComboSolo.Text, dUD_ComboSolo.SelectedItem.ToString(), lb_money_combosolo.Text);
+            AddListViewItem(lb_ComboCouple.Text, dUD_ComboCouple.SelectedItem.ToString(), lb_money_combocouple.Text);
+            AddListViewItem(lb_ComboParty.Text, dUD_ComboParty.SelectedItem.ToString(), lb_money_comboparty.Text);
+            AddListViewItem(lb_ComboSolo_2Ngan.Text, dUD_ComboSolo_2ngan.SelectedItem.ToString(), lb_money_combosolo_2ngan.Text);
+            AddListViewItem(lb_ComboParty_2Ngan.Text, dUD_ComboParty_2ngan.SelectedItem.ToString(), lb_money_comboparty_2ngan.Text);
+            AddListViewItem(lb_ComboCouple_2Ngan.Text, dUD_ComboCouple_2ngan.SelectedItem.ToString(), lb_money_combocouple_2ngan.Text);
 
-            HideRowsWithSoLuongOne();
+            HideRowsWithSoLuongZero();
         }
-        private void AddListViewItem(string name, string quantity)
+        private void AddListViewItem(string name, string quantity, string price)
         {
             ListViewItem item = new ListViewItem(name);
             item.SubItems.Add(quantity);
+            item.SubItems.Add(price);
             listView1.Items.Add(item);
         }
-        private void HideRowsWithSoLuongOne()
+        private void HideRowsWithSoLuongZero()
         {
             // Create a list to store the items to be removed
             List<ListViewItem> itemsToRemove = new List<ListViewItem>();
 
             // Iterate through the items in the ListView
-            foreach (ListViewItem item in listView1.Items)
+            for (int i = 1; i < listView1.Items.Count; i++) // Skip the first item (movie info)
             {
+                ListViewItem item = listView1.Items[i];
                 // Check if the value of the SoLuong column is equal to 0
                 if (item.SubItems[1].Text == "0") // Assuming SoLuong is the second column
                 {
@@ -160,6 +165,38 @@ namespace CinemaManagement_Project.BuyTickets
             {
                 listView1.Items.Remove(itemToRemove);
             }
+        }
+
+        private void FoodAndDrink_Load(object sender, EventArgs e)
+        {
+            string movieName = string.Empty;
+            switch (selectedMovie)
+            {
+                case "1":
+                    movieName = NameOfMovie1;
+                    break;
+                case "2":
+                    movieName = NameOfMovie2;
+                    break;
+                case "3":
+                    movieName = NameOfMovie3;
+                    break;
+                case "4":
+                    movieName = NameOfMovie4;
+                    break;
+                default:
+                    return;
+            }
+
+            // Add movie info to ListView
+            AddListViewItem(movieName, countTickets.ToString(), lb_totalMoney.Text);
+        }
+
+        private void btn_Buy_Click(object sender, EventArgs e)
+        {
+           Payment payment = new Payment();
+           this.Hide();
+           payment.Show();
         }
     }
 }

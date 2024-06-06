@@ -57,14 +57,15 @@
             lb_money_comboparty_2ngan = new Label();
             lb_money_combocouple_2ngan = new Label();
             panel1 = new Panel();
-            listView1 = new ListView();
-            Name = new ColumnHeader();
-            SoLuong = new ColumnHeader();
             lb_totalMoney = new Label();
             lb_total_money = new Label();
             btn_Buy = new Button();
             button1 = new Button();
             lb_TongTien = new Label();
+            listView1 = new ListView();
+            Name = new ColumnHeader();
+            SoLuong = new ColumnHeader();
+            DonGia = new ColumnHeader();
             dUD_ComboSolo = new DomainUpDown();
             dUD_ComboCouple = new DomainUpDown();
             dUD_ComboParty = new DomainUpDown();
@@ -86,7 +87,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(33, 27);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(936, 233);
+            pictureBox1.Size = new Size(887, 233);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -393,43 +394,23 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(listView1);
             panel1.Controls.Add(lb_totalMoney);
             panel1.Controls.Add(lb_total_money);
             panel1.Controls.Add(btn_Buy);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(lb_TongTien);
-            panel1.Location = new Point(1000, 25);
+            panel1.Controls.Add(listView1);
+            panel1.Location = new Point(930, 25);
             panel1.Name = "panel1";
-            panel1.Size = new Size(299, 233);
+            panel1.Size = new Size(375, 233);
             panel1.TabIndex = 88;
-            // 
-            // listView1
-            // 
-            listView1.Columns.AddRange(new ColumnHeader[] { Name, SoLuong });
-            listView1.Location = new Point(21, 13);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(259, 113);
-            listView1.TabIndex = 65;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // Name
-            // 
-            Name.Text = "Sản Phẩm";
-            Name.Width = 175;
-            // 
-            // SoLuong
-            // 
-            SoLuong.Text = "Số Lượng";
-            SoLuong.Width = 100;
             // 
             // lb_totalMoney
             // 
             lb_totalMoney.AutoSize = true;
             lb_totalMoney.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lb_totalMoney.ForeColor = Color.Firebrick;
-            lb_totalMoney.Location = new Point(186, 139);
+            lb_totalMoney.Location = new Point(186, 155);
             lb_totalMoney.Name = "lb_totalMoney";
             lb_totalMoney.Size = new Size(0, 17);
             lb_totalMoney.TabIndex = 64;
@@ -450,12 +431,13 @@
             btn_Buy.Cursor = Cursors.Hand;
             btn_Buy.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Buy.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Buy.Location = new Point(72, 168);
+            btn_Buy.Location = new Point(108, 175);
             btn_Buy.Name = "btn_Buy";
             btn_Buy.Size = new Size(162, 50);
             btn_Buy.TabIndex = 56;
             btn_Buy.Text = "THANH TOÁN";
             btn_Buy.UseVisualStyleBackColor = false;
+            btn_Buy.Click += btn_Buy_Click;
             // 
             // button1
             // 
@@ -471,11 +453,35 @@
             lb_TongTien.AutoSize = true;
             lb_TongTien.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lb_TongTien.ForeColor = Color.Firebrick;
-            lb_TongTien.Location = new Point(18, 139);
+            lb_TongTien.Location = new Point(24, 155);
             lb_TongTien.Name = "lb_TongTien";
             lb_TongTien.Size = new Size(162, 17);
             lb_TongTien.TabIndex = 54;
             lb_TongTien.Text = "TỔNG TIỀN TẠM TÍNH:";
+            // 
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { Name, SoLuong, DonGia });
+            listView1.Location = new Point(21, 13);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(333, 133);
+            listView1.TabIndex = 65;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
+            // Name
+            // 
+            Name.Text = "Sản Phẩm";
+            Name.Width = 170;
+            // 
+            // SoLuong
+            // 
+            SoLuong.Text = "Số Lượng";
+            // 
+            // DonGia
+            // 
+            DonGia.Text = "Đơn Giá";
+            DonGia.Width = 98;
             // 
             // dUD_ComboSolo
             // 
@@ -579,8 +585,9 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            //Name = "FoodAndDrink";
+            Name = "FoodAndDrink";
             Text = "FoodAndDrink";
+            Load += FoodAndDrink_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -638,5 +645,6 @@
         private ListView listView1;
         private ColumnHeader Name;
         private ColumnHeader SoLuong;
+        private ColumnHeader DonGia;
     }
 }
