@@ -18,8 +18,10 @@ namespace CinemaManagement_Project
     public partial class SelectMovieState : Form
     {
         private string Role;
+        public static PictureBox pictureBox;
         public SelectMovieState(string role)
         {
+            pictureBox = new PictureBox();
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Role = role;
@@ -104,13 +106,22 @@ namespace CinemaManagement_Project
         public static string NameOfMovie2 = null;
         public static string NameOfMovie3 = null;
         public static string NameOfMovie4 = null;
+
+        public static string AgeOfMovie1 = null;
+        public static string AgeOfMovie2 = null;
+        public static string AgeOfMovie3 = null;
+        public static string AgeOfMovie4 = null;
         private void SelectMovieState_Load(object sender, EventArgs e)
         {
-            NameOfMovie1 = lab_NameOfMovie1.Text;
-            NameOfMovie2 = lab_NameOfMovie2.Text;
-            NameOfMovie3 = lab_NameOfMovie3.Text;
-            NameOfMovie4 = lab_NameOfMovie4.Text;
+            NameOfMovie1 = lab_Detail1_Name.Text;
+            NameOfMovie2 = lab_Detail2_Name.Text;
+            NameOfMovie3 = lab_Detail3_Name.Text;
+            NameOfMovie4 = lab_Detail4_Name.Text;
 
+            AgeOfMovie1 = ExtractAgeFromLabel(lab_NameOfMovie1.Text);
+            AgeOfMovie2 = ExtractAgeFromLabel(lab_NameOfMovie2.Text);
+            AgeOfMovie3 = ExtractAgeFromLabel(lab_NameOfMovie3.Text);
+            AgeOfMovie4 = ExtractAgeFromLabel(lab_NameOfMovie4.Text);
 
             lab_NameOfMovie1.Parent = pic_background;
             lab_NameOfMovie1.BackColor = Color.Transparent;
@@ -144,7 +155,11 @@ namespace CinemaManagement_Project
                 btn_Edit_Movie.Visible = true;
             }
         }
-
+        private string ExtractAgeFromLabel(string labelText)
+        {
+            var match = System.Text.RegularExpressions.Regex.Match(labelText, @"\(([^)]*)\)");
+            return match.Success ? match.Groups[1].Value : string.Empty;
+        }
         private void btn_Edit_Movie_Click(object sender, EventArgs e)
         {   
             btn_SignOut.Visible = false;
@@ -424,6 +439,22 @@ namespace CinemaManagement_Project
         public static string selectedMovie;
         private void btn_Book_Click(object sender, EventArgs e)
         {
+            if(selectedMovie == "1")
+            {
+                pictureBox.Image = pic_Movie1.Image;
+            }
+            else if (selectedMovie == "2") 
+            {
+                pictureBox.Image = pic_Movie2.Image;
+            }
+            else if (selectedMovie == "3")
+            {
+                pictureBox.Image = pic_Movie3.Image;
+            }
+            else if (selectedMovie == "4")
+            {
+                pictureBox.Image = pic_Movie4.Image;
+            }
             selectedTheater = comboBox1.SelectedItem as string;
 
             price_film1 = lab_Detail1_Money.Text.Replace(" đ", "");

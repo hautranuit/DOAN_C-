@@ -15,7 +15,7 @@ namespace CinemaManagement_Project.BuyTickets
     {
         private decimal Total_FoodAndDrink_Money = 0m;
         private decimal initialMoney = 0m; // Store initial money from Theater1
-        private int countTickets = 0;
+        public static int countTickets = 0;
         public FoodAndDrink(string money, int count)
         {
             countTickets = count;
@@ -190,10 +190,28 @@ namespace CinemaManagement_Project.BuyTickets
             // Add movie info to ListView
             AddListViewItem(movieName, countTickets.ToString(), lb_totalMoney.Text);
         }
-
+        public static string totalMoney = null;
+        DataTable comboTable = new DataTable();
         private void btn_Buy_Click(object sender, EventArgs e)
-        {
-           Payment payment = new Payment();
+        {   
+            totalMoney = lb_totalMoney.Text;
+            comboTable.Columns.Add("ComboName", typeof(string));
+            comboTable.Columns.Add("Quantity", typeof(int));
+
+            foreach (ListViewItem item in listView1.Items)
+            {
+                // Kiểm tra nếu cột "Name" bắt đầu bằng "COMBO"
+                if (item.Text.StartsWith("COMBO"))
+                {
+                    // Lấy giá trị của cột "SoLuong"
+                    string comboName = item.Text;
+                    int quantity = int.Parse(item.SubItems[1].Text);
+
+                    // Thêm vào bảng
+                    comboTable.Rows.Add(comboName, quantity);
+                }
+            }
+            Payment payment = new Payment(comboTable);
            this.Hide();
            payment.Show();
         }

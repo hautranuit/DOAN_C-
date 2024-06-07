@@ -66,7 +66,6 @@
             label23 = new Label();
             lb_Num_Corn_Drink_Info = new Label();
             lb_Num_Corn_Drink = new Label();
-            label20 = new Label();
             lb_Corn_Drink_Info = new Label();
             lb_Corn_Drink = new Label();
             lb_NumSeatInfo = new Label();
@@ -301,11 +300,11 @@
             Ticket_NameMovie.BackColor = Color.Transparent;
             Ticket_NameMovie.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             Ticket_NameMovie.ForeColor = Color.White;
-            Ticket_NameMovie.Location = new Point(60, 22);
+            Ticket_NameMovie.Location = new Point(220, 20);
             Ticket_NameMovie.Name = "Ticket_NameMovie";
-            Ticket_NameMovie.Size = new Size(548, 25);
+            Ticket_NameMovie.Size = new Size(203, 25);
             Ticket_NameMovie.TabIndex = 71;
-            Ticket_NameMovie.Text = "DORAEMON LT(P): NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU";
+            Ticket_NameMovie.Text = "ĐÀO, PHỞ VÀ PIANO";
             Ticket_NameMovie.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btn_Complete
@@ -320,6 +319,7 @@
             btn_Complete.TabIndex = 70;
             btn_Complete.Text = "HOÀN TẤT";
             btn_Complete.UseVisualStyleBackColor = false;
+            btn_Complete.Click += btn_Complete_Click;
             // 
             // pictureBox1
             // 
@@ -465,7 +465,6 @@
             panel4.Controls.Add(label23);
             panel4.Controls.Add(lb_Num_Corn_Drink_Info);
             panel4.Controls.Add(lb_Num_Corn_Drink);
-            panel4.Controls.Add(label20);
             panel4.Controls.Add(lb_Corn_Drink_Info);
             panel4.Controls.Add(lb_Corn_Drink);
             panel4.Controls.Add(lb_NumSeatInfo);
@@ -555,7 +554,7 @@
             lb_Num_Corn_Drink_Info.BackColor = Color.Transparent;
             lb_Num_Corn_Drink_Info.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Num_Corn_Drink_Info.ForeColor = Color.White;
-            lb_Num_Corn_Drink_Info.Location = new Point(301, 372);
+            lb_Num_Corn_Drink_Info.Location = new Point(301, 363);
             lb_Num_Corn_Drink_Info.Name = "lb_Num_Corn_Drink_Info";
             lb_Num_Corn_Drink_Info.Size = new Size(17, 23);
             lb_Num_Corn_Drink_Info.TabIndex = 84;
@@ -573,25 +572,13 @@
             lb_Num_Corn_Drink.TabIndex = 83;
             lb_Num_Corn_Drink.Text = "Số lượng";
             // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(17, 395);
-            label20.Name = "label20";
-            label20.Size = new Size(226, 20);
-            label20.TabIndex = 82;
-            label20.Text = "1 Bắp Ngọt 60oz  + 2 Coke 32Oz";
-            // 
             // lb_Corn_Drink_Info
             // 
             lb_Corn_Drink_Info.AutoSize = true;
             lb_Corn_Drink_Info.BackColor = Color.Transparent;
             lb_Corn_Drink_Info.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Corn_Drink_Info.ForeColor = Color.White;
-            lb_Corn_Drink_Info.Location = new Point(17, 372);
+            lb_Corn_Drink_Info.Location = new Point(17, 363);
             lb_Corn_Drink_Info.Name = "lb_Corn_Drink_Info";
             lb_Corn_Drink_Info.Size = new Size(204, 23);
             lb_Corn_Drink_Info.TabIndex = 81;
@@ -957,6 +944,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1307, 685);
+            Controls.Add(panel4);
             Controls.Add(pn_Voucher);
             Controls.Add(pn_CusInfo);
             Controls.Add(panel2);
@@ -964,7 +952,6 @@
             Controls.Add(lb_TicketInfo);
             Controls.Add(lb_PayInfo);
             Controls.Add(lb_CusInfo);
-            Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Payment";
             Text = "Payment";
@@ -1022,7 +1009,6 @@
         private Label lb_NumSeatInfo;
         private Label lb_SeatInfo;
         private Label lb_NumberInfo;
-        private Label label20;
         private Label label24;
         private Label label23;
         private Label lb_Num_Corn_Drink_Info;

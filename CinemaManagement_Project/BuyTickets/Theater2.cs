@@ -27,6 +27,7 @@ namespace CinemaManagement_Project.BuyTickets
         private double priceCouple;
         public static double TongTien;
         private int count;
+
         public Theater2()
         {
             InitializeComponent();
@@ -180,9 +181,63 @@ namespace CinemaManagement_Project.BuyTickets
                 sw.WriteLine(line);
             }
         }
-
+        public static string TypeOfSeat;
+        public static string NumSeat;
         private void button2_Click(object sender, EventArgs e)
         {
+            // Initialize a list to keep track of the seat types
+            List<string> seatTypes = new List<string>();
+            List<string> bookedSeats = new List<string>();
+
+            // List of seats to check
+            List<PictureBox> seats = new List<PictureBox> {
+            A1, A2, A3, A4, A5,
+            B1, B2, B3, B4, B5,
+            C1, C2, C3, C4, C5,
+            D1, D2, D3
+            };
+
+            // Iterate through the seats to check if they are booked and determine their type
+            foreach (var seat in seats)
+            {
+                if (seat.Tag != null && seat.Tag.ToString() == "booked")
+                {
+                    bookedSeats.Add(seat.Name);
+                    if (seat == A1 || seat == A5 || seat == B1 || seat == B5 || seat == C1 || seat == C5)
+                    {
+                        if (!seatTypes.Contains("Economy"))
+                        {
+                            seatTypes.Add("Economy");
+                        }
+                    }
+                    else if (seat == B2 || seat == B3 || seat == B4)
+                    {
+                        if (!seatTypes.Contains("VIP"))
+                        {
+                            seatTypes.Add("VIP");
+                        }
+                    }
+                    else if (seat == D1 || seat == D2 || seat == D3)
+                    {
+                        if (!seatTypes.Contains("Couple"))
+                        {
+                            seatTypes.Add("Couple");
+                        }
+                    }
+                    else
+                    {
+                        if (!seatTypes.Contains("Standard"))
+                        {
+                            seatTypes.Add("Standard");
+                        }
+                    }
+                }
+            }
+
+            // Join the seat types into a single string separated by commas
+            TypeOfSeat = string.Join(", ", seatTypes);
+            NumSeat = string.Join(", ", bookedSeats);
+
             FoodAndDrink FandD = new FoodAndDrink(money, count);
             this.Hide();
             FandD.Show();

@@ -11,15 +11,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QRCoder;
 using static CinemaManagement_Project.SelectMovieState;
+using static CinemaManagement_Project.BuyTickets.FoodAndDrink;
+using static CinemaManagement_Project.BuyTickets.Theater2;
+using static CinemaManagement_Project.BuyTickets.Theater3;
+using static CinemaManagement_Project.Theater1;
+using CinemaManagement_Project.BuyTickets;
+using System.Net.Mail;
+using System.Net;
+using System.Drawing.Imaging;
+using System.Net.Mime;
 
 namespace CinemaManagement_Project
 {
     public partial class Payment : Form
     {
-        public Payment()
+        private DataTable comboTable;
+        public Payment(DataTable table)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            comboTable = table;
         }
 
         private void lb_PayInfo_Click(object sender, EventArgs e)
@@ -47,9 +58,10 @@ namespace CinemaManagement_Project
             pn_CusInfo.Visible = true;
             pn_PayInfo.Visible = false;
         }
-
+        private string emailReceived;
         private void button2_Click(object sender, EventArgs e)
-        {
+        {   
+            emailReceived = tbx_Email.Text;
             lb_PayInfo_Click(sender, e);
             CheckCusInfo();
         }
@@ -164,7 +176,7 @@ namespace CinemaManagement_Project
 
         private void Payment_Load(object sender, EventArgs e)
         {
-            if(selectedMovie == "1")
+            if (selectedMovie == "1")
             {
                 lb_Movie.Text = NameOfMovie1;
             }
@@ -176,16 +188,130 @@ namespace CinemaManagement_Project
             {
                 lb_Movie.Text = NameOfMovie3;
             }
-            else if(selectedMovie == "4")
+            else if (selectedMovie == "4")
             {
                 lb_Movie.Text = NameOfMovie4;
             }
+
+            lb_RoomInfo.Text = selectedTheater;
+            lb_NumberInfo.Text = countTickets.ToString();
+
+            if (selectedTheater == "1")
+            {
+                lb_SeatInfo.Text = Theater1.TypeOfSeat;
+                lb_NumSeatInfo.Text = Theater1.NumSeat;
+            }
+            else if (selectedTheater == "2")
+            {
+                lb_SeatInfo.Text = BuyTickets.Theater2.TypeOfSeat;
+                lb_NumSeatInfo.Text = BuyTickets.Theater2.NumSeat;
+            }
+            else if (selectedTheater == "3")
+            {
+                lb_SeatInfo.Text = BuyTickets.Theater3.TypeOfSeat;
+                lb_NumSeatInfo.Text = BuyTickets.Theater3.NumSeat;
+            }
+            // Cập nhật lb_Corn_Drink_Info.Text và lb_Num_Corn_Drink_Info.Text từ comboTable
+            StringBuilder cornDrinkInfo = new StringBuilder();
+            StringBuilder numCornDrinkInfo = new StringBuilder();
+
+            foreach (DataRow row in comboTable.Rows)
+            {
+                cornDrinkInfo.AppendLine(row["ComboName"].ToString());
+                numCornDrinkInfo.AppendLine(row["Quantity"].ToString());
+            }
+
+            lb_Corn_Drink_Info.Text = cornDrinkInfo.ToString();
+            lb_Num_Corn_Drink_Info.Text = numCornDrinkInfo.ToString();
+
+            lb_Price.Text = totalMoney;
+
         }
         private string GenerateRandomString(int length)
         {
             const string chars = "0123456789";
             Random random = new Random();
             return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+        private void btn_Complete_Click(object sender, EventArgs e)
+        {
+                string recipientEmail = emailReceived;
+                string subject = "Thông tin vé xem phim của bạn";
+                string body = GenerateEmailBody();
+                SendEmail(recipientEmail, subject, body, "smtp.gmail.com", "22520412@gm.uit.edu.vn", "qlar xdqm most pyjx");
+                MessageBox.Show("Email đã được gửi thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+ 
+        }
+        private string GenerateEmailBody()
+        {
+            string movieName = lb_Movie.Text;
+            string ticketCode = lb_TicketCode.Text;
+            string address = lb_Address2.Text;
+            string roomInfo = lb_RoomInfo.Text;
+            string seatInfo = lb_NumSeatInfo.Text;
+            string comboInfo = lb_Corn_Drink_Info.Text != "" ? lb_Corn_Drink_Info.Text : "Không có";
+            string voucherInfo = lb_AppliedVoucher.Text != "" ? lb_AppliedVoucher.Text : "Không có";
+            string totalPrice = lb_Price.Text;
+
+            return $@"
+                <html>
+                <body>
+                    <h1>Thông tin vé xem phim của bạn</h1>
+                    <p><strong>Tên phim:</strong> {movieName}</p>
+                    <p><strong>Mã vé:</strong> {ticketCode}</p>
+                    <p><strong>Địa chỉ:</strong> {address}</p>
+                    <p><strong>Phòng chiếu:</strong> {roomInfo}</p>
+                    <p><strong>Thông tin ghế:</strong> {seatInfo}</p>
+                    <p><strong>Combo:</strong> {comboInfo}</p>
+                    <p><strong>Voucher:</strong> {voucherInfo}</p>
+                    <p><strong>Tổng tiền:</strong> {totalPrice}</p>
+                    <img src=""cid:movieTicketImage"" alt=""Movie Ticket"" />
+                </body>
+                </html>
+            ";
+        }
+        private void SendEmail(string recipientEmail, string subject, string body, string smtpHost, string smtpUser, string smtpPass)
+        {
+            var smtpClient = new SmtpClient(smtpHost)
+            {
+                Port = 587,
+                Credentials = new NetworkCredential(smtpUser, smtpPass),
+                EnableSsl = true,
+            };
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(smtpUser),
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true,
+            };
+            mailMessage.To.Add(recipientEmail);
+
+            // Convert PictureBox image to MemoryStream
+            MemoryStream ms = new MemoryStream();
+            pictureBox.Image.Save(ms, ImageFormat.Png);
+            ms.Position = 0;
+            // Add image as an attachment
+            var inlineLogo = new Attachment(ms, "movieTicketImage.png", "image/png");
+            inlineLogo.ContentId = "movieTicketImage";
+            inlineLogo.ContentDisposition.Inline = true;
+            inlineLogo.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
+            mailMessage.Attachments.Add(inlineLogo);
+
+            // Chuyển đổi PictureBox image (QRCode) thành MemoryStream
+            MemoryStream msQRCode = new MemoryStream();
+            picQRCode.Image.Save(msQRCode, ImageFormat.Png);
+            msQRCode.Position = 0;
+
+            // Thêm QRCode dưới dạng tệp đính kèm
+            var qrCodeAttachment = new Attachment(msQRCode, "QRCodeMaDatVe.png", "image/png");
+            qrCodeAttachment.ContentId = "QRCodeMaDatVe";
+            qrCodeAttachment.ContentDisposition.Inline = true;
+            qrCodeAttachment.ContentDisposition.DispositionType = DispositionTypeNames.Inline;
+            mailMessage.Attachments.Add(qrCodeAttachment);
+
+            smtpClient.Send(mailMessage);
         }
     }
 }
