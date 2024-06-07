@@ -585,7 +585,6 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FoodAndDrink";
             Text = "FoodAndDrink";
             Load += FoodAndDrink_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

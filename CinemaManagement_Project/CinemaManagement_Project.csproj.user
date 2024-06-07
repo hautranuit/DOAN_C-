@@ -19,6 +19,9 @@
     <Compile Update="Pay\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pay\QRCodePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SignIn_SignUp\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -50,9 +50,21 @@
               "target": "Package",
               "version": "[5.2.0, )"
             },
+            "QRCodeDecoderLibrary": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
             "System.Security.AccessControl": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.6, )"
             }
           },
           "imports": [

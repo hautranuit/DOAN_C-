@@ -14,6 +14,7 @@ namespace CinemaManagement_Project
             //Application.Run(new DangNhap());
             Application.Run(new SelectMovieState("guest"));
             //Application.Run(new Theater1());
+            //Application.Run(new Payment());
         }
     }
 }

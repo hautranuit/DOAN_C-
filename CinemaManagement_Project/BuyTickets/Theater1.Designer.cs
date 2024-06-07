@@ -75,24 +75,12 @@
             lb_PriceStandard = new Label();
             lb_PriceEconomy = new Label();
             lb_PriceVIP = new Label();
-            panel1 = new Panel();
-            monthCalendar1 = new MonthCalendar();
-            lb_total_money = new Label();
-            datebutton = new Button();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
             button2 = new Button();
-            button1 = new Button();
             lb_TongTien = new Label();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            label4 = new Label();
             lb_Theater = new Label();
             pic_return = new PictureBox();
             pn_Theater1 = new Panel();
+            lb_total_money = new Label();
             ((System.ComponentModel.ISupportInitialize)pic_Screen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)A1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)A2).BeginInit();
@@ -113,7 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)pic_blue).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_yellow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_Background).BeginInit();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pic_return).BeginInit();
             pn_Theater1.SuspendLayout();
             SuspendLayout();
@@ -122,7 +109,7 @@
             // 
             pic_Screen.BackColor = Color.Black;
             pic_Screen.Image = (Image)resources.GetObject("pic_Screen.Image");
-            pic_Screen.Location = new Point(371, 46);
+            pic_Screen.Location = new Point(222, 41);
             pic_Screen.Name = "pic_Screen";
             pic_Screen.Size = new Size(832, 62);
             pic_Screen.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -169,7 +156,7 @@
             // 
             A1.BackColor = Color.SteelBlue;
             A1.Image = (Image)resources.GetObject("A1.Image");
-            A1.Location = new Point(91, 82);
+            A1.Location = new Point(136, 82);
             A1.Name = "A1";
             A1.Size = new Size(62, 54);
             A1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -183,7 +170,7 @@
             A1_Click.Cursor = Cursors.Hand;
             A1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A1_Click.ForeColor = Color.Black;
-            A1_Click.Location = new Point(91, 82);
+            A1_Click.Location = new Point(136, 82);
             A1_Click.Name = "A1_Click";
             A1_Click.Size = new Size(62, 54);
             A1_Click.TabIndex = 36;
@@ -197,7 +184,7 @@
             // 
             A2.BackColor = Color.Transparent;
             A2.Image = (Image)resources.GetObject("A2.Image");
-            A2.Location = new Point(227, 82);
+            A2.Location = new Point(272, 82);
             A2.Name = "A2";
             A2.Size = new Size(62, 54);
             A2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -211,7 +198,7 @@
             A2_Click.Cursor = Cursors.Hand;
             A2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A2_Click.ForeColor = Color.Black;
-            A2_Click.Location = new Point(227, 82);
+            A2_Click.Location = new Point(272, 82);
             A2_Click.Name = "A2_Click";
             A2_Click.Size = new Size(62, 54);
             A2_Click.TabIndex = 38;
@@ -225,7 +212,7 @@
             // 
             A3.BackColor = Color.Transparent;
             A3.Image = (Image)resources.GetObject("A3.Image");
-            A3.Location = new Point(367, 82);
+            A3.Location = new Point(412, 82);
             A3.Name = "A3";
             A3.Size = new Size(62, 54);
             A3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -239,7 +226,7 @@
             A3_Click.Cursor = Cursors.Hand;
             A3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A3_Click.ForeColor = Color.Black;
-            A3_Click.Location = new Point(367, 82);
+            A3_Click.Location = new Point(412, 82);
             A3_Click.Name = "A3_Click";
             A3_Click.Size = new Size(62, 54);
             A3_Click.TabIndex = 40;
@@ -253,7 +240,7 @@
             // 
             A4.BackColor = Color.Transparent;
             A4.Image = (Image)resources.GetObject("A4.Image");
-            A4.Location = new Point(506, 84);
+            A4.Location = new Point(551, 84);
             A4.Name = "A4";
             A4.Size = new Size(62, 54);
             A4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -267,7 +254,7 @@
             A4_Click.Cursor = Cursors.Hand;
             A4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A4_Click.ForeColor = Color.Black;
-            A4_Click.Location = new Point(506, 84);
+            A4_Click.Location = new Point(551, 84);
             A4_Click.Name = "A4_Click";
             A4_Click.Size = new Size(62, 54);
             A4_Click.TabIndex = 42;
@@ -281,7 +268,7 @@
             // 
             A5.BackColor = Color.SteelBlue;
             A5.Image = (Image)resources.GetObject("A5.Image");
-            A5.Location = new Point(639, 82);
+            A5.Location = new Point(684, 82);
             A5.Name = "A5";
             A5.Size = new Size(62, 54);
             A5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -295,7 +282,7 @@
             A5_Click.Cursor = Cursors.Hand;
             A5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             A5_Click.ForeColor = Color.Black;
-            A5_Click.Location = new Point(639, 82);
+            A5_Click.Location = new Point(684, 82);
             A5_Click.Name = "A5_Click";
             A5_Click.Size = new Size(62, 54);
             A5_Click.TabIndex = 44;
@@ -309,7 +296,7 @@
             // 
             B1.BackColor = Color.SteelBlue;
             B1.Image = (Image)resources.GetObject("B1.Image");
-            B1.Location = new Point(91, 181);
+            B1.Location = new Point(136, 181);
             B1.Name = "B1";
             B1.Size = new Size(62, 54);
             B1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -323,7 +310,7 @@
             B1_Click.Cursor = Cursors.Hand;
             B1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B1_Click.ForeColor = Color.Black;
-            B1_Click.Location = new Point(91, 181);
+            B1_Click.Location = new Point(136, 181);
             B1_Click.Name = "B1_Click";
             B1_Click.Size = new Size(62, 54);
             B1_Click.TabIndex = 46;
@@ -337,7 +324,7 @@
             // 
             B2.BackColor = Color.Moccasin;
             B2.Image = (Image)resources.GetObject("B2.Image");
-            B2.Location = new Point(227, 181);
+            B2.Location = new Point(272, 181);
             B2.Name = "B2";
             B2.Size = new Size(62, 54);
             B2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -351,7 +338,7 @@
             B2_Click.Cursor = Cursors.Hand;
             B2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B2_Click.ForeColor = Color.Black;
-            B2_Click.Location = new Point(227, 181);
+            B2_Click.Location = new Point(272, 181);
             B2_Click.Name = "B2_Click";
             B2_Click.Size = new Size(62, 54);
             B2_Click.TabIndex = 48;
@@ -365,7 +352,7 @@
             // 
             B3.BackColor = Color.Moccasin;
             B3.Image = (Image)resources.GetObject("B3.Image");
-            B3.Location = new Point(365, 181);
+            B3.Location = new Point(410, 181);
             B3.Name = "B3";
             B3.Size = new Size(62, 54);
             B3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -379,7 +366,7 @@
             B3_Click.Cursor = Cursors.Hand;
             B3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B3_Click.ForeColor = Color.Black;
-            B3_Click.Location = new Point(365, 181);
+            B3_Click.Location = new Point(410, 181);
             B3_Click.Name = "B3_Click";
             B3_Click.Size = new Size(62, 54);
             B3_Click.TabIndex = 50;
@@ -393,7 +380,7 @@
             // 
             B4.BackColor = Color.Moccasin;
             B4.Image = (Image)resources.GetObject("B4.Image");
-            B4.Location = new Point(506, 181);
+            B4.Location = new Point(551, 181);
             B4.Name = "B4";
             B4.Size = new Size(62, 54);
             B4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -407,7 +394,7 @@
             B4_Click.Cursor = Cursors.Hand;
             B4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B4_Click.ForeColor = Color.Black;
-            B4_Click.Location = new Point(506, 181);
+            B4_Click.Location = new Point(551, 181);
             B4_Click.Name = "B4_Click";
             B4_Click.Size = new Size(62, 54);
             B4_Click.TabIndex = 52;
@@ -421,7 +408,7 @@
             // 
             B5.BackColor = Color.SteelBlue;
             B5.Image = (Image)resources.GetObject("B5.Image");
-            B5.Location = new Point(639, 181);
+            B5.Location = new Point(684, 181);
             B5.Name = "B5";
             B5.Size = new Size(62, 54);
             B5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -435,7 +422,7 @@
             B5_Click.Cursor = Cursors.Hand;
             B5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             B5_Click.ForeColor = Color.Black;
-            B5_Click.Location = new Point(639, 181);
+            B5_Click.Location = new Point(684, 181);
             B5_Click.Name = "B5_Click";
             B5_Click.Size = new Size(62, 54);
             B5_Click.TabIndex = 54;
@@ -449,7 +436,7 @@
             // 
             C1.BackColor = Color.SteelBlue;
             C1.Image = (Image)resources.GetObject("C1.Image");
-            C1.Location = new Point(91, 275);
+            C1.Location = new Point(136, 275);
             C1.Name = "C1";
             C1.Size = new Size(62, 54);
             C1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -461,7 +448,7 @@
             // 
             C2.BackColor = Color.Transparent;
             C2.Image = (Image)resources.GetObject("C2.Image");
-            C2.Location = new Point(227, 275);
+            C2.Location = new Point(272, 275);
             C2.Name = "C2";
             C2.Size = new Size(62, 54);
             C2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -473,7 +460,7 @@
             // 
             C3.BackColor = Color.Transparent;
             C3.Image = (Image)resources.GetObject("C3.Image");
-            C3.Location = new Point(367, 277);
+            C3.Location = new Point(412, 277);
             C3.Name = "C3";
             C3.Size = new Size(62, 54);
             C3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -485,7 +472,7 @@
             // 
             C4.BackColor = Color.Transparent;
             C4.Image = (Image)resources.GetObject("C4.Image");
-            C4.Location = new Point(506, 277);
+            C4.Location = new Point(551, 277);
             C4.Name = "C4";
             C4.Size = new Size(62, 54);
             C4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -497,7 +484,7 @@
             // 
             C5.BackColor = Color.SteelBlue;
             C5.Image = (Image)resources.GetObject("C5.Image");
-            C5.Location = new Point(639, 277);
+            C5.Location = new Point(684, 277);
             C5.Name = "C5";
             C5.Size = new Size(62, 54);
             C5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -511,7 +498,7 @@
             C1_Click.Cursor = Cursors.Hand;
             C1_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C1_Click.ForeColor = Color.Black;
-            C1_Click.Location = new Point(91, 275);
+            C1_Click.Location = new Point(136, 275);
             C1_Click.Name = "C1_Click";
             C1_Click.Size = new Size(62, 54);
             C1_Click.TabIndex = 60;
@@ -527,7 +514,7 @@
             C2_Click.Cursor = Cursors.Hand;
             C2_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C2_Click.ForeColor = Color.Black;
-            C2_Click.Location = new Point(227, 275);
+            C2_Click.Location = new Point(272, 275);
             C2_Click.Name = "C2_Click";
             C2_Click.Size = new Size(62, 54);
             C2_Click.TabIndex = 61;
@@ -543,7 +530,7 @@
             C3_Click.Cursor = Cursors.Hand;
             C3_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C3_Click.ForeColor = Color.Black;
-            C3_Click.Location = new Point(367, 277);
+            C3_Click.Location = new Point(412, 277);
             C3_Click.Name = "C3_Click";
             C3_Click.Size = new Size(62, 54);
             C3_Click.TabIndex = 62;
@@ -559,7 +546,7 @@
             C4_Click.Cursor = Cursors.Hand;
             C4_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C4_Click.ForeColor = Color.Black;
-            C4_Click.Location = new Point(506, 277);
+            C4_Click.Location = new Point(551, 277);
             C4_Click.Name = "C4_Click";
             C4_Click.Size = new Size(62, 54);
             C4_Click.TabIndex = 63;
@@ -575,7 +562,7 @@
             C5_Click.Cursor = Cursors.Hand;
             C5_Click.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             C5_Click.ForeColor = Color.Black;
-            C5_Click.Location = new Point(639, 277);
+            C5_Click.Location = new Point(684, 277);
             C5_Click.Name = "C5_Click";
             C5_Click.Size = new Size(62, 54);
             C5_Click.TabIndex = 64;
@@ -591,7 +578,7 @@
             btn_delete.Cursor = Cursors.Hand;
             btn_delete.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = SystemColors.ActiveCaptionText;
-            btn_delete.Location = new Point(1172, 282);
+            btn_delete.Location = new Point(39, 266);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(112, 138);
             btn_delete.TabIndex = 65;
@@ -605,7 +592,7 @@
             lab_screen.BackColor = Color.Black;
             lab_screen.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_screen.ForeColor = Color.White;
-            lab_screen.Location = new Point(717, 111);
+            lab_screen.Location = new Point(558, 106);
             lab_screen.Name = "lab_screen";
             lab_screen.Size = new Size(137, 31);
             lab_screen.TabIndex = 66;
@@ -613,7 +600,7 @@
             // 
             // pic_white
             // 
-            pic_white.Location = new Point(488, 601);
+            pic_white.Location = new Point(204, 608);
             pic_white.Name = "pic_white";
             pic_white.Size = new Size(51, 41);
             pic_white.TabIndex = 67;
@@ -625,7 +612,7 @@
             standard.BackColor = Color.Transparent;
             standard.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             standard.ForeColor = Color.White;
-            standard.Location = new Point(557, 619);
+            standard.Location = new Point(273, 626);
             standard.Name = "standard";
             standard.Size = new Size(115, 23);
             standard.TabIndex = 68;
@@ -634,7 +621,7 @@
             // pic_blue
             // 
             pic_blue.BackColor = Color.SteelBlue;
-            pic_blue.Location = new Point(762, 601);
+            pic_blue.Location = new Point(478, 608);
             pic_blue.Name = "pic_blue";
             pic_blue.Size = new Size(51, 41);
             pic_blue.TabIndex = 69;
@@ -646,7 +633,7 @@
             economy.BackColor = Color.Transparent;
             economy.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             economy.ForeColor = Color.White;
-            economy.Location = new Point(832, 619);
+            economy.Location = new Point(548, 626);
             economy.Name = "economy";
             economy.Size = new Size(113, 23);
             economy.TabIndex = 70;
@@ -655,7 +642,7 @@
             // pic_yellow
             // 
             pic_yellow.BackColor = Color.Moccasin;
-            pic_yellow.Location = new Point(1036, 601);
+            pic_yellow.Location = new Point(752, 608);
             pic_yellow.Name = "pic_yellow";
             pic_yellow.Size = new Size(51, 41);
             pic_yellow.TabIndex = 71;
@@ -667,7 +654,7 @@
             vip.BackColor = Color.Transparent;
             vip.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             vip.ForeColor = Color.White;
-            vip.Location = new Point(1106, 619);
+            vip.Location = new Point(822, 626);
             vip.Name = "vip";
             vip.Size = new Size(42, 23);
             vip.TabIndex = 72;
@@ -677,9 +664,9 @@
             // 
             pic_Background.BackgroundImageLayout = ImageLayout.Stretch;
             pic_Background.Image = (Image)resources.GetObject("pic_Background.Image");
-            pic_Background.Location = new Point(-2, 0);
+            pic_Background.Location = new Point(0, 0);
             pic_Background.Name = "pic_Background";
-            pic_Background.Size = new Size(1304, 667);
+            pic_Background.Size = new Size(1151, 667);
             pic_Background.SizeMode = PictureBoxSizeMode.StretchImage;
             pic_Background.TabIndex = 1;
             pic_Background.TabStop = false;
@@ -690,7 +677,7 @@
             lb_PriceStandard.BackColor = Color.Transparent;
             lb_PriceStandard.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceStandard.ForeColor = Color.White;
-            lb_PriceStandard.Location = new Point(557, 585);
+            lb_PriceStandard.Location = new Point(273, 592);
             lb_PriceStandard.Name = "lb_PriceStandard";
             lb_PriceStandard.Size = new Size(109, 25);
             lb_PriceStandard.TabIndex = 73;
@@ -702,7 +689,7 @@
             lb_PriceEconomy.BackColor = Color.Transparent;
             lb_PriceEconomy.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceEconomy.ForeColor = Color.White;
-            lb_PriceEconomy.Location = new Point(832, 585);
+            lb_PriceEconomy.Location = new Point(548, 592);
             lb_PriceEconomy.Name = "lb_PriceEconomy";
             lb_PriceEconomy.Size = new Size(109, 25);
             lb_PriceEconomy.TabIndex = 74;
@@ -714,99 +701,11 @@
             lb_PriceVIP.BackColor = Color.Transparent;
             lb_PriceVIP.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceVIP.ForeColor = Color.White;
-            lb_PriceVIP.Location = new Point(1106, 585);
+            lb_PriceVIP.Location = new Point(822, 592);
             lb_PriceVIP.Name = "lb_PriceVIP";
             lb_PriceVIP.Size = new Size(109, 25);
             lb_PriceVIP.TabIndex = 75;
             lb_PriceVIP.Text = "MÀN HÌNH";
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(monthCalendar1);
-            panel1.Controls.Add(lb_total_money);
-            panel1.Controls.Add(datebutton);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(lb_TongTien);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(label4);
-            panel1.Location = new Point(25, 100);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(299, 507);
-            panel1.TabIndex = 76;
-            // 
-            // monthCalendar1
-            // 
-            monthCalendar1.Location = new Point(25, 55);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 61;
-            monthCalendar1.Visible = false;
-            // 
-            // lb_total_money
-            // 
-            lb_total_money.AutoSize = true;
-            lb_total_money.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_total_money.ForeColor = Color.Firebrick;
-            lb_total_money.Location = new Point(193, 392);
-            lb_total_money.Name = "lb_total_money";
-            lb_total_money.Size = new Size(0, 17);
-            lb_total_money.TabIndex = 63;
-            // 
-            // datebutton
-            // 
-            datebutton.ForeColor = Color.Gray;
-            datebutton.Location = new Point(25, 176);
-            datebutton.Name = "datebutton";
-            datebutton.Size = new Size(262, 29);
-            datebutton.TabIndex = 62;
-            datebutton.Text = "Click to choose";
-            datebutton.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(25, 313);
-            label9.Name = "label9";
-            label9.Size = new Size(46, 20);
-            label9.TabIndex = 60;
-            label9.Text = "Email";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(25, 233);
-            label8.Name = "label8";
-            label8.Size = new Size(99, 20);
-            label8.TabIndex = 59;
-            label8.Text = "Số điện thoại";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(25, 153);
-            label7.Name = "label7";
-            label7.Size = new Size(78, 20);
-            label7.TabIndex = 58;
-            label7.Text = "Ngày sinh";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(25, 72);
-            label6.Name = "label6";
-            label6.Size = new Size(77, 20);
-            label6.TabIndex = 57;
-            label6.Text = "Họ và Tên";
             // 
             // button2
             // 
@@ -814,7 +713,7 @@
             button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(60, 429);
+            button2.Location = new Point(962, 599);
             button2.Name = "button2";
             button2.Size = new Size(162, 50);
             button2.TabIndex = 56;
@@ -822,56 +721,17 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(158, 451);
-            button1.Name = "button1";
-            button1.Size = new Size(8, 8);
-            button1.TabIndex = 55;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // lb_TongTien
             // 
             lb_TongTien.AutoSize = true;
+            lb_TongTien.BackColor = Color.Transparent;
             lb_TongTien.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_TongTien.ForeColor = Color.Firebrick;
-            lb_TongTien.Location = new Point(25, 392);
+            lb_TongTien.ForeColor = Color.Transparent;
+            lb_TongTien.Location = new Point(617, 397);
             lb_TongTien.Name = "lb_TongTien";
             lb_TongTien.Size = new Size(162, 17);
             lb_TongTien.TabIndex = 54;
             lb_TongTien.Text = "TỔNG TIỀN TẠM TÍNH:";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(25, 104);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 53;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(25, 336);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(244, 27);
-            textBox4.TabIndex = 52;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(25, 256);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(244, 27);
-            textBox3.TabIndex = 51;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Stencil", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(45, 26);
-            label4.Name = "label4";
-            label4.Size = new Size(210, 20);
-            label4.TabIndex = 0;
-            label4.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
             // lb_Theater
             // 
@@ -879,7 +739,7 @@
             lb_Theater.BackColor = Color.Transparent;
             lb_Theater.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Theater.ForeColor = Color.White;
-            lb_Theater.Location = new Point(140, 46);
+            lb_Theater.Location = new Point(586, 7);
             lb_Theater.Name = "lb_Theater";
             lb_Theater.Size = new Size(78, 31);
             lb_Theater.TabIndex = 77;
@@ -900,9 +760,11 @@
             // pn_Theater1
             // 
             pn_Theater1.BackColor = Color.Transparent;
+            pn_Theater1.Controls.Add(lb_total_money);
             pn_Theater1.Controls.Add(A2_Click);
             pn_Theater1.Controls.Add(A2);
             pn_Theater1.Controls.Add(C3_Click);
+            pn_Theater1.Controls.Add(lb_TongTien);
             pn_Theater1.Controls.Add(C4_Click);
             pn_Theater1.Controls.Add(A1_Click);
             pn_Theater1.Controls.Add(lab_seatA);
@@ -933,19 +795,29 @@
             pn_Theater1.Controls.Add(B1);
             pn_Theater1.Controls.Add(C3);
             pn_Theater1.Controls.Add(C4);
-            pn_Theater1.Location = new Point(417, 145);
+            pn_Theater1.Location = new Point(205, 142);
             pn_Theater1.Name = "pn_Theater1";
-            pn_Theater1.Size = new Size(731, 424);
+            pn_Theater1.Size = new Size(919, 424);
             pn_Theater1.TabIndex = 79;
+            // 
+            // lb_total_money
+            // 
+            lb_total_money.AutoSize = true;
+            lb_total_money.Font = new Font("Cambria", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_total_money.ForeColor = Color.Firebrick;
+            lb_total_money.Location = new Point(779, 397);
+            lb_total_money.Name = "lb_total_money";
+            lb_total_money.Size = new Size(0, 17);
+            lb_total_money.TabIndex = 80;
             // 
             // Theater1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1296, 667);
+            ClientSize = new Size(1149, 667);
             Controls.Add(pic_return);
+            Controls.Add(button2);
             Controls.Add(lb_Theater);
-            Controls.Add(panel1);
             Controls.Add(lb_PriceVIP);
             Controls.Add(lb_PriceEconomy);
             Controls.Add(lb_PriceStandard);
@@ -984,8 +856,6 @@
             ((System.ComponentModel.ISupportInitialize)pic_blue).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_yellow).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_Background).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_return).EndInit();
             pn_Theater1.ResumeLayout(false);
             pn_Theater1.PerformLayout();
@@ -1040,23 +910,11 @@
         private Label lb_PriceStandard;
         private Label lb_PriceEconomy;
         private Label lb_PriceVIP;
-        private Panel panel1;
-        private MonthCalendar monthCalendar1;
-        private Label lb_total_money;
-        private Button datebutton;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
         private Button button2;
-        private Button button1;
         private Label lb_TongTien;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private Label label4;
         private Label lb_Theater;
         private PictureBox pic_return;
         private Panel pn_Theater1;
+        private Label lb_total_money;
     }
 }

@@ -235,3 +235,8 @@ E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.pdb
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.genruntimeconfig.cache
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\ref\CinemaManagement_Project.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Payment.resources
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\QRCodeDecoderLibrary.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\QRCoder.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\zxing.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Pay.QRCodePayment.resources

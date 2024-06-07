@@ -9,7 +9,10 @@
       "CinemaManagement_Project/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.0",
-          "System.Security.AccessControl": "6.0.1"
+          "QRCodeDecoderLibrary": "2.0.1",
+          "QRCoder": "1.5.1",
+          "System.Security.AccessControl": "6.0.1",
+          "ZXing.Net": "0.16.6"
         },
         "runtime": {
           "CinemaManagement_Project.dll": {}
@@ -311,6 +314,25 @@
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {},
+      "QRCodeDecoderLibrary/2.0.1": {
+        "runtime": {
+          "lib/net462/QRCodeDecoderLibrary.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "QRCoder/1.5.1": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/QRCoder.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        }
+      },
       "System.Configuration.ConfigurationManager/6.0.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -435,6 +457,14 @@
       "System.Windows.Extensions/6.0.0": {
         "dependencies": {
           "System.Drawing.Common": "6.0.0"
+        }
+      },
+      "ZXing.Net/0.16.6": {
+        "runtime": {
+          "lib/netcoreapp3.1/zxing.dll": {
+            "assemblyVersion": "0.16.6.0",
+            "fileVersion": "0.16.6.0"
+          }
         }
       }
     }
@@ -585,6 +615,20 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "QRCodeDecoderLibrary/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RdyGBr1mtuO9dIWQs77y7/kz0e85q9kHBFOIH6x8UqDZTM8l9+a4vgIGGqjP5nPidCGQHGR/Z+zpVTp1KBJd/g==",
+      "path": "qrcodedecoderlibrary/2.0.1",
+      "hashPath": "qrcodedecoderlibrary.2.0.1.nupkg.sha512"
+    },
+    "QRCoder/1.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+v8VntytuDw4R1nCNJkSA7SWSizJoQfiByV1+nUjOwrDZEuaxefG73aKuuQjpaGtoZ7qlXpRbK70C23m1h3WLw==",
+      "path": "qrcoder/1.5.1",
+      "hashPath": "qrcoder.1.5.1.nupkg.sha512"
+    },
     "System.Configuration.ConfigurationManager/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -731,6 +775,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0+6EcJ7Ve1BocwqvqpAmgMa7xF3wxqROcM3KvAE6WGNIqXLA5YEziLjRX+kKYVrcttlFRz1IaoRSzt/o6Ttviw==",
+      "path": "zxing.net/0.16.6",
+      "hashPath": "zxing.net.0.16.6.nupkg.sha512"
     }
   }
 }
