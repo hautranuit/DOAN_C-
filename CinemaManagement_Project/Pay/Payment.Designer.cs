@@ -944,8 +944,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1307, 685);
-            Controls.Add(panel4);
             Controls.Add(pn_Voucher);
+            Controls.Add(panel4);
             Controls.Add(pn_CusInfo);
             Controls.Add(panel2);
             Controls.Add(panel1);

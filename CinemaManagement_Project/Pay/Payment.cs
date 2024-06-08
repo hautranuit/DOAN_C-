@@ -179,20 +179,24 @@ namespace CinemaManagement_Project
             if (selectedMovie == "1")
             {
                 lb_Movie.Text = NameOfMovie1;
+                lb_Age.Text = AgeOfMovie1;
             }
             else if (selectedMovie == "2")
             {
                 lb_Movie.Text = NameOfMovie2;
+                lb_Age.Text = AgeOfMovie2;
             }
             else if (selectedMovie == "3")
             {
                 lb_Movie.Text = NameOfMovie3;
+                lb_Age.Text = AgeOfMovie3;
             }
             else if (selectedMovie == "4")
             {
                 lb_Movie.Text = NameOfMovie4;
+                lb_Age.Text = AgeOfMovie4;
             }
-
+            
             lb_RoomInfo.Text = selectedTheater;
             lb_NumberInfo.Text = countTickets.ToString();
 
@@ -235,12 +239,18 @@ namespace CinemaManagement_Project
         }
         private void btn_Complete_Click(object sender, EventArgs e)
         {
-                string recipientEmail = emailReceived;
-                string subject = "Thông tin vé xem phim của bạn";
-                string body = GenerateEmailBody();
-                SendEmail(recipientEmail, subject, body, "smtp.gmail.com", "22520412@gm.uit.edu.vn", "qlar xdqm most pyjx");
-                MessageBox.Show("Email đã được gửi thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
- 
+            
+            string recipientEmail = emailReceived;
+            string subject = "Thông tin vé xem phim của bạn";
+            string body = GenerateEmailBody();
+            SendEmail(recipientEmail, subject, body, "smtp.gmail.com", "22520412@gm.uit.edu.vn", "qlar xdqm most pyjx");
+            MessageBox.Show("Vé xem phim của bạn đã được gửi qua email!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Show ThankYou form and close the current form
+            ThankYou thankYou = new ThankYou();
+            this.Close();
+            thankYou.Show();
+
         }
         private string GenerateEmailBody()
         {
@@ -254,21 +264,46 @@ namespace CinemaManagement_Project
             string totalPrice = lb_Price.Text;
 
             return $@"
-                <html>
-                <body>
-                    <h1>Thông tin vé xem phim của bạn</h1>
-                    <p><strong>Tên phim:</strong> {movieName}</p>
-                    <p><strong>Mã vé:</strong> {ticketCode}</p>
-                    <p><strong>Địa chỉ:</strong> {address}</p>
-                    <p><strong>Phòng chiếu:</strong> {roomInfo}</p>
-                    <p><strong>Thông tin ghế:</strong> {seatInfo}</p>
-                    <p><strong>Combo:</strong> {comboInfo}</p>
-                    <p><strong>Voucher:</strong> {voucherInfo}</p>
-                    <p><strong>Tổng tiền:</strong> {totalPrice}</p>
-                    <img src=""cid:movieTicketImage"" alt=""Movie Ticket"" />
+        <html>
+        <head>
+            <style>
+                body {{
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                }}
+                h1 {{
+                    color: #800080; /* Màu tím đậm */
+                }}
+                p {{
+                    font-size: 14px;
+                }}
+                .label {{
+                    font-weight: bold;
+                    color: #D8BFD8; /* Màu tím nhạt */
+                }}
+                .value {{
+                    color: #FFFF66;
+                }}
+            </style>
+        </head>
+        <body>
+            <h1>THÔNG TIN VÉ XEM PHIM CỦA BẠN</h1>
+            <p><span class='label'>Tên phim:</span> <span class='value'>{movieName}</span></p>
+            <p><span class='label'>Mã vé:</span> <span class='value'>{ticketCode}</span></p>
+            <p><span class='label'>Địa chỉ:</span> <span class='value'>{address}</span></p>
+            <p><span class='label'>Phòng chiếu:</span> <span class='value'>{roomInfo}</span></p>
+            <p><span class='label'>Thông tin ghế:</span> <span class='value'>{seatInfo}</span></p>
+            <p><span class='label'>Combo:</span> <span class='value'>{comboInfo}</span></p>
+            <p><span class='label'>Voucher:</span> <span class='value'>{voucherInfo}</span></p>
+            <p><span class='label'>Tổng tiền:</span> <span class='value'>{totalPrice}</span></p>
+            <img src='cid:movieTicketImage' alt='Movie Ticket' />
+            <p><strong>Lưu ý / Note:</strong><br>
+                    Vé đã mua không thể hủy, đổi hoặc trả lại. Vui lòng liên hệ Ban Quản Lý rạp hoặc tra cứu thông tin tại mục Điều khoản mua và sử dụng vé xem phim để biết thêm chi tiết. Cảm ơn bạn đã lựa chọn mua vé qua Ứng dụng Ví điện tử VNPAY. Chúc bạn xem phim vui vẻ!<br>
+                    The successful movie ticket cannot be canceled, exchanged or refunded. If you have any question or problems with this order, you can contact Theater Manager or see our Condition to purchase and use movie tickets for more information. Thank you for choosing Ứng dụng Ví điện tử VNPAY and Enjoy the movie!
+                    </p>
                 </body>
-                </html>
-            ";
+                </html>"";      
+    ";
         }
         private void SendEmail(string recipientEmail, string subject, string body, string smtpHost, string smtpUser, string smtpPass)
         {

@@ -46,14 +46,26 @@ namespace CinemaManagement_Project.BuyTickets
         private void ConfigureDomainUpDown(DomainUpDown domainUpDown)
         {
             domainUpDown.Items.Clear();
-            for (int i = 10; i >= 0; i--) // Adjust the range as needed
+            for (int i = 10; i >= 0; i--) // Điều chỉnh phạm vi theo nhu cầu
             {
                 domainUpDown.Items.Add(i);
             }
             domainUpDown.SelectedIndex = 10;
             domainUpDown.Wrap = true;
+            domainUpDown.KeyDown += DomainUpDown_KeyDown; // Gắn sự kiện KeyDown
         }
-
+        private void DomainUpDown_KeyDown(object sender, KeyEventArgs e)
+        {
+            DomainUpDown domainUpDown = sender as DomainUpDown;
+            if (domainUpDown != null)
+            {
+                int currentValue = Convert.ToInt32(domainUpDown.SelectedItem);
+                if ((e.KeyCode == Keys.Up && currentValue == 10) || (e.KeyCode == Keys.Down && currentValue == 0))
+                {
+                    e.SuppressKeyPress = true; // Ngăn chặn hành động khi giá trị đạt giới hạn
+                }
+            }
+        }
         private void AttachEventHandlers()
         {
             // Attach event handlers to DomainUpDown controls

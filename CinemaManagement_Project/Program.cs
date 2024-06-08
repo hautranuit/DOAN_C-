@@ -11,8 +11,8 @@ namespace CinemaManagement_Project
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Application.Run(new DangNhap());
-            Application.Run(new SelectMovieState("guest"));
+            Application.Run(new DangNhap());
+            //Application.Run(new SelectMovieState("guest"));
             //Application.Run(new Theater1());
             //Application.Run(new Payment());
         }
