@@ -470,9 +470,9 @@
             lab_Detail3_Name.ForeColor = Color.White;
             lab_Detail3_Name.Location = new Point(17, 60);
             lab_Detail3_Name.Name = "lab_Detail3_Name";
-            lab_Detail3_Name.Size = new Size(165, 20);
+            lab_Detail3_Name.Size = new Size(176, 20);
             lab_Detail3_Name.TabIndex = 7;
-            lab_Detail3_Name.Text = "GẶP LẠI CHỊ BẦ (T18)";
+            lab_Detail3_Name.Text = "GẶP LẠI CHỊ BẦU (T18)";
             // 
             // panel_Movie4
             // 
@@ -1091,8 +1091,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1294, 664);
-            Controls.Add(btn_SignOut);
             Controls.Add(pn_SelectTheater);
+            Controls.Add(panel_Movie3);
+            Controls.Add(btn_SignOut);
             Controls.Add(panel_Movie1);
             Controls.Add(btn_Edit_Movie);
             Controls.Add(btn_Trailer4);
@@ -1121,7 +1122,6 @@
             Controls.Add(lab_NameOfMovie2);
             Controls.Add(lab_NameOfMovie1);
             Controls.Add(panel_Movie4);
-            Controls.Add(panel_Movie3);
             Controls.Add(panel_Movie2);
             Controls.Add(lab_Title1);
             Controls.Add(pic_Movie1);

@@ -12,6 +12,7 @@ using System.IO;
 using System.Security.Cryptography;
 using CinemaManagement_Project.BuyTickets;
 using System.Diagnostics.Eventing.Reader;
+using Microsoft.Data.SqlClient;
 
 namespace CinemaManagement_Project
 {
@@ -25,6 +26,7 @@ namespace CinemaManagement_Project
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Role = role;
+            LoadMovieInfoFromDatabase();
         }
 
         private void panel_Movie1_MouseHover(object sender, EventArgs e)
@@ -293,10 +295,10 @@ namespace CinemaManagement_Project
             btn_AddPic3.Visible = false;
             btn_AddPic4.Visible = false;
             lab_Title1.Visible = true;
-            btn_Book1.Visible = true;
-            btn_Book2.Visible = true;
-            btn_Book3.Visible = true;
-            btn_Book4.Visible = true;
+            btn_Book1.Visible = false;
+            btn_Book2.Visible = false;
+            btn_Book3.Visible = false;
+            btn_Book4.Visible = false;
             btn_blurred1.Visible = false;
             btn_blurred2.Visible = false;
             btn_blurred3.Visible = false;
@@ -342,6 +344,12 @@ namespace CinemaManagement_Project
             btn_Trailer2.Visible = true;
             btn_Trailer3.Visible = true;
             btn_Trailer4.Visible = true;
+
+            //CapnhatPhim
+            UpdateMovieInfoInDatabase(1, tbx_info1_name.Text, tbx_info1_price.Text, tbx_info1_theater.Text, tbx_info1_country.Text);
+            UpdateMovieInfoInDatabase(2, tbx_info2_name.Text, tbx_info2_price.Text, tbx_info2_theater.Text, tbx_info2_country.Text);
+            UpdateMovieInfoInDatabase(3, tbx_info3_name.Text, tbx_info3_price.Text, tbx_info3_theater.Text, tbx_info3_country.Text);
+            UpdateMovieInfoInDatabase(4, tbx_info4_name.Text, tbx_info4_price.Text, tbx_info4_theater.Text, tbx_info4_country.Text);
 
         }
         public static string price_film1 = null;
@@ -487,6 +495,134 @@ namespace CinemaManagement_Project
             this.Hide();
             DangNhap dn = new DangNhap();
             dn.Show();
+        }
+
+        //Cac ham load phim tu SQL
+        private void UpdateMovieInfoInDatabase(int movieId, string name, string price, string theater, string country)
+        {
+            string connectionString = "Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string updateQuery = "UPDATE Movies SET Name = @Name, Image = @Image, BlurredImage = @BlurredImage, Price = @Price, Theater = @Theater, Country = @Country WHERE Id = @Id";
+                using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@Name", tbx_info1_name.Text);
+                    command.Parameters.AddWithValue("@Image", ImageToByteArray(pic_Movie1.Image));
+                    command.Parameters.AddWithValue("@BlurredImage", ImageToByteArray(panel_Movie1.BackgroundImage));
+                    command.Parameters.AddWithValue("@Price", tbx_info1_price.Text);
+                    command.Parameters.AddWithValue("@Theater", tbx_info1_theater.Text);
+                    command.Parameters.AddWithValue("@Country", tbx_info1_country.Text);
+                    command.Parameters.AddWithValue("@Id", 1);
+                    command.ExecuteNonQuery();
+
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@Name", tbx_info2_name.Text);
+                    command.Parameters.AddWithValue("@Image", ImageToByteArray(pic_Movie2.Image));
+                    command.Parameters.AddWithValue("@BlurredImage", ImageToByteArray(panel_Movie2.BackgroundImage));
+                    command.Parameters.AddWithValue("@Price", tbx_info2_price.Text);
+                    command.Parameters.AddWithValue("@Theater", tbx_info2_theater.Text);
+                    command.Parameters.AddWithValue("@Country", tbx_info2_country.Text);
+                    command.Parameters.AddWithValue("@Id", 2);
+                    command.ExecuteNonQuery();
+
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@Name", tbx_info3_name.Text);
+                    command.Parameters.AddWithValue("@Image", ImageToByteArray(pic_Movie3.Image));
+                    command.Parameters.AddWithValue("@BlurredImage", ImageToByteArray(panel_Movie3.BackgroundImage));
+                    command.Parameters.AddWithValue("@Price", tbx_info3_price.Text);
+                    command.Parameters.AddWithValue("@Theater", tbx_info3_theater.Text);
+                    command.Parameters.AddWithValue("@Country", tbx_info3_country.Text);
+                    command.Parameters.AddWithValue("@Id", 3);
+                    command.ExecuteNonQuery();
+
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@Name", tbx_info4_name.Text);
+                    command.Parameters.AddWithValue("@Image", ImageToByteArray(pic_Movie4.Image));
+                    command.Parameters.AddWithValue("@BlurredImage", ImageToByteArray(panel_Movie4.BackgroundImage));
+                    command.Parameters.AddWithValue("@Price", tbx_info4_price.Text);
+                    command.Parameters.AddWithValue("@Theater", tbx_info4_theater.Text);
+                    command.Parameters.AddWithValue("@Country", tbx_info4_country.Text);
+                    command.Parameters.AddWithValue("@Id", 4);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, image.RawFormat);
+                return ms.ToArray();
+            }
+        }
+
+        private void LoadMovieInfoFromDatabase()
+        {
+            string connectionString = @"Data Source=.;Initial Catalog=Bai_Thuc_Hanh_01;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Movies";
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    tbx_info1_name.Text = reader["Name"].ToString();
+                    lab_Detail1_Name.Text = reader["Name"].ToString();
+                    lab_NameOfMovie1.Text = reader["Name"].ToString();
+                    lab_Detail1_Money.Text = reader["Price"].ToString();
+                    lab_Detail1_NumCinema.Text = reader["Theater"].ToString();
+                    lab_Detail1_Country.Text = reader["Country"].ToString();
+                    pic_Movie1.Image = ByteArrayToImage((byte[])reader["Image"]);
+                    panel_Movie1.BackgroundImage = ByteArrayToImage((byte[])reader["BlurredImage"]);
+                }
+
+                if (reader.Read())
+                {
+                    tbx_info2_name.Text = reader["Name"].ToString();
+                    lab_Detail2_Name.Text = reader["Name"].ToString();
+                    lab_NameOfMovie2.Text = reader["Name"].ToString();
+                    lab_Detail2_Money.Text = reader["Price"].ToString();
+                    lab_Detail2_NumCinema.Text = reader["Theater"].ToString();
+                    lab_Detail2_Country.Text = reader["Country"].ToString();
+                    pic_Movie2.Image = ByteArrayToImage((byte[])reader["Image"]);
+                    panel_Movie2.BackgroundImage = ByteArrayToImage((byte[])reader["BlurredImage"]);
+                }
+
+                if (reader.Read())
+                {
+                    tbx_info3_name.Text = reader["Name"].ToString();
+                    lab_Detail3_Name.Text = reader["Name"].ToString();
+                    lab_NameOfMovie3.Text = reader["Name"].ToString();
+                    lab_Detail3_Money.Text = reader["Price"].ToString();
+                    lab_Detail3_NumCinema.Text = reader["Theater"].ToString();
+                    lab_Detail3_Country.Text = reader["Country"].ToString();
+                    pic_Movie3.Image = ByteArrayToImage((byte[])reader["Image"]);
+                    panel_Movie3.BackgroundImage = ByteArrayToImage((byte[])reader["BlurredImage"]);
+                }
+
+                if (reader.Read())
+                {
+                    tbx_info4_name.Text = reader["Name"].ToString();
+                    lab_Detail4_Name.Text = reader["Name"].ToString();
+                    lab_NameOfMovie4.Text = reader["Name"].ToString();
+                    lab_Detail4_Money.Text = reader["Price"].ToString();
+                    lab_Detail4_NumCinema.Text = reader["Theater"].ToString();
+                    lab_Detail4_Country.Text = reader["Country"].ToString();
+                    pic_Movie4.Image = ByteArrayToImage((byte[])reader["Image"]);
+                    panel_Movie4.BackgroundImage = ByteArrayToImage((byte[])reader["BlurredImage"]);
+                }
+            }
+        }
+        private Image ByteArrayToImage(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
         }
     }
 }
