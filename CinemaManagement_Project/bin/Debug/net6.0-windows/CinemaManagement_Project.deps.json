@@ -13,7 +13,9 @@
           "QRCodeDecoderLibrary": "2.0.1",
           "QRCoder": "1.5.1",
           "System.Security.AccessControl": "6.0.1",
-          "ZXing.Net": "0.16.6"
+          "ZXing.Net": "0.16.6",
+          "Interop.WMPLib": "1.0.0.0",
+          "AxInterop.WMPLib": "1.0.0.0"
         },
         "runtime": {
           "CinemaManagement_Project.dll": {}
@@ -525,6 +527,22 @@
             "fileVersion": "0.16.6.0"
           }
         }
+      },
+      "Interop.WMPLib/1.0.0.0": {
+        "runtime": {
+          "Interop.WMPLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AxInterop.WMPLib/1.0.0.0": {
+        "runtime": {
+          "AxInterop.WMPLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -876,6 +894,16 @@
       "sha512": "sha512-0+6EcJ7Ve1BocwqvqpAmgMa7xF3wxqROcM3KvAE6WGNIqXLA5YEziLjRX+kKYVrcttlFRz1IaoRSzt/o6Ttviw==",
       "path": "zxing.net/0.16.6",
       "hashPath": "zxing.net.0.16.6.nupkg.sha512"
+    },
+    "Interop.WMPLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AxInterop.WMPLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

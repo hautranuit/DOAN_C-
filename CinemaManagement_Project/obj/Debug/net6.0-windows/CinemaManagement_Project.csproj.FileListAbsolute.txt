@@ -247,3 +247,10 @@ E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Pay.ThankYou.resources
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.BuyTickets.Trailer.resources
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\Interop.WMPLib.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\AxInterop.WMPLib.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\Interop.WMPLib.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\AxInterop.WMPLib.dll
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.csproj.ResolveComReference.cache
+E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\obj\Debug\net6.0-windows\CinemaManagement_Project.Pay.EditTrailer.resources

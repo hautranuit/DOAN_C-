@@ -67,6 +67,7 @@
             lab_Detail4_NumCinema = new Label();
             lab_Detail4_Money = new Label();
             lab_Detail4_Name = new Label();
+            btn_edit4 = new Button();
             lab_NameOfMovie1 = new Label();
             lab_NameOfMovie2 = new Label();
             lab_NameOfMovie3 = new Label();
@@ -112,6 +113,9 @@
             comboBox1 = new ComboBox();
             lb_SelectTheater = new Label();
             btn_SignOut = new Button();
+            btn_edit1 = new Button();
+            btn_edit2 = new Button();
+            btn_edit3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_background).BeginInit();
             panel_Movie1.SuspendLayout();
             panel_Movie2.SuspendLayout();
@@ -583,6 +587,21 @@
             lab_Detail4_Name.TabIndex = 7;
             lab_Detail4_Name.Text = "TAROT (T18)";
             // 
+            // btn_edit4
+            // 
+            btn_edit4.BackColor = Color.DarkKhaki;
+            btn_edit4.Cursor = Cursors.Hand;
+            btn_edit4.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_edit4.ForeColor = SystemColors.ActiveCaptionText;
+            btn_edit4.Location = new Point(1081, 589);
+            btn_edit4.Name = "btn_edit4";
+            btn_edit4.Size = new Size(142, 39);
+            btn_edit4.TabIndex = 51;
+            btn_edit4.Text = "SỬA GIỚI THIỆU";
+            btn_edit4.UseVisualStyleBackColor = false;
+            btn_edit4.Visible = false;
+            btn_edit4.Click += btn_edit4_Click;
+            // 
             // lab_NameOfMovie1
             // 
             lab_NameOfMovie1.AutoSize = true;
@@ -970,6 +989,7 @@
             btn_Trailer1.TabIndex = 44;
             btn_Trailer1.Text = "GIỚI THIỆU";
             btn_Trailer1.UseVisualStyleBackColor = false;
+            btn_Trailer1.Click += btn_Trailer1_Click;
             // 
             // btn_Trailer2
             // 
@@ -997,6 +1017,7 @@
             btn_Trailer3.TabIndex = 46;
             btn_Trailer3.Text = "GIỚI THIỆU";
             btn_Trailer3.UseVisualStyleBackColor = false;
+            btn_Trailer3.Click += btn_Trailer3_Click;
             // 
             // btn_Trailer4
             // 
@@ -1010,6 +1031,7 @@
             btn_Trailer4.TabIndex = 47;
             btn_Trailer4.Text = "GIỚI THIỆU";
             btn_Trailer4.UseVisualStyleBackColor = false;
+            btn_Trailer4.Click += btn_Trailer4_Click;
             // 
             // pn_SelectTheater
             // 
@@ -1086,11 +1108,60 @@
             btn_SignOut.UseVisualStyleBackColor = false;
             btn_SignOut.Click += btn_SignOut_Click;
             // 
+            // btn_edit1
+            // 
+            btn_edit1.BackColor = Color.DarkKhaki;
+            btn_edit1.Cursor = Cursors.Hand;
+            btn_edit1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_edit1.ForeColor = SystemColors.ActiveCaptionText;
+            btn_edit1.Location = new Point(72, 589);
+            btn_edit1.Name = "btn_edit1";
+            btn_edit1.Size = new Size(142, 39);
+            btn_edit1.TabIndex = 49;
+            btn_edit1.Text = "SỬA GIỚI THIỆU";
+            btn_edit1.UseVisualStyleBackColor = false;
+            btn_edit1.Visible = false;
+            btn_edit1.Click += btn_edit1_Click;
+            // 
+            // btn_edit2
+            // 
+            btn_edit2.BackColor = Color.DarkKhaki;
+            btn_edit2.Cursor = Cursors.Hand;
+            btn_edit2.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_edit2.ForeColor = SystemColors.ActiveCaptionText;
+            btn_edit2.Location = new Point(410, 589);
+            btn_edit2.Name = "btn_edit2";
+            btn_edit2.Size = new Size(142, 39);
+            btn_edit2.TabIndex = 50;
+            btn_edit2.Text = "SỬA GIỚI THIỆU";
+            btn_edit2.UseVisualStyleBackColor = false;
+            btn_edit2.Visible = false;
+            btn_edit2.Click += btn_edit2_Click;
+            // 
+            // btn_edit3
+            // 
+            btn_edit3.BackColor = Color.DarkKhaki;
+            btn_edit3.Cursor = Cursors.Hand;
+            btn_edit3.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_edit3.ForeColor = SystemColors.ActiveCaptionText;
+            btn_edit3.Location = new Point(740, 589);
+            btn_edit3.Name = "btn_edit3";
+            btn_edit3.Size = new Size(142, 39);
+            btn_edit3.TabIndex = 51;
+            btn_edit3.Text = "SỬA GIỚI THIỆU";
+            btn_edit3.UseVisualStyleBackColor = false;
+            btn_edit3.Visible = false;
+            btn_edit3.Click += btn_edit3_Click;
+            // 
             // SelectMovieState
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1294, 664);
+            Controls.Add(btn_edit4);
+            Controls.Add(btn_edit3);
+            Controls.Add(btn_edit2);
+            Controls.Add(btn_edit1);
             Controls.Add(pn_SelectTheater);
             Controls.Add(panel_Movie3);
             Controls.Add(btn_SignOut);
@@ -1237,5 +1308,9 @@
         private ComboBox comboBox1;
         private Button btn_cancel;
         private Button btn_SignOut;
+        private Button btn_edit1;
+        private Button btn_edit2;
+        private Button btn_edit3;
+        private Button btn_edit4;
     }
 }

@@ -13,6 +13,7 @@ using System.Security.Cryptography;
 using CinemaManagement_Project.BuyTickets;
 using System.Diagnostics.Eventing.Reader;
 using Microsoft.Data.SqlClient;
+using CinemaManagement_Project.Pay;
 
 namespace CinemaManagement_Project
 {
@@ -20,9 +21,13 @@ namespace CinemaManagement_Project
     {
         private string Role;
         public static PictureBox pictureBox;
+        public static PictureBox picMovie;
+
         public SelectMovieState(string role)
         {
             pictureBox = new PictureBox();
+            picMovie = new PictureBox();
+
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Role = role;
@@ -155,6 +160,11 @@ namespace CinemaManagement_Project
                 btn_Book4.Visible = false;
 
                 btn_Edit_Movie.Visible = true;
+
+                btn_edit1.Visible = true;
+                btn_edit2.Visible = true;
+                btn_edit3.Visible = true;
+                btn_edit4.Visible = true;
             }
         }
         private string ExtractAgeFromLabel(string labelText)
@@ -163,7 +173,11 @@ namespace CinemaManagement_Project
             return match.Success ? match.Groups[1].Value : string.Empty;
         }
         private void btn_Edit_Movie_Click(object sender, EventArgs e)
-        {   
+        {
+            btn_edit1.Visible = false;
+            btn_edit2.Visible = false;
+            btn_edit3.Visible = false;
+            btn_edit4.Visible = false;
             btn_SignOut.Visible = false;
             btn_Book1.Visible = false;
             btn_Book2.Visible = false;
@@ -278,6 +292,12 @@ namespace CinemaManagement_Project
 
         private void btn_Apply_Click(object sender, EventArgs e)
         {
+
+            btn_edit1.Visible = true;
+            btn_edit2.Visible = true;
+            btn_edit3.Visible = true;
+            btn_edit4.Visible = true;
+
             btn_Edit_Movie.Visible = true;
             btn_SignOut.Visible = true;
             lab_NameOfMovie1.Text = tbx_1.Text;
@@ -285,7 +305,7 @@ namespace CinemaManagement_Project
             lab_NameOfMovie3.Text = tbx_3.Text;
             lab_NameOfMovie4.Text = tbx_4.Text;
             btn_Apply.Visible = false;
-            btn_Edit_Movie.Visible = false;
+
             tbx_1.Visible = false;
             tbx_2.Visible = false;
             tbx_3.Visible = false;
@@ -398,7 +418,8 @@ namespace CinemaManagement_Project
 
         private void btn_Trailer2_Click(object sender, EventArgs e)
         {
-
+            picMovie.Image = pic_Movie2.Image;
+            OpenTrailerForm(2);
         }
 
         private void btn_Book2_Click(object sender, EventArgs e)
@@ -447,11 +468,11 @@ namespace CinemaManagement_Project
         public static string selectedMovie;
         private void btn_Book_Click(object sender, EventArgs e)
         {
-            if(selectedMovie == "1")
+            if (selectedMovie == "1")
             {
                 pictureBox.Image = pic_Movie1.Image;
             }
-            else if (selectedMovie == "2") 
+            else if (selectedMovie == "2")
             {
                 pictureBox.Image = pic_Movie2.Image;
             }
@@ -623,6 +644,63 @@ namespace CinemaManagement_Project
             {
                 return Image.FromStream(ms);
             }
+        }
+
+        private void btn_Trailer1_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie1.Image;
+            OpenTrailerForm(1);
+
+        }
+
+        private void btn_Trailer3_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie3.Image;
+            OpenTrailerForm(3);
+        }
+
+        private void btn_Trailer4_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie4.Image;
+            OpenTrailerForm(4);
+        }
+        private void OpenTrailerForm(int selectedMovieId)
+        {
+            Trailer trailerForm = new Trailer(selectedMovieId);
+            trailerForm.Show();
+            this.Close();
+        }
+
+        private void btn_edit1_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie1.Image;
+            EditTrailer edit = new EditTrailer(1);
+            edit.Show();
+            this.Close();
+        }
+
+        private void btn_edit2_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie2.Image;
+            EditTrailer edit = new EditTrailer(2);
+            edit.Show();
+            this.Close();
+        }
+
+        private void btn_edit3_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie3.Image;
+            EditTrailer edit = new EditTrailer(3);
+            edit.Show();
+            this.Close();
+        }
+
+        private void btn_edit4_Click(object sender, EventArgs e)
+        {
+            picMovie.Image = pic_Movie4.Image;
+            EditTrailer edit = new EditTrailer(4);
+            edit.Show();
+            this.Close();
         }
     }
 }
