@@ -24,7 +24,7 @@ using System.Net.Mime;
 namespace CinemaManagement_Project
 {
     public partial class Payment : Form
-    {
+    {   
         private DataTable comboTable;
         public Payment(DataTable table)
         {
@@ -69,6 +69,49 @@ namespace CinemaManagement_Project
         private void pic_discount_Click(object sender, EventArgs e)
         {
             pn_Voucher.Visible = true;
+            // Đường dẫn tới file Vouchers.txt
+            string vouchersFilePath = "Vouchers.txt";
+
+            // Đọc dữ liệu từ file Vouchers.txt
+            string[] voucherLines = File.ReadAllLines(vouchersFilePath);
+
+            // Duyệt qua từng dòng trong file Vouchers.txt
+            foreach (string line in voucherLines)
+            {
+                // Tách dòng thành các phần dựa vào dấu phẩy
+                string[] parts = line.Split(',');
+
+                if (parts.Length == 3)
+                {
+                    string voucherName = parts[0].Trim();
+                    int remainingCount = int.Parse(parts[2].Trim());
+
+                    if (remainingCount == 0)
+                    {
+                        if (voucherName == "Giảm 20% bắp nước - CINEKING")
+                        {
+                            DisableVoucherPanel(pn_Voucher1);
+                        }
+                        else if (voucherName == "C'Ten: 45k phim 2D")
+                        {
+                            DisableVoucherPanel(pn_Voucher2);
+                        }
+                        else if (voucherName == "C'Member: 45k phim 2D")
+                        {
+                            DisableVoucherPanel(pn_Voucher3);
+                        }
+                    }
+                }
+            }
+        }
+        private void DisableVoucherPanel(Panel panel)
+        {
+            panel.Enabled = false;
+            panel.BackColor = Color.Gainsboro;
+            foreach (Control control in panel.Controls)
+            {
+                control.ForeColor = Color.Gainsboro;
+            }
         }
         double TotalPrice;
         private void btn_Countinue_Click(object sender, EventArgs e)
@@ -80,6 +123,50 @@ namespace CinemaManagement_Project
                 lb_Price.Text = TotalPrice.ToString("N0") + " VND";
                 lb_AppliedVoucher.Visible = true;
 
+                // Tên voucher bạn đang sử dụng (vd: "Giảm 20% bắp nước - CINEKING")
+                string voucherName = "Giảm 20% bắp nước - CINEKING";
+
+                // Đường dẫn tới file Vouchers.txt
+                string vouchersFilePath = "Vouchers.txt";
+
+                // Đọc dữ liệu từ file Vouchers.txt
+                string[] voucherLines = File.ReadAllLines(vouchersFilePath);
+
+                // Tạo một danh sách để lưu các dòng đã cập nhật
+                List<string> updatedLines = new List<string>();
+
+                // Duyệt qua từng dòng trong file Vouchers.txt
+                foreach (string line in voucherLines)
+                {
+                    // Tách dòng thành các phần dựa vào dấu phẩy
+                    string[] parts = line.Split(',');
+
+                    // Kiểm tra xem dòng có đúng định dạng và chứa tên voucher đang sử dụng không
+                    if (parts.Length == 3 && parts[0].Trim() == voucherName)
+                    {
+                        // Lấy số voucher đã dùng và số voucher còn lại từ dòng hiện tại
+                        int usedCount = int.Parse(parts[1].Trim());
+                        int remainingCount = int.Parse(parts[2].Trim());
+
+                        // Tăng số voucher đã dùng lên 1 và giảm số voucher còn lại đi 1
+                        usedCount++;
+                        remainingCount--;
+
+                        // Cập nhật dòng hiện tại
+                        string updatedLine = $"{voucherName}, {usedCount},{remainingCount}";
+
+                        // Thêm vào danh sách các dòng đã cập nhật
+                        updatedLines.Add(updatedLine);
+                    }
+                    else
+                    {
+                        // Nếu không phải dòng chứa tên voucher đang sử dụng, giữ nguyên dòng này
+                        updatedLines.Add(line);
+                    }
+                }
+
+                // Ghi lại các thay đổi vào file Vouchers.txt
+                File.WriteAllLines(vouchersFilePath, updatedLines);
             }
             pn_Voucher.Visible = false;
         }
@@ -239,7 +326,9 @@ namespace CinemaManagement_Project
         }
         private void btn_Complete_Click(object sender, EventArgs e)
         {
-            
+            // Cập nhật thông tin doanh thu vào tệp DoanhThu.txt
+            UpdateRevenue();
+
             string recipientEmail = emailReceived;
             string subject = "Thông tin vé xem phim của bạn";
             string body = GenerateEmailBody();
@@ -264,46 +353,42 @@ namespace CinemaManagement_Project
             string totalPrice = lb_Price.Text;
 
             return $@"
-        <html>
-        <head>
-            <style>
-                body {{
-                    font-family: Arial, sans-serif;
-                    color: #333;
-                }}
-                h1 {{
-                    color: #800080; /* Màu tím đậm */
-                }}
-                p {{
-                    font-size: 14px;
-                }}
-                .label {{
-                    font-weight: bold;
-                    color: #D8BFD8; /* Màu tím nhạt */
-                }}
-                .value {{
-                    color: #FFFF66;
-                }}
-            </style>
-        </head>
-        <body>
-            <h1>THÔNG TIN VÉ XEM PHIM CỦA BẠN</h1>
-            <p><span class='label'>Tên phim:</span> <span class='value'>{movieName}</span></p>
-            <p><span class='label'>Mã vé:</span> <span class='value'>{ticketCode}</span></p>
-            <p><span class='label'>Địa chỉ:</span> <span class='value'>{address}</span></p>
-            <p><span class='label'>Phòng chiếu:</span> <span class='value'>{roomInfo}</span></p>
-            <p><span class='label'>Thông tin ghế:</span> <span class='value'>{seatInfo}</span></p>
-            <p><span class='label'>Combo:</span> <span class='value'>{comboInfo}</span></p>
-            <p><span class='label'>Voucher:</span> <span class='value'>{voucherInfo}</span></p>
-            <p><span class='label'>Tổng tiền:</span> <span class='value'>{totalPrice}</span></p>
-            <img src='cid:movieTicketImage' alt='Movie Ticket' />
-            <p><strong>Lưu ý / Note:</strong><br>
-                    Vé đã mua không thể hủy, đổi hoặc trả lại. Vui lòng liên hệ Ban Quản Lý rạp hoặc tra cứu thông tin tại mục Điều khoản mua và sử dụng vé xem phim để biết thêm chi tiết. Cảm ơn bạn đã lựa chọn mua vé qua Ứng dụng Ví điện tử VNPAY. Chúc bạn xem phim vui vẻ!<br>
-                    The successful movie ticket cannot be canceled, exchanged or refunded. If you have any question or problems with this order, you can contact Theater Manager or see our Condition to purchase and use movie tickets for more information. Thank you for choosing Ứng dụng Ví điện tử VNPAY and Enjoy the movie!
-                    </p>
-                </body>
-                </html>"";      
-    ";
+    <html>
+    <head>
+        <style>
+            body {{
+                font-family: Arial, sans-serif;
+                color: #333;
+            }}
+            h1 {{
+                color: #800080; /* Màu tím đậm */
+            }}
+            p {{
+                font-size: 14px;
+            }}
+            .label {{
+                font-weight: bold;
+                color: #800080; /* Màu tím đậm */
+            }}
+        </style>
+    </head>
+    <body>
+        <h1>THÔNG TIN VÉ XEM PHIM CỦA BẠN</h1>
+        <p><span class='label'>Tên phim:</span> <span>{movieName}</span></p>
+        <p><span class='label'>Mã vé:</span> <span>{ticketCode}</span></p>
+        <p><span class='label'>Địa chỉ:</span> <span>{address}</span></p>
+        <p><span class='label'>Phòng chiếu:</span> <span>{roomInfo}</span></p>
+        <p><span class='label'>Thông tin ghế:</span> <span>{seatInfo}</span></p>
+        <p><span class='label'>Combo:</span> <span>{comboInfo}</span></p>
+        <p><span class='label'>Voucher:</span> <span>{voucherInfo}</span></p>
+        <p><span class='label'>Tổng tiền:</span> <span>{totalPrice}</span></p>
+        <img src='cid:movieTicketImage' alt='Movie Ticket' />
+        <p><strong>Lưu ý / Note:</strong><br>
+                Vé đã mua không thể hủy, đổi hoặc trả lại. Vui lòng liên hệ Ban Quản Lý rạp hoặc tra cứu thông tin tại mục Điều khoản mua và sử dụng vé xem phim để biết thêm chi tiết. Cảm ơn bạn đã lựa chọn mua vé qua Ứng dụng Ví điện tử VNPAY. Chúc bạn xem phim vui vẻ!<br>
+                The successful movie ticket cannot be canceled, exchanged or refunded. If you have any question or problems with this order, you can contact Theater Manager or see our Condition to purchase and use movie tickets for more information. Thank you for choosing Ứng dụng Ví điện tử VNPAY and Enjoy the movie!
+                </p>
+            </body>
+            </html>";
         }
         private void SendEmail(string recipientEmail, string subject, string body, string smtpHost, string smtpUser, string smtpPass)
         {
@@ -347,6 +432,34 @@ namespace CinemaManagement_Project
             mailMessage.Attachments.Add(qrCodeAttachment);
 
             smtpClient.Send(mailMessage);
+        }
+        private void UpdateRevenue()
+        {
+            string filePath = "DoanhThu.txt";
+            string[] lines = File.ReadAllLines(filePath);
+            Dictionary<int, decimal> revenues = new Dictionary<int, decimal>();
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                int theater = int.Parse(parts[0].Trim());
+                decimal revenue = decimal.Parse(parts[1].Trim());
+                revenues[theater] = revenue;
+            }
+
+            int theaterNumber = int.Parse(lb_RoomInfo.Text);
+            decimal currentRevenue = revenues[theaterNumber];
+            decimal newRevenue = currentRevenue + initialMoney;
+
+            revenues[theaterNumber] = newRevenue;
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                foreach (var kvp in revenues)
+                {
+                    writer.WriteLine($"{kvp.Key}, {kvp.Value}");
+                }
+            }
         }
     }
 }

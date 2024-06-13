@@ -30,13 +30,15 @@ namespace CinemaManagement_Project
             quenMatKhau.ShowDialog();
         }
         private void Click_DangNhap_Click(object sender, EventArgs e)
-        {   
+        {
             //Check quyen admin
             if (username.Text == "admin" && password.Text == "adminadminadmin")
             {
                 this.Hide();
-                SelectMovieState selectMovieState = new SelectMovieState("admin");
-                selectMovieState.Show();
+                //SelectMovieState selectMovieState = new SelectMovieState("admin");
+                //selectMovieState.Show();
+                SignIn_SignUp.Select sl = new SignIn_SignUp.Select();
+                sl.Show();
             }
             else
             {
@@ -79,9 +81,20 @@ namespace CinemaManagement_Project
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void show_password_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (show_password.Checked == true)
+            {
+                password.PasswordChar = '\0';
+            }
+            else
+            {
+                password.PasswordChar = '*';
+            }
+        }
     }
 }
 

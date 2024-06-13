@@ -1,0 +1,225 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CinemaManagement_Project.Pay
+{
+    public partial class PaymentManagement : Form
+    {
+        private const int InitialTickets = 100; // Initial number of tickets for each cinema
+        private const int InitialVouchers = 30; // Initial number of vouchers
+
+        // Dictionary to store combo quantities
+        private Dictionary<string, Tuple<int, int>> comboQuantities = new Dictionary<string, Tuple<int, int>>();
+        public PaymentManagement()
+        {
+            InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            LoadTicketData();
+        }
+        private void LoadTicketData()
+        {
+            // Dictionary to store the count of tickets sold for each cinema
+            Dictionary<int, int> ticketsSold = new Dictionary<int, int>();
+            // Dictionary to store the total revenue for each cinema
+            Dictionary<int, decimal> cinemaRevenue = new Dictionary<int, decimal>();
+
+            // Read the BookedSeats.txt file
+            string[] bookedSeatsLines = File.ReadAllLines("BookedSeats.txt");
+            foreach (string line in bookedSeatsLines)
+            {
+                // Split the line by comma
+                string[] parts = line.Split(',');
+
+                if (parts.Length == 3)
+                {
+                    // Get the cinema number
+                    int cinemaNumber = int.Parse(parts[1]);
+
+                    // Update the count for the cinema
+                    if (ticketsSold.ContainsKey(cinemaNumber))
+                    {
+                        ticketsSold[cinemaNumber]++;
+                    }
+                    else
+                    {
+                        ticketsSold[cinemaNumber] = 1;
+                    }
+                }
+            }
+
+            // Read the DoanhThu.txt file
+            string[] doanhThuLines = File.ReadAllLines("DoanhThu.txt");
+            foreach (string line in doanhThuLines)
+            {
+                // Split the line by comma
+                string[] parts = line.Split(',');
+
+                if (parts.Length == 2)
+                {
+                    // Get the cinema number and total revenue
+                    int cinemaNumber = int.Parse(parts[0].Trim());
+                    decimal revenue = decimal.Parse(parts[1].Trim());
+
+                    cinemaRevenue[cinemaNumber] = revenue;
+                }
+            }
+
+            // Clear the existing items in listView1
+            listView1.Items.Clear();
+
+            // Add items to listView1 for each cinema
+            foreach (var kvp in ticketsSold)
+            {
+                string cinemaName = $"Vé Rạp {kvp.Key}";
+                int tickets = kvp.Value;
+                int remainingTickets = InitialTickets - tickets;
+                string unitPrice = "Tùy vào ghế";
+                decimal totalRevenue = cinemaRevenue.ContainsKey(kvp.Key) ? cinemaRevenue[kvp.Key] : 0;
+
+                ListViewItem item = new ListViewItem(cinemaName);
+                item.SubItems.Add(remainingTickets.ToString()); // Số lượng còn lại
+                item.SubItems.Add(tickets.ToString()); // Số lượng đã bán
+                item.SubItems.Add(unitPrice); // Đơn giá
+                item.SubItems.Add(totalRevenue.ToString("N0") + " VND"); // Tổng doanh thu
+
+                listView1.Items.Add(item);
+            }
+
+            // Load combo quantities from FoodAndDrink.txt
+            LoadComboQuantitiesFromFile();
+
+            // Load voucher data from Vouchers.txt
+            LoadVoucherData();
+        }
+
+        private void LoadComboQuantitiesFromFile()
+        {
+            string filePath = "FoodAndDrink.txt";
+            if (File.Exists(filePath))
+            {
+                string[] comboLines = File.ReadAllLines(filePath);
+                foreach (string line in comboLines)
+                {
+                    string[] parts = line.Split(':');
+                    if (parts.Length == 2)
+                    {
+                        string comboName = parts[0].Trim();
+                        string[] quantities = parts[1].Split(',');
+                        if (quantities.Length == 2)
+                        {
+                            int soldCount = int.Parse(quantities[0].Trim());
+                            int remainingCount = int.Parse(quantities[1].Trim());
+                            comboQuantities[comboName] = new Tuple<int, int>(soldCount, remainingCount);
+
+                            AddPlaceholderItem(comboName, remainingCount, GetComboPrice(comboName));
+                        }
+                    }
+                }
+            }
+        }
+
+        private string GetComboPrice(string comboName)
+        {
+            switch (comboName)
+            {
+                case "COMBO SOLO - VOL 2":
+                    return "79,000 VND";
+                case "COMBO COUPLE - VOL 2":
+                    return "109,000 VND";
+                case "COMBO PARTY - VOL 2":
+                    return "209,000 VND";
+                case "COMBO SOLO 2 NGĂN":
+                    return "99,000 VND";
+                case "COMBO COUPLE 2 NGĂN":
+                    return "239,000 VND";
+                case "COMBO PARTY 2 NGĂN":
+                    return "109,000 VND";
+                default:
+                    return "N/A";
+            }
+        }
+
+        private void AddPlaceholderItem(string itemName, int initialCount, string price)
+        {
+            int soldCount = comboQuantities.ContainsKey(itemName) ? comboQuantities[itemName].Item1 : 0;
+            decimal unitPrice = ParsePrice(price);
+            decimal totalRevenue = soldCount * unitPrice;
+
+            ListViewItem item = new ListViewItem(itemName);
+            item.SubItems.Add(initialCount.ToString()); // Số lượng còn lại
+            item.SubItems.Add(soldCount.ToString()); // Số lượng đã bán
+            item.SubItems.Add(price); // Đơn giá
+            item.SubItems.Add(totalRevenue == 0 ? "N/A" : totalRevenue.ToString("N0") + " VND"); // Tổng doanh thu
+
+            listView1.Items.Add(item);
+        }
+
+        private decimal ParsePrice(string price)
+        {
+            if (price == "N/A" || price == "Tùy vào ghế")
+            {
+                return 0;
+            }
+
+            string cleanedPrice = price.Replace("VND", "").Replace(",", "").Trim();
+            return decimal.TryParse(cleanedPrice, out decimal result) ? result : 0;
+        }
+        private void LoadVoucherData()
+        {
+            string vouchersFilePath = "Vouchers.txt";
+            if (File.Exists(vouchersFilePath))
+            {
+                string[] voucherLines = File.ReadAllLines(vouchersFilePath);
+                foreach (string line in voucherLines)
+                {
+                    string[] parts = line.Split(',');
+                    if (parts.Length == 3)
+                    {
+                        string voucherName = parts[0].Trim();
+                        int soldCount = int.Parse(parts[1].Trim());
+                        int remainingCount = int.Parse(parts[2].Trim());
+
+                        string price = GetVoucherPrice(voucherName);
+                        AddVoucherItem(voucherName, remainingCount, soldCount, price);
+                    }
+                }
+            }
+        }
+
+        private string GetVoucherPrice(string voucherName)
+        {
+            switch (voucherName)
+            {
+                case "Giảm 20% bắp nước - CINEKING":
+                    return "Giảm 20% bắp nước"; // Adjust price accordingly
+                case "C'Ten: 45k phim 2D":
+                    return "Đồng giá 45,000 VND";
+                case "C'Member: 45k phim 2D":
+                    return "Đồng giá 45,000 VND";
+                default:
+                    return "N/A";
+            }
+        }
+
+        private void AddVoucherItem(string itemName, int remainingCount, int soldCount, string price)
+        {
+            decimal unitPrice = ParsePrice(price);
+            decimal totalRevenue = soldCount * unitPrice;
+
+            ListViewItem item = new ListViewItem(itemName);
+            item.SubItems.Add(remainingCount.ToString()); // Số lượng còn lại
+            item.SubItems.Add(soldCount.ToString()); // Số lượng đã bán
+            item.SubItems.Add(price); // Đơn giá
+            item.SubItems.Add(totalRevenue == 0 ? "N/A" : totalRevenue.ToString("N0") + " VND"); // Tổng doanh thu
+
+            listView1.Items.Add(item);
+        }
+    }
+}

@@ -21,7 +21,7 @@ CREATE TABLE Movies (
 );
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (1, '?ÀO, PH? VÀ PIANO (T13)', '45000 ?', 'R?p 1,2,3', 'Vi?t Nam');
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (2, 'MAI (T18)', '100000 ?', 'R?p 2,3', 'Vi?t Nam');
-INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (3, 'G?P L?I CH? B?U (T18)', '70000 ?', 'R?p 1', 'Vi?t Nam');
+INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (3, 'GẶP LẠI CHỊ BẦU (T18)', '70000 đ', 'RẠP 1', 'Việt Nam');
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (4, 'TAROT (T18)', '90000 ?', 'R?p 3', 'Hoa K?');
 	SELECT * FROM Movies;
 
@@ -83,5 +83,6 @@ rủa. Từng người một phải đối mặt với số phận của mình v
 cuộc chạy đua chống lại cái chết để thoát khỏi số phận đã được tiên đoán.', 
 N'E:\NAM 2\NNLT C#\FINAL_PROJECT\DOAN_C-\CinemaManagement_Project\bin\Debug\net6.0-windows\VideoTrailer\tarot_trailer.mp4');
 
+DELETE FROM Movies WHERE Id = 3
 DELETE FROM Trailer WHERE MovieId = 3
-DELETE FROM Trailer WHERE MovieId = 4
+DELETE FROM Trailer WHERE MovieId = 4	

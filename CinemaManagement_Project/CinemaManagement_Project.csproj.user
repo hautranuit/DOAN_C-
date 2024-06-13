@@ -25,6 +25,9 @@
     <Compile Update="Pay\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pay\PaymentManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pay\QRCodePayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SignIn_SignUp\QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignIn_SignUp\Select.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThamKhao\Lab01_Bai5(P2).cs">

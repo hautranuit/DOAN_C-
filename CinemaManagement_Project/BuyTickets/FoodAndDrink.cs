@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,14 +13,18 @@ using static CinemaManagement_Project.SelectMovieState;
 namespace CinemaManagement_Project.BuyTickets
 {
     public partial class FoodAndDrink : Form
-    {
+    {   
         private decimal Total_FoodAndDrink_Money = 0m;
-        private decimal initialMoney = 0m; // Store initial money from Theater1
+        public static decimal initialMoney = 0m; // Store initial money from Theater1
         public static int countTickets = 0;
+
+        private Dictionary<string, Tuple<int, int>> comboQuantities = new Dictionary<string, Tuple<int, int>>();
+
         public FoodAndDrink(string money, int count)
         {
             countTickets = count;
             InitializeComponent();
+            LoadComboQuantities();
             if (money != null)
             {
                 lb_totalMoney.Text = money;
@@ -35,22 +40,23 @@ namespace CinemaManagement_Project.BuyTickets
         private void InitializeDomainUpDownControls()
         {
             // Setting properties for DomainUpDown controls
-            ConfigureDomainUpDown(dUD_ComboSolo);
-            ConfigureDomainUpDown(dUD_ComboCouple);
-            ConfigureDomainUpDown(dUD_ComboParty);
-            ConfigureDomainUpDown(dUD_ComboSolo_2ngan);
-            ConfigureDomainUpDown(dUD_ComboParty_2ngan);
-            ConfigureDomainUpDown(dUD_ComboCouple_2ngan);
+            ConfigureDomainUpDown(dUD_ComboSolo, "COMBO SOLO - VOL 2");
+            ConfigureDomainUpDown(dUD_ComboCouple, "COMBO COUPLE - VOL 2");
+            ConfigureDomainUpDown(dUD_ComboParty, "COMBO PARTY - VOL 2");
+            ConfigureDomainUpDown(dUD_ComboSolo_2ngan, "COMBO SOLO 2 NGĂN");
+            ConfigureDomainUpDown(dUD_ComboParty_2ngan, "COMBO PARTY 2 NGĂN");
+            ConfigureDomainUpDown(dUD_ComboCouple_2ngan, "COMBO COUPLE 2 NGĂN");
         }
 
-        private void ConfigureDomainUpDown(DomainUpDown domainUpDown)
+        private void ConfigureDomainUpDown(DomainUpDown domainUpDown, string comboName)
         {
             domainUpDown.Items.Clear();
-            for (int i = 10; i >= 0; i--) // Điều chỉnh phạm vi theo nhu cầu
+            int maxQuantity = comboQuantities[comboName].Item2; // Lấy số lượng còn lại
+            for (int i = maxQuantity; i >= 0; i--)
             {
                 domainUpDown.Items.Add(i);
             }
-            domainUpDown.SelectedIndex = 10;
+            domainUpDown.SelectedIndex = maxQuantity;
             domainUpDown.Wrap = true;
             domainUpDown.KeyDown += DomainUpDown_KeyDown; // Gắn sự kiện KeyDown
         }
@@ -223,9 +229,58 @@ namespace CinemaManagement_Project.BuyTickets
                     comboTable.Rows.Add(comboName, quantity);
                 }
             }
+            UpdateComboQuantities();
+            SaveComboQuantities();
+
             Payment payment = new Payment(comboTable);
-           this.Hide();
-           payment.Show();
+            this.Hide();
+            payment.Show();
+        }
+        private void LoadComboQuantities()
+        {
+            string filePath = "FoodAndDrink.txt";
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(':');
+                string comboName = parts[0].Trim();
+                string[] quantities = parts[1].Split(',');
+                int sold = int.Parse(quantities[0].Trim());
+                int remaining = int.Parse(quantities[1].Trim());
+
+                comboQuantities[comboName] = new Tuple<int, int>(sold, remaining);
+            }
+        }
+        private void UpdateComboQuantities()
+        {
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text.StartsWith("COMBO"))
+                {
+                    string comboName = item.Text; // Lấy tên combo mà không có khoảng trống
+                    int quantity = int.Parse(item.SubItems[1].Text);
+
+                    if (comboQuantities.ContainsKey(comboName))
+                    {
+                        var quantities = comboQuantities[comboName];
+                        int newSold = quantities.Item1 + quantity;
+                        int newRemaining = quantities.Item2 - quantity;
+                        comboQuantities[comboName] = new Tuple<int, int>(newSold, newRemaining);
+                    }
+                }
+            }
+        }
+        private void SaveComboQuantities()
+        {
+            string filePath = "FoodAndDrink.txt";
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                foreach (var kvp in comboQuantities)
+                {
+                    writer.WriteLine($"{kvp.Key}: {kvp.Value.Item1}, {kvp.Value.Item2}");
+                }
+            }
         }
     }
 }

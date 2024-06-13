@@ -109,6 +109,7 @@
             show_password.TabIndex = 19;
             show_password.Text = "Show Password";
             show_password.UseVisualStyleBackColor = false;
+            show_password.CheckedChanged += show_password_CheckedChanged_1;
             // 
             // label3
             // 

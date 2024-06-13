@@ -87,11 +87,11 @@
             label2 = new Label();
             linkLabel1 = new LinkLabel();
             btn_Countinue = new Button();
-            panel7 = new Panel();
+            pn_Voucher3 = new Panel();
             checkBox3 = new CheckBox();
             label29 = new Label();
             label30 = new Label();
-            panel6 = new Panel();
+            pn_Voucher2 = new Panel();
             checkBox2 = new CheckBox();
             label27 = new Label();
             label28 = new Label();
@@ -106,8 +106,8 @@
             panel4.SuspendLayout();
             pn_Voucher.SuspendLayout();
             pn_Voucher1.SuspendLayout();
-            panel7.SuspendLayout();
-            panel6.SuspendLayout();
+            pn_Voucher3.SuspendLayout();
+            pn_Voucher2.SuspendLayout();
             SuspendLayout();
             // 
             // lb_CusInfo
@@ -746,8 +746,8 @@
             pn_Voucher.Controls.Add(pn_Voucher1);
             pn_Voucher.Controls.Add(linkLabel1);
             pn_Voucher.Controls.Add(btn_Countinue);
-            pn_Voucher.Controls.Add(panel7);
-            pn_Voucher.Controls.Add(panel6);
+            pn_Voucher.Controls.Add(pn_Voucher3);
+            pn_Voucher.Controls.Add(pn_Voucher2);
             pn_Voucher.Controls.Add(textBox1);
             pn_Voucher.Controls.Add(label1);
             pn_Voucher.Location = new Point(367, 114);
@@ -826,17 +826,17 @@
             btn_Countinue.UseVisualStyleBackColor = false;
             btn_Countinue.Click += btn_Countinue_Click;
             // 
-            // panel7
+            // pn_Voucher3
             // 
-            panel7.BackColor = Color.Gainsboro;
-            panel7.Controls.Add(checkBox3);
-            panel7.Controls.Add(label29);
-            panel7.Controls.Add(label30);
-            panel7.Cursor = Cursors.Hand;
-            panel7.Location = new Point(34, 302);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(515, 65);
-            panel7.TabIndex = 94;
+            pn_Voucher3.BackColor = Color.White;
+            pn_Voucher3.Controls.Add(checkBox3);
+            pn_Voucher3.Controls.Add(label29);
+            pn_Voucher3.Controls.Add(label30);
+            pn_Voucher3.Cursor = Cursors.Hand;
+            pn_Voucher3.Location = new Point(34, 302);
+            pn_Voucher3.Name = "pn_Voucher3";
+            pn_Voucher3.Size = new Size(515, 65);
+            pn_Voucher3.TabIndex = 94;
             // 
             // checkBox3
             // 
@@ -851,7 +851,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            label29.ForeColor = Color.Gray;
+            label29.ForeColor = SystemColors.ControlText;
             label29.Location = new Point(9, 31);
             label29.Name = "label29";
             label29.Size = new Size(314, 20);
@@ -862,24 +862,24 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label30.ForeColor = Color.Gray;
+            label30.ForeColor = SystemColors.ControlText;
             label30.Location = new Point(9, 7);
             label30.Name = "label30";
             label30.Size = new Size(176, 20);
             label30.TabIndex = 0;
             label30.Text = "C'Member: 45k phim 2D";
             // 
-            // panel6
+            // pn_Voucher2
             // 
-            panel6.BackColor = Color.Gainsboro;
-            panel6.Controls.Add(checkBox2);
-            panel6.Controls.Add(label27);
-            panel6.Controls.Add(label28);
-            panel6.Cursor = Cursors.Hand;
-            panel6.Location = new Point(34, 220);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(515, 65);
-            panel6.TabIndex = 93;
+            pn_Voucher2.BackColor = Color.White;
+            pn_Voucher2.Controls.Add(checkBox2);
+            pn_Voucher2.Controls.Add(label27);
+            pn_Voucher2.Controls.Add(label28);
+            pn_Voucher2.Cursor = Cursors.Hand;
+            pn_Voucher2.Location = new Point(34, 220);
+            pn_Voucher2.Name = "pn_Voucher2";
+            pn_Voucher2.Size = new Size(515, 65);
+            pn_Voucher2.TabIndex = 93;
             // 
             // checkBox2
             // 
@@ -894,7 +894,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            label27.ForeColor = Color.Gray;
+            label27.ForeColor = SystemColors.ControlText;
             label27.Location = new Point(9, 31);
             label27.Name = "label27";
             label27.Size = new Size(261, 20);
@@ -905,7 +905,7 @@
             // 
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label28.ForeColor = Color.Gray;
+            label28.ForeColor = SystemColors.ControlText;
             label28.Location = new Point(9, 7);
             label28.Name = "label28";
             label28.Size = new Size(141, 20);
@@ -970,10 +970,10 @@
             pn_Voucher.PerformLayout();
             pn_Voucher1.ResumeLayout(false);
             pn_Voucher1.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
+            pn_Voucher3.ResumeLayout(false);
+            pn_Voucher3.PerformLayout();
+            pn_Voucher2.ResumeLayout(false);
+            pn_Voucher2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1023,10 +1023,10 @@
         private Label label1;
         private LinkLabel linkLabel1;
         private Button btn_Countinue;
-        private Panel panel7;
+        private Panel pn_Voucher3;
         private Label label29;
         private Label label30;
-        private Panel panel6;
+        private Panel pn_Voucher2;
         private Label label27;
         private Label label28;
         private CheckBox checkBox3;
