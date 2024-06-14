@@ -12,8 +12,6 @@ namespace CinemaManagement_Project.Pay
 {
     public partial class PaymentManagement : Form
     {
-        private const int InitialTickets = 100; // Initial number of tickets for each cinema
-        private const int InitialVouchers = 30; // Initial number of vouchers
 
         // Dictionary to store combo quantities
         private Dictionary<string, Tuple<int, int>> comboQuantities = new Dictionary<string, Tuple<int, int>>();
@@ -27,7 +25,8 @@ namespace CinemaManagement_Project.Pay
         {
             // Dictionary to store the count of tickets sold for each cinema
             Dictionary<int, int> ticketsSold = new Dictionary<int, int>();
-            // Dictionary to store the total revenue for each cinema
+            // Dictionary to store the total tickets and revenue for each cinema
+            Dictionary<int, int> totalTickets = new Dictionary<int, int>();
             Dictionary<int, decimal> cinemaRevenue = new Dictionary<int, decimal>();
 
             // Read the BookedSeats.txt file
@@ -61,12 +60,14 @@ namespace CinemaManagement_Project.Pay
                 // Split the line by comma
                 string[] parts = line.Split(',');
 
-                if (parts.Length == 2)
+                if (parts.Length == 3)
                 {
-                    // Get the cinema number and total revenue
+                    // Get the cinema number, total tickets, and total revenue
                     int cinemaNumber = int.Parse(parts[0].Trim());
-                    decimal revenue = decimal.Parse(parts[1].Trim());
+                    int totalTicketsCount = int.Parse(parts[1].Trim());
+                    decimal revenue = decimal.Parse(parts[2].Trim());
 
+                    totalTickets[cinemaNumber] = totalTicketsCount;
                     cinemaRevenue[cinemaNumber] = revenue;
                 }
             }
@@ -75,17 +76,19 @@ namespace CinemaManagement_Project.Pay
             listView1.Items.Clear();
 
             // Add items to listView1 for each cinema
-            foreach (var kvp in ticketsSold)
+            foreach (var kvp in totalTickets)
             {
-                string cinemaName = $"Vé Rạp {kvp.Key}";
-                int tickets = kvp.Value;
-                int remainingTickets = InitialTickets - tickets;
+                int cinemaNumber = kvp.Key;
+                string cinemaName = $"Vé Rạp {cinemaNumber}";
+                int totalTicketsCount = kvp.Value;
+                int ticketsSoldCount = ticketsSold.ContainsKey(cinemaNumber) ? ticketsSold[cinemaNumber] : 0;
+                int remainingTickets = totalTicketsCount - ticketsSoldCount;
                 string unitPrice = "Tùy vào ghế";
-                decimal totalRevenue = cinemaRevenue.ContainsKey(kvp.Key) ? cinemaRevenue[kvp.Key] : 0;
+                decimal totalRevenue = cinemaRevenue.ContainsKey(cinemaNumber) ? cinemaRevenue[cinemaNumber] : 0;
 
                 ListViewItem item = new ListViewItem(cinemaName);
                 item.SubItems.Add(remainingTickets.ToString()); // Số lượng còn lại
-                item.SubItems.Add(tickets.ToString()); // Số lượng đã bán
+                item.SubItems.Add(ticketsSoldCount.ToString()); // Số lượng đã bán
                 item.SubItems.Add(unitPrice); // Đơn giá
                 item.SubItems.Add(totalRevenue.ToString("N0") + " VND"); // Tổng doanh thu
 
@@ -98,6 +101,7 @@ namespace CinemaManagement_Project.Pay
             // Load voucher data from Vouchers.txt
             LoadVoucherData();
         }
+
 
         private void LoadComboQuantitiesFromFile()
         {
@@ -220,6 +224,20 @@ namespace CinemaManagement_Project.Pay
             item.SubItems.Add(totalRevenue == 0 ? "N/A" : totalRevenue.ToString("N0") + " VND"); // Tổng doanh thu
 
             listView1.Items.Add(item);
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            SignIn_SignUp.Select select = new SignIn_SignUp.Select();
+            this.Close();
+            select.Show();
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            FormUpdateTicketsAndVouchers form = new FormUpdateTicketsAndVouchers();
+            this.Close();
+            form.Show();
         }
     }
 }

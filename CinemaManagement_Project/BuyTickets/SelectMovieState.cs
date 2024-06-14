@@ -513,9 +513,18 @@ namespace CinemaManagement_Project
 
         private void btn_SignOut_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DangNhap dn = new DangNhap();
-            dn.Show();
+            if (Role == "guest")
+            {
+                this.Close();
+                DangNhap dn = new DangNhap();
+                dn.Show();
+            }
+            else
+            {
+                this.Close();
+                SignIn_SignUp.Select sl = new SignIn_SignUp.Select();
+                sl.Show();
+            }
         }
 
         //Cac ham load phim tu SQL

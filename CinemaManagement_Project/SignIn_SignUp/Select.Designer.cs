@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Select));
             btn_MovieMana = new Button();
             btn_PaymentMana = new Button();
+            btn_SignOut = new Button();
             SuspendLayout();
             // 
             // btn_MovieMana
@@ -63,6 +64,20 @@
             btn_PaymentMana.UseVisualStyleBackColor = false;
             btn_PaymentMana.Click += btn_PaymentMana_Click;
             // 
+            // btn_SignOut
+            // 
+            btn_SignOut.BackColor = Color.DarkSlateBlue;
+            btn_SignOut.Cursor = Cursors.Hand;
+            btn_SignOut.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_SignOut.ForeColor = Color.AliceBlue;
+            btn_SignOut.Location = new Point(283, 245);
+            btn_SignOut.Name = "btn_SignOut";
+            btn_SignOut.Size = new Size(180, 39);
+            btn_SignOut.TabIndex = 49;
+            btn_SignOut.Text = "ĐĂNG XUẤT";
+            btn_SignOut.UseVisualStyleBackColor = false;
+            btn_SignOut.Click += btn_SignOut_Click;
+            // 
             // Select
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -70,6 +85,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(750, 317);
+            Controls.Add(btn_SignOut);
             Controls.Add(btn_PaymentMana);
             Controls.Add(btn_MovieMana);
             FormBorderStyle = FormBorderStyle.None;
@@ -82,5 +98,6 @@
 
         private Button btn_MovieMana;
         private Button btn_PaymentMana;
+        private Button btn_SignOut;
     }
 }

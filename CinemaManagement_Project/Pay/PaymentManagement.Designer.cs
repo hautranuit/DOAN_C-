@@ -45,6 +45,8 @@
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
+            btn_Back = new Button();
+            btn_Edit = new Button();
             SuspendLayout();
             // 
             // listView1
@@ -88,13 +90,41 @@
             columnHeader5.Text = "Tổng danh thu";
             columnHeader5.Width = 200;
             // 
+            // btn_Back
+            // 
+            btn_Back.BackColor = Color.Silver;
+            btn_Back.Cursor = Cursors.Hand;
+            btn_Back.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Back.Location = new Point(370, 502);
+            btn_Back.Name = "btn_Back";
+            btn_Back.Size = new Size(111, 44);
+            btn_Back.TabIndex = 1;
+            btn_Back.Text = "Trở Lại";
+            btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
+            // 
+            // btn_Edit
+            // 
+            btn_Edit.BackColor = Color.Yellow;
+            btn_Edit.Cursor = Cursors.Hand;
+            btn_Edit.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Edit.Location = new Point(534, 502);
+            btn_Edit.Name = "btn_Edit";
+            btn_Edit.Size = new Size(111, 44);
+            btn_Edit.TabIndex = 2;
+            btn_Edit.Text = "Chỉnh Sửa";
+            btn_Edit.UseVisualStyleBackColor = false;
+            btn_Edit.Click += btn_Edit_Click;
+            // 
             // PaymentManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1017, 521);
+            ClientSize = new Size(1017, 558);
+            Controls.Add(btn_Edit);
+            Controls.Add(btn_Back);
             Controls.Add(listView1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PaymentManagement";
@@ -110,5 +140,7 @@
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
+        private Button btn_Back;
+        private Button btn_Edit;
     }
 }

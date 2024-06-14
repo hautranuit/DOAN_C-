@@ -22,6 +22,9 @@
     <Compile Update="BuyTickets\EditTrailer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pay\FormUpdateTicketsAndVouchers.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pay\Payment.cs">
       <SubType>Form</SubType>
     </Compile>

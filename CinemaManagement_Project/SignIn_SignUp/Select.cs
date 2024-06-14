@@ -33,5 +33,12 @@ namespace CinemaManagement_Project.SignIn_SignUp
             this.Close();
             paymentManagement.Show();
         }
+
+        private void btn_SignOut_Click(object sender, EventArgs e)
+        {
+            DangNhap dn = new DangNhap();
+            this.Close();
+            dn.Show();  
+        }
     }
 }
