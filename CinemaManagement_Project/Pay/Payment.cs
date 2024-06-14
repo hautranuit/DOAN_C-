@@ -20,17 +20,21 @@ using System.Net.Mail;
 using System.Net;
 using System.Drawing.Imaging;
 using System.Net.Mime;
+using Org.BouncyCastle.Math.Field;
+using System.Drawing.Text;
+using Microsoft.Identity.Client;
 
 namespace CinemaManagement_Project
 {
     public partial class Payment : Form
     {   
         private DataTable comboTable;
+        public double ComboMoney;
         public Payment(DataTable table)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            comboTable = table;
+            comboTable = table;            
         }
 
         private void lb_PayInfo_Click(object sender, EventArgs e)
@@ -86,6 +90,26 @@ namespace CinemaManagement_Project
                     string voucherName = parts[0].Trim();
                     int remainingCount = int.Parse(parts[2].Trim());
 
+                    // Kiểm tra điều kiện thời gian cho voucher "C'Ten: 45k phim 2D"
+                    if (voucherName == "C'Ten: 45k phim 2D")
+                    {
+                        DateTime now = DateTime.Now;
+                        if (now.Hour > 10 || now.Hour <= 22)
+                        {
+                            DisableVoucherPanel(pn_Voucher2);
+                        }
+                    }
+
+                    // Kiểm tra điều kiện ngày cho voucher "C'Member: 45k phim 2D"
+                    if (voucherName == "C'Member: 45k phim 2D")
+                    {
+                        DayOfWeek today = DateTime.Now.DayOfWeek;
+                        if (today != DayOfWeek.Wednesday)
+                        {
+                            DisableVoucherPanel(pn_Voucher3);
+                        }
+                    }
+
                     if (remainingCount == 0)
                     {
                         if (voucherName == "Giảm 20% bắp nước - CINEKING")
@@ -103,6 +127,7 @@ namespace CinemaManagement_Project
                     }
                 }
             }
+
         }
         private void DisableVoucherPanel(Panel panel)
         {
@@ -116,16 +141,41 @@ namespace CinemaManagement_Project
         double TotalPrice;
         private void btn_Countinue_Click(object sender, EventArgs e)
         {
+            double initialMoneyDouble = (double)initialMoney;
+
+            double Price = double.Parse(lb_Price.Text.Replace("VND", "").Trim());           
+            string voucherName = null;
             if (cb_Voucher1.Checked == true)
             {
-                double Price = double.Parse(lb_Price.Text.Replace("VND", "").Trim());
-                TotalPrice = (Price * 0.8);
-                lb_Price.Text = TotalPrice.ToString("N0") + " VND";
-                lb_AppliedVoucher.Visible = true;
-
                 // Tên voucher bạn đang sử dụng (vd: "Giảm 20% bắp nước - CINEKING")
-                string voucherName = "Giảm 20% bắp nước - CINEKING";
+                voucherName = "Giảm 20% bắp nước - CINEKING";
+                TotalPrice = initialMoneyDouble + ComboMoney * 0.8;
+            }
+            else if (cb_Voucher2.Checked == true)
+            {
+                voucherName = "C'Ten: 45k phim 2D";
+                int numberOfTickets;
+                if (int.TryParse(lb_NumberInfo.Text, out numberOfTickets))
+                {
+                    TotalPrice = (45000 * numberOfTickets) + ComboMoney;
+                }
+            }
+            else if (cb_Voucher3.Checked == true)
+            {
+                voucherName = "C'Member: 45k phim 2D";
+                int numberOfTickets;
+                if (int.TryParse(lb_NumberInfo.Text, out numberOfTickets))
+                {
+                    TotalPrice = (45000 * numberOfTickets) + ComboMoney;
+                }
+            }
+            
+            lb_Price.Text = TotalPrice.ToString("N0") + " VND";
+            lb_AppliedVoucher.Visible = true;
 
+
+            if (voucherName != null)
+            {
                 // Đường dẫn tới file Vouchers.txt
                 string vouchersFilePath = "Vouchers.txt";
 
@@ -164,7 +214,6 @@ namespace CinemaManagement_Project
                         updatedLines.Add(line);
                     }
                 }
-
                 // Ghi lại các thay đổi vào file Vouchers.txt
                 File.WriteAllLines(vouchersFilePath, updatedLines);
             }
@@ -317,6 +366,13 @@ namespace CinemaManagement_Project
 
             lb_Price.Text = totalMoney;
 
+            string priceText = lb_Price.Text.Replace(" VND", "").Replace(",", "");
+            decimal price;
+            if (decimal.TryParse(priceText, out price))
+            {
+                ComboMoney = (double)(price - initialMoney);
+            }
+
         }
         private string GenerateRandomString(int length)
         {
@@ -437,29 +493,35 @@ namespace CinemaManagement_Project
         {
             string filePath = "DoanhThu.txt";
             string[] lines = File.ReadAllLines(filePath);
-            Dictionary<int, decimal> revenues = new Dictionary<int, decimal>();
+            Dictionary<int, Tuple<int, decimal>> theaterData = new Dictionary<int, Tuple<int, decimal>>();
 
+            // Đọc dữ liệu từ file và lưu vào dictionary
             foreach (string line in lines)
             {
                 string[] parts = line.Split(',');
                 int theater = int.Parse(parts[0].Trim());
-                decimal revenue = decimal.Parse(parts[1].Trim());
-                revenues[theater] = revenue;
+                int totalTickets = int.Parse(parts[1].Trim());
+                decimal revenue = decimal.Parse(parts[2].Trim());
+                theaterData[theater] = new Tuple<int, decimal>(totalTickets, revenue);
             }
 
+            // Lấy thông tin số rạp và doanh thu hiện tại
             int theaterNumber = int.Parse(lb_RoomInfo.Text);
-            decimal currentRevenue = revenues[theaterNumber];
+            decimal currentRevenue = theaterData[theaterNumber].Item2;
             decimal newRevenue = currentRevenue + initialMoney;
 
-            revenues[theaterNumber] = newRevenue;
+            // Cập nhật doanh thu mới
+            theaterData[theaterNumber] = new Tuple<int, decimal>(theaterData[theaterNumber].Item1, newRevenue);
 
+            // Ghi lại dữ liệu vào file
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                foreach (var kvp in revenues)
+                foreach (var kvp in theaterData)
                 {
-                    writer.WriteLine($"{kvp.Key}, {kvp.Value}");
+                    writer.WriteLine($"{kvp.Key}, {kvp.Value.Item1}, {kvp.Value.Item2}");
                 }
             }
         }
+
     }
 }

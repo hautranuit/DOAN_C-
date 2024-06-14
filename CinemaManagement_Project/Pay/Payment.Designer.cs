@@ -88,11 +88,11 @@
             linkLabel1 = new LinkLabel();
             btn_Countinue = new Button();
             pn_Voucher3 = new Panel();
-            checkBox3 = new CheckBox();
+            cb_Voucher3 = new CheckBox();
             label29 = new Label();
             label30 = new Label();
             pn_Voucher2 = new Panel();
-            checkBox2 = new CheckBox();
+            cb_Voucher2 = new CheckBox();
             label27 = new Label();
             label28 = new Label();
             textBox1 = new TextBox();
@@ -829,7 +829,7 @@
             // pn_Voucher3
             // 
             pn_Voucher3.BackColor = Color.White;
-            pn_Voucher3.Controls.Add(checkBox3);
+            pn_Voucher3.Controls.Add(cb_Voucher3);
             pn_Voucher3.Controls.Add(label29);
             pn_Voucher3.Controls.Add(label30);
             pn_Voucher3.Cursor = Cursors.Hand;
@@ -838,14 +838,14 @@
             pn_Voucher3.Size = new Size(515, 65);
             pn_Voucher3.TabIndex = 94;
             // 
-            // checkBox3
+            // cb_Voucher3
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(494, 45);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(18, 17);
-            checkBox3.TabIndex = 3;
-            checkBox3.UseVisualStyleBackColor = true;
+            cb_Voucher3.AutoSize = true;
+            cb_Voucher3.Location = new Point(494, 45);
+            cb_Voucher3.Name = "cb_Voucher3";
+            cb_Voucher3.Size = new Size(18, 17);
+            cb_Voucher3.TabIndex = 3;
+            cb_Voucher3.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -872,7 +872,7 @@
             // pn_Voucher2
             // 
             pn_Voucher2.BackColor = Color.White;
-            pn_Voucher2.Controls.Add(checkBox2);
+            pn_Voucher2.Controls.Add(cb_Voucher2);
             pn_Voucher2.Controls.Add(label27);
             pn_Voucher2.Controls.Add(label28);
             pn_Voucher2.Cursor = Cursors.Hand;
@@ -881,14 +881,14 @@
             pn_Voucher2.Size = new Size(515, 65);
             pn_Voucher2.TabIndex = 93;
             // 
-            // checkBox2
+            // cb_Voucher2
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(494, 43);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(18, 17);
-            checkBox2.TabIndex = 3;
-            checkBox2.UseVisualStyleBackColor = true;
+            cb_Voucher2.AutoSize = true;
+            cb_Voucher2.Location = new Point(494, 43);
+            cb_Voucher2.Name = "cb_Voucher2";
+            cb_Voucher2.Size = new Size(18, 17);
+            cb_Voucher2.TabIndex = 3;
+            cb_Voucher2.UseVisualStyleBackColor = true;
             // 
             // label27
             // 
@@ -945,13 +945,13 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1307, 685);
             Controls.Add(pn_Voucher);
-            Controls.Add(panel4);
             Controls.Add(pn_CusInfo);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(lb_TicketInfo);
             Controls.Add(lb_PayInfo);
             Controls.Add(lb_CusInfo);
+            Controls.Add(panel4);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Payment";
             Text = "Payment";
@@ -1029,8 +1029,8 @@
         private Panel pn_Voucher2;
         private Label label27;
         private Label label28;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
+        private CheckBox cb_Voucher3;
+        private CheckBox cb_Voucher2;
         private Panel pn_Voucher1;
         private CheckBox cb_Voucher1;
         private Label label26;

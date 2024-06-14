@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\pay\\formupdateticketsandvouchers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\pay\\formupdateticketsandvouchers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\pay\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\pay\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\pay\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\pay\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\pay\\paymentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\pay\\paymentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\selectmoviestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\selectmoviestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|solutionrelative:cinemamanagement_project\\buytickets\\foodanddrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97BF9C66-54E9-465A-8A6A-C0F8B056A93E}|CinemaManagement_Project\\CinemaManagement_Project.csproj|e:\\nam 2\\nnlt c#\\final_project\\doan_c-\\cinemamanagement_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,45 +67,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SelectMovieState.cs",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\SelectMovieState.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\SelectMovieState.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\SelectMovieState.cs",
-              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\SelectMovieState.cs",
-              "ViewState": "AQIAAPYBAAAAAAAAAAAAABMCAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T05:25:36.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "PaymentManagement.cs",
               "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\PaymentManagement.cs",
               "RelativeDocumentMoniker": "CinemaManagement_Project\\Pay\\PaymentManagement.cs",
               "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\PaymentManagement.cs",
               "RelativeToolTip": "CinemaManagement_Project\\Pay\\PaymentManagement.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwGcAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T04:59:06.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormUpdateTicketsAndVouchers.cs",
-              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\FormUpdateTicketsAndVouchers.cs",
-              "RelativeDocumentMoniker": "CinemaManagement_Project\\Pay\\FormUpdateTicketsAndVouchers.cs",
-              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\FormUpdateTicketsAndVouchers.cs",
-              "RelativeToolTip": "CinemaManagement_Project\\Pay\\FormUpdateTicketsAndVouchers.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA2wCkAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:53:03.507Z",
+              "WhenOpened": "2024-06-14T10:36:42.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FoodAndDrink.cs",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "RelativeToolTip": "CinemaManagement_Project\\BuyTickets\\FoodAndDrink.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwIYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T09:58:55.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\Payment.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\Pay\\Payment.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\Payment.cs",
+              "RelativeToolTip": "CinemaManagement_Project\\Pay\\Payment.cs",
+              "ViewState": "AQIAAOYBAAAAAAAAAAAgwAwCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T09:52:06.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment.cs [Design]",
+              "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\Payment.cs",
+              "RelativeDocumentMoniker": "CinemaManagement_Project\\Pay\\Payment.cs",
+              "ToolTip": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Pay\\Payment.cs [Design]",
+              "RelativeToolTip": "CinemaManagement_Project\\Pay\\Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T09:51:59.576Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\Program.cs",
               "RelativeDocumentMoniker": "CinemaManagement_Project\\Program.cs",
