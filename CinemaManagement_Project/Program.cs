@@ -1,3 +1,5 @@
+using CinemaManagement_Project.Pay;
+
 namespace CinemaManagement_Project
 {
     internal static class Program
@@ -11,6 +13,7 @@ namespace CinemaManagement_Project
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            //Application.Run(new PaymentManagement());
             Application.Run(new DangNhap());
             //Application.Run(new SelectMovieState("guest"));
             //Application.Run(new Theater1());

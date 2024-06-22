@@ -64,7 +64,7 @@
             // 
             // tbx_Synopsis
             // 
-            tbx_Synopsis.Location = new Point(798, 217);
+            tbx_Synopsis.Location = new Point(889, 209);
             tbx_Synopsis.Multiline = true;
             tbx_Synopsis.Name = "tbx_Synopsis";
             tbx_Synopsis.Size = new Size(510, 134);
@@ -72,7 +72,7 @@
             // 
             // tbx_ReleaseDate
             // 
-            tbx_ReleaseDate.Location = new Point(803, 179);
+            tbx_ReleaseDate.Location = new Point(894, 171);
             tbx_ReleaseDate.Multiline = true;
             tbx_ReleaseDate.Name = "tbx_ReleaseDate";
             tbx_ReleaseDate.Size = new Size(271, 27);
@@ -80,7 +80,7 @@
             // 
             // tbx_Actors
             // 
-            tbx_Actors.Location = new Point(792, 147);
+            tbx_Actors.Location = new Point(883, 139);
             tbx_Actors.Multiline = true;
             tbx_Actors.Name = "tbx_Actors";
             tbx_Actors.Size = new Size(282, 27);
@@ -88,7 +88,7 @@
             // 
             // tbx_Director
             // 
-            tbx_Director.Location = new Point(792, 113);
+            tbx_Director.Location = new Point(883, 105);
             tbx_Director.Multiline = true;
             tbx_Director.Name = "tbx_Director";
             tbx_Director.Size = new Size(282, 27);
@@ -96,7 +96,7 @@
             // 
             // tbx_SubtitleOrDubbing
             // 
-            tbx_SubtitleOrDubbing.Location = new Point(356, 302);
+            tbx_SubtitleOrDubbing.Location = new Point(447, 294);
             tbx_SubtitleOrDubbing.Multiline = true;
             tbx_SubtitleOrDubbing.Name = "tbx_SubtitleOrDubbing";
             tbx_SubtitleOrDubbing.Size = new Size(199, 27);
@@ -104,7 +104,7 @@
             // 
             // tbx_Country
             // 
-            tbx_Country.Location = new Point(356, 238);
+            tbx_Country.Location = new Point(447, 230);
             tbx_Country.Multiline = true;
             tbx_Country.Name = "tbx_Country";
             tbx_Country.Size = new Size(199, 27);
@@ -112,7 +112,7 @@
             // 
             // tbx_Duration
             // 
-            tbx_Duration.Location = new Point(356, 173);
+            tbx_Duration.Location = new Point(447, 165);
             tbx_Duration.Multiline = true;
             tbx_Duration.Name = "tbx_Duration";
             tbx_Duration.Size = new Size(199, 27);
@@ -120,7 +120,7 @@
             // 
             // tbx_Genre
             // 
-            tbx_Genre.Location = new Point(356, 107);
+            tbx_Genre.Location = new Point(447, 99);
             tbx_Genre.Multiline = true;
             tbx_Genre.Name = "tbx_Genre";
             tbx_Genre.Size = new Size(199, 27);
@@ -132,7 +132,7 @@
             btn_Apply.Cursor = Cursors.Hand;
             btn_Apply.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Apply.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Apply.Location = new Point(1125, 29);
+            btn_Apply.Location = new Point(1216, 21);
             btn_Apply.Name = "btn_Apply";
             btn_Apply.Size = new Size(158, 50);
             btn_Apply.TabIndex = 59;
@@ -143,7 +143,7 @@
             // axWindowsMediaPlayer1
             // 
             axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(258, 357);
+            axWindowsMediaPlayer1.Location = new Point(349, 349);
             axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
             axWindowsMediaPlayer1.Size = new Size(800, 450);
@@ -155,7 +155,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Yellow;
-            label7.Location = new Point(703, 215);
+            label7.Location = new Point(794, 207);
             label7.Name = "label7";
             label7.Size = new Size(86, 23);
             label7.TabIndex = 56;
@@ -167,7 +167,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(703, 179);
+            label5.Location = new Point(794, 171);
             label5.Name = "label5";
             label5.Size = new Size(94, 23);
             label5.TabIndex = 52;
@@ -179,7 +179,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(703, 147);
+            label4.Location = new Point(794, 139);
             label4.Name = "label4";
             label4.Size = new Size(86, 23);
             label4.TabIndex = 51;
@@ -191,7 +191,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(602, 424);
+            label3.Location = new Point(693, 416);
             label3.Name = "label3";
             label3.Size = new Size(74, 23);
             label3.TabIndex = 50;
@@ -203,7 +203,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(703, 113);
+            label2.Location = new Point(794, 105);
             label2.Name = "label2";
             label2.Size = new Size(83, 23);
             label2.TabIndex = 49;
@@ -215,7 +215,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(703, 55);
+            label1.Location = new Point(794, 47);
             label1.Name = "label1";
             label1.Size = new Size(109, 38);
             label1.TabIndex = 48;
@@ -225,7 +225,7 @@
             // 
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(305, 291);
+            pictureBox5.Location = new Point(396, 283);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(45, 40);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -236,7 +236,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(305, 227);
+            pictureBox4.Location = new Point(396, 219);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(45, 40);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -247,7 +247,7 @@
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(305, 162);
+            pictureBox3.Location = new Point(396, 154);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(45, 40);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -257,7 +257,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Location = new Point(613, 412);
+            pictureBox2.Location = new Point(704, 404);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(53, 46);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -268,7 +268,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(305, 96);
+            pictureBox1.Location = new Point(396, 88);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(45, 40);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -279,7 +279,7 @@
             // 
             pic_Movie.BackColor = SystemColors.Control;
             pic_Movie.Image = (Image)resources.GetObject("pic_Movie.Image");
-            pic_Movie.Location = new Point(40, 29);
+            pic_Movie.Location = new Point(131, 21);
             pic_Movie.Name = "pic_Movie";
             pic_Movie.Size = new Size(259, 322);
             pic_Movie.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -289,14 +289,14 @@
             // tbx_Name
             // 
             tbx_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            tbx_Name.Location = new Point(305, 41);
+            tbx_Name.Location = new Point(396, 33);
             tbx_Name.Name = "tbx_Name";
             tbx_Name.Size = new Size(322, 38);
             tbx_Name.TabIndex = 68;
             // 
             // tbx_URL
             // 
-            tbx_URL.Location = new Point(258, 813);
+            tbx_URL.Location = new Point(349, 805);
             tbx_URL.Multiline = true;
             tbx_URL.Name = "tbx_URL";
             tbx_URL.Size = new Size(800, 27);
@@ -308,7 +308,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1305, 848);
+            ClientSize = new Size(1400, 850);
             Controls.Add(tbx_URL);
             Controls.Add(tbx_Name);
             Controls.Add(tbx_Synopsis);

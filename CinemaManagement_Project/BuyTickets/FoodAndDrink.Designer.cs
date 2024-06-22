@@ -85,7 +85,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(33, 27);
+            pictureBox1.Location = new Point(70, 25);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(887, 233);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -95,7 +95,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(33, 360);
+            pictureBox2.Location = new Point(111, 360);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(120, 142);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(421, 360);
+            pictureBox3.Location = new Point(499, 360);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(120, 142);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(800, 360);
+            pictureBox4.Location = new Point(878, 360);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(120, 142);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -125,7 +125,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(33, 657);
+            pictureBox5.Location = new Point(111, 657);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(120, 142);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -135,7 +135,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(421, 657);
+            pictureBox6.Location = new Point(499, 657);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(120, 142);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -145,7 +145,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(800, 657);
+            pictureBox7.Location = new Point(878, 657);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(120, 142);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -158,7 +158,7 @@
             lab_screen.BackColor = Color.Transparent;
             lab_screen.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             lab_screen.ForeColor = Color.White;
-            lab_screen.Location = new Point(473, 288);
+            lab_screen.Location = new Point(551, 288);
             lab_screen.Name = "lab_screen";
             lab_screen.Size = new Size(183, 38);
             lab_screen.TabIndex = 67;
@@ -170,7 +170,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(455, 578);
+            label1.Location = new Point(533, 578);
             label1.Name = "label1";
             label1.Size = new Size(237, 38);
             label1.TabIndex = 68;
@@ -182,7 +182,7 @@
             lb_ComboSolo.BackColor = Color.Transparent;
             lb_ComboSolo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboSolo.ForeColor = Color.White;
-            lb_ComboSolo.Location = new Point(159, 360);
+            lb_ComboSolo.Location = new Point(237, 360);
             lb_ComboSolo.Name = "lb_ComboSolo";
             lb_ComboSolo.Size = new Size(189, 23);
             lb_ComboSolo.TabIndex = 69;
@@ -194,7 +194,7 @@
             lb_ComboCouple.BackColor = Color.Transparent;
             lb_ComboCouple.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboCouple.ForeColor = Color.White;
-            lb_ComboCouple.Location = new Point(547, 360);
+            lb_ComboCouple.Location = new Point(625, 360);
             lb_ComboCouple.Name = "lb_ComboCouple";
             lb_ComboCouple.Size = new Size(208, 23);
             lb_ComboCouple.TabIndex = 70;
@@ -206,7 +206,7 @@
             lb_ComboParty.BackColor = Color.Transparent;
             lb_ComboParty.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboParty.ForeColor = Color.White;
-            lb_ComboParty.Location = new Point(926, 360);
+            lb_ComboParty.Location = new Point(1004, 360);
             lb_ComboParty.Name = "lb_ComboParty";
             lb_ComboParty.Size = new Size(196, 23);
             lb_ComboParty.TabIndex = 71;
@@ -218,7 +218,7 @@
             lb_ComboSolo_2Ngan.BackColor = Color.Transparent;
             lb_ComboSolo_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboSolo_2Ngan.ForeColor = Color.White;
-            lb_ComboSolo_2Ngan.Location = new Point(159, 657);
+            lb_ComboSolo_2Ngan.Location = new Point(237, 657);
             lb_ComboSolo_2Ngan.Name = "lb_ComboSolo_2Ngan";
             lb_ComboSolo_2Ngan.Size = new Size(194, 23);
             lb_ComboSolo_2Ngan.TabIndex = 72;
@@ -230,7 +230,7 @@
             lb_ComboParty_2Ngan.BackColor = Color.Transparent;
             lb_ComboParty_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboParty_2Ngan.ForeColor = Color.White;
-            lb_ComboParty_2Ngan.Location = new Point(547, 657);
+            lb_ComboParty_2Ngan.Location = new Point(625, 657);
             lb_ComboParty_2Ngan.Name = "lb_ComboParty_2Ngan";
             lb_ComboParty_2Ngan.Size = new Size(201, 23);
             lb_ComboParty_2Ngan.TabIndex = 73;
@@ -242,7 +242,7 @@
             lb_ComboCouple_2Ngan.BackColor = Color.Transparent;
             lb_ComboCouple_2Ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_ComboCouple_2Ngan.ForeColor = Color.White;
-            lb_ComboCouple_2Ngan.Location = new Point(926, 657);
+            lb_ComboCouple_2Ngan.Location = new Point(1004, 657);
             lb_ComboCouple_2Ngan.Name = "lb_ComboCouple_2Ngan";
             lb_ComboCouple_2Ngan.Size = new Size(213, 23);
             lb_ComboCouple_2Ngan.TabIndex = 74;
@@ -254,7 +254,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(159, 383);
+            label8.Location = new Point(237, 383);
             label8.Name = "label8";
             label8.Size = new Size(224, 20);
             label8.TabIndex = 75;
@@ -266,7 +266,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(547, 383);
+            label9.Location = new Point(625, 383);
             label9.Name = "label9";
             label9.Size = new Size(226, 20);
             label9.TabIndex = 76;
@@ -278,7 +278,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(926, 383);
+            label10.Location = new Point(1004, 383);
             label10.Name = "label10";
             label10.Size = new Size(229, 20);
             label10.TabIndex = 77;
@@ -290,7 +290,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(159, 680);
+            label11.Location = new Point(237, 680);
             label11.Name = "label11";
             label11.Size = new Size(240, 20);
             label11.TabIndex = 78;
@@ -302,7 +302,7 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(547, 680);
+            label12.Location = new Point(625, 680);
             label12.Name = "label12";
             label12.Size = new Size(245, 20);
             label12.TabIndex = 79;
@@ -314,7 +314,7 @@
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(926, 680);
+            label13.Location = new Point(1004, 680);
             label13.Name = "label13";
             label13.Size = new Size(242, 20);
             label13.TabIndex = 80;
@@ -326,7 +326,7 @@
             lb_money_combosolo.BackColor = Color.Transparent;
             lb_money_combosolo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_combosolo.ForeColor = Color.White;
-            lb_money_combosolo.Location = new Point(159, 416);
+            lb_money_combosolo.Location = new Point(237, 416);
             lb_money_combosolo.Name = "lb_money_combosolo";
             lb_money_combosolo.Size = new Size(91, 20);
             lb_money_combosolo.TabIndex = 81;
@@ -338,7 +338,7 @@
             lb_money_combocouple.BackColor = Color.Transparent;
             lb_money_combocouple.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_combocouple.ForeColor = Color.White;
-            lb_money_combocouple.Location = new Point(547, 413);
+            lb_money_combocouple.Location = new Point(625, 413);
             lb_money_combocouple.Name = "lb_money_combocouple";
             lb_money_combocouple.Size = new Size(112, 23);
             lb_money_combocouple.TabIndex = 82;
@@ -350,7 +350,7 @@
             lb_money_comboparty.BackColor = Color.Transparent;
             lb_money_comboparty.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_comboparty.ForeColor = Color.White;
-            lb_money_comboparty.Location = new Point(926, 416);
+            lb_money_comboparty.Location = new Point(1004, 416);
             lb_money_comboparty.Name = "lb_money_comboparty";
             lb_money_comboparty.Size = new Size(112, 23);
             lb_money_comboparty.TabIndex = 83;
@@ -362,7 +362,7 @@
             lb_money_combosolo_2ngan.BackColor = Color.Transparent;
             lb_money_combosolo_2ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_combosolo_2ngan.ForeColor = Color.White;
-            lb_money_combosolo_2ngan.Location = new Point(159, 710);
+            lb_money_combosolo_2ngan.Location = new Point(237, 710);
             lb_money_combosolo_2ngan.Name = "lb_money_combosolo_2ngan";
             lb_money_combosolo_2ngan.Size = new Size(102, 23);
             lb_money_combosolo_2ngan.TabIndex = 84;
@@ -374,7 +374,7 @@
             lb_money_comboparty_2ngan.BackColor = Color.Transparent;
             lb_money_comboparty_2ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_comboparty_2ngan.ForeColor = Color.White;
-            lb_money_comboparty_2ngan.Location = new Point(547, 710);
+            lb_money_comboparty_2ngan.Location = new Point(625, 710);
             lb_money_comboparty_2ngan.Name = "lb_money_comboparty_2ngan";
             lb_money_comboparty_2ngan.Size = new Size(112, 23);
             lb_money_comboparty_2ngan.TabIndex = 85;
@@ -386,7 +386,7 @@
             lb_money_combocouple_2ngan.BackColor = Color.Transparent;
             lb_money_combocouple_2ngan.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_money_combocouple_2ngan.ForeColor = Color.White;
-            lb_money_combocouple_2ngan.Location = new Point(926, 710);
+            lb_money_combocouple_2ngan.Location = new Point(1004, 710);
             lb_money_combocouple_2ngan.Name = "lb_money_combocouple_2ngan";
             lb_money_combocouple_2ngan.Size = new Size(112, 23);
             lb_money_combocouple_2ngan.TabIndex = 87;
@@ -400,7 +400,7 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(lb_TongTien);
             panel1.Controls.Add(listView1);
-            panel1.Location = new Point(930, 25);
+            panel1.Location = new Point(975, 25);
             panel1.Name = "panel1";
             panel1.Size = new Size(375, 233);
             panel1.TabIndex = 88;
@@ -487,7 +487,7 @@
             // 
             dUD_ComboSolo.BackColor = Color.MediumPurple;
             dUD_ComboSolo.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboSolo.Location = new Point(159, 472);
+            dUD_ComboSolo.Location = new Point(237, 472);
             dUD_ComboSolo.Name = "dUD_ComboSolo";
             dUD_ComboSolo.Size = new Size(65, 30);
             dUD_ComboSolo.TabIndex = 89;
@@ -497,7 +497,7 @@
             // 
             dUD_ComboCouple.BackColor = Color.MediumPurple;
             dUD_ComboCouple.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboCouple.Location = new Point(547, 472);
+            dUD_ComboCouple.Location = new Point(625, 472);
             dUD_ComboCouple.Name = "dUD_ComboCouple";
             dUD_ComboCouple.Size = new Size(65, 30);
             dUD_ComboCouple.TabIndex = 90;
@@ -507,7 +507,7 @@
             // 
             dUD_ComboParty.BackColor = Color.MediumPurple;
             dUD_ComboParty.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboParty.Location = new Point(926, 472);
+            dUD_ComboParty.Location = new Point(1004, 472);
             dUD_ComboParty.Name = "dUD_ComboParty";
             dUD_ComboParty.Size = new Size(65, 30);
             dUD_ComboParty.TabIndex = 91;
@@ -517,7 +517,7 @@
             // 
             dUD_ComboSolo_2ngan.BackColor = Color.MediumPurple;
             dUD_ComboSolo_2ngan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboSolo_2ngan.Location = new Point(159, 769);
+            dUD_ComboSolo_2ngan.Location = new Point(237, 769);
             dUD_ComboSolo_2ngan.Name = "dUD_ComboSolo_2ngan";
             dUD_ComboSolo_2ngan.Size = new Size(65, 30);
             dUD_ComboSolo_2ngan.TabIndex = 92;
@@ -527,7 +527,7 @@
             // 
             dUD_ComboParty_2ngan.BackColor = Color.MediumPurple;
             dUD_ComboParty_2ngan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboParty_2ngan.Location = new Point(547, 769);
+            dUD_ComboParty_2ngan.Location = new Point(625, 769);
             dUD_ComboParty_2ngan.Name = "dUD_ComboParty_2ngan";
             dUD_ComboParty_2ngan.Size = new Size(65, 30);
             dUD_ComboParty_2ngan.TabIndex = 93;
@@ -537,7 +537,7 @@
             // 
             dUD_ComboCouple_2ngan.BackColor = Color.MediumPurple;
             dUD_ComboCouple_2ngan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dUD_ComboCouple_2ngan.Location = new Point(926, 769);
+            dUD_ComboCouple_2ngan.Location = new Point(1004, 769);
             dUD_ComboCouple_2ngan.Name = "dUD_ComboCouple_2ngan";
             dUD_ComboCouple_2ngan.Size = new Size(65, 30);
             dUD_ComboCouple_2ngan.TabIndex = 94;
@@ -549,7 +549,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1313, 827);
+            ClientSize = new Size(1400, 850);
             Controls.Add(dUD_ComboCouple_2ngan);
             Controls.Add(dUD_ComboParty_2ngan);
             Controls.Add(dUD_ComboSolo_2ngan);

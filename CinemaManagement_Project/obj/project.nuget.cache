@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rzVLcLQ10VrEsP5PWOqL5HUUJKLEgtFNM5VIg/8sErE+kHUgY7vbiCs601nguWDZ3NMuv0auEE6VqJf1RTyP9A==",
+  "dgSpecHash": "0niXA2MqChkcIZCra8iiPs6qMNBqNkN3toLGDavWIfjCLx8VROmlT1m6EkERyHkZvu296sxIbUlcu6UlxbRpwA==",
   "success": true,
   "projectFilePath": "E:\\NAM 2\\NNLT C#\\FINAL_PROJECT\\DOAN_C-\\CinemaManagement_Project\\CinemaManagement_Project.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [

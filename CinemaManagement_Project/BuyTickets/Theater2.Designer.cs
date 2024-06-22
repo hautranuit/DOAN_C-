@@ -247,7 +247,7 @@
             button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(1056, 591);
+            button2.Location = new Point(1183, 766);
             button2.Name = "button2";
             button2.Size = new Size(162, 50);
             button2.TabIndex = 56;
@@ -288,7 +288,7 @@
             lb_PriceVIP.BackColor = Color.Transparent;
             lb_PriceVIP.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceVIP.ForeColor = Color.White;
-            lb_PriceVIP.Location = new Point(691, 584);
+            lb_PriceVIP.Location = new Point(756, 680);
             lb_PriceVIP.Name = "lb_PriceVIP";
             lb_PriceVIP.Size = new Size(109, 25);
             lb_PriceVIP.TabIndex = 92;
@@ -336,7 +336,7 @@
             lb_PriceEconomy.BackColor = Color.Transparent;
             lb_PriceEconomy.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceEconomy.ForeColor = Color.White;
-            lb_PriceEconomy.Location = new Point(440, 584);
+            lb_PriceEconomy.Location = new Point(505, 680);
             lb_PriceEconomy.Name = "lb_PriceEconomy";
             lb_PriceEconomy.Size = new Size(109, 25);
             lb_PriceEconomy.TabIndex = 91;
@@ -364,7 +364,7 @@
             vip.BackColor = Color.Transparent;
             vip.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             vip.ForeColor = Color.White;
-            vip.Location = new Point(691, 618);
+            vip.Location = new Point(756, 714);
             vip.Name = "vip";
             vip.Size = new Size(42, 23);
             vip.TabIndex = 89;
@@ -392,7 +392,7 @@
             lb_Theater.BackColor = Color.Transparent;
             lb_Theater.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Theater.ForeColor = Color.White;
-            lb_Theater.Location = new Point(594, 12);
+            lb_Theater.Location = new Point(659, 64);
             lb_Theater.Name = "lb_Theater";
             lb_Theater.Size = new Size(78, 31);
             lb_Theater.TabIndex = 94;
@@ -443,7 +443,7 @@
             pn_Theater1.Controls.Add(B1);
             pn_Theater1.Controls.Add(C3);
             pn_Theater1.Controls.Add(C4);
-            pn_Theater1.Location = new Point(205, 142);
+            pn_Theater1.Location = new Point(270, 238);
             pn_Theater1.Name = "pn_Theater1";
             pn_Theater1.Size = new Size(1013, 424);
             pn_Theater1.TabIndex = 96;
@@ -819,7 +819,7 @@
             lb_PriceStandard.BackColor = Color.Transparent;
             lb_PriceStandard.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceStandard.ForeColor = Color.White;
-            lb_PriceStandard.Location = new Point(190, 584);
+            lb_PriceStandard.Location = new Point(255, 680);
             lb_PriceStandard.Name = "lb_PriceStandard";
             lb_PriceStandard.Size = new Size(109, 25);
             lb_PriceStandard.TabIndex = 90;
@@ -829,7 +829,7 @@
             // 
             pic_Screen.BackColor = Color.Black;
             pic_Screen.Image = (Image)resources.GetObject("pic_Screen.Image");
-            pic_Screen.Location = new Point(226, 46);
+            pic_Screen.Location = new Point(291, 142);
             pic_Screen.Name = "pic_Screen";
             pic_Screen.Size = new Size(832, 62);
             pic_Screen.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -839,10 +839,11 @@
             // pic_Background
             // 
             pic_Background.BackgroundImageLayout = ImageLayout.Stretch;
+            pic_Background.Dock = DockStyle.Fill;
             pic_Background.Image = (Image)resources.GetObject("pic_Background.Image");
             pic_Background.Location = new Point(0, 0);
             pic_Background.Name = "pic_Background";
-            pic_Background.Size = new Size(1235, 667);
+            pic_Background.Size = new Size(1400, 850);
             pic_Background.SizeMode = PictureBoxSizeMode.StretchImage;
             pic_Background.TabIndex = 80;
             pic_Background.TabStop = false;
@@ -851,7 +852,7 @@
             // 
             pic_return.Cursor = Cursors.Hand;
             pic_return.Image = (Image)resources.GetObject("pic_return.Image");
-            pic_return.Location = new Point(14, 0);
+            pic_return.Location = new Point(53, 46);
             pic_return.Name = "pic_return";
             pic_return.Size = new Size(65, 65);
             pic_return.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -861,7 +862,7 @@
             // 
             // pic_white
             // 
-            pic_white.Location = new Point(121, 600);
+            pic_white.Location = new Point(186, 696);
             pic_white.Name = "pic_white";
             pic_white.Size = new Size(51, 41);
             pic_white.TabIndex = 84;
@@ -873,7 +874,7 @@
             lab_screen.BackColor = Color.Black;
             lab_screen.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_screen.ForeColor = Color.White;
-            lab_screen.Location = new Point(572, 111);
+            lab_screen.Location = new Point(637, 207);
             lab_screen.Name = "lab_screen";
             lab_screen.Size = new Size(137, 31);
             lab_screen.TabIndex = 83;
@@ -885,7 +886,7 @@
             economy.BackColor = Color.Transparent;
             economy.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             economy.ForeColor = Color.White;
-            economy.Location = new Point(440, 618);
+            economy.Location = new Point(505, 714);
             economy.Name = "economy";
             economy.Size = new Size(113, 23);
             economy.TabIndex = 87;
@@ -894,7 +895,7 @@
             // pic_blue
             // 
             pic_blue.BackColor = Color.SteelBlue;
-            pic_blue.Location = new Point(370, 600);
+            pic_blue.Location = new Point(435, 696);
             pic_blue.Name = "pic_blue";
             pic_blue.Size = new Size(51, 41);
             pic_blue.TabIndex = 86;
@@ -906,7 +907,7 @@
             standard.BackColor = Color.Transparent;
             standard.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             standard.ForeColor = Color.White;
-            standard.Location = new Point(190, 618);
+            standard.Location = new Point(255, 714);
             standard.Name = "standard";
             standard.Size = new Size(115, 23);
             standard.TabIndex = 85;
@@ -918,7 +919,7 @@
             btn_delete.Cursor = Cursors.Hand;
             btn_delete.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = SystemColors.ActiveCaptionText;
-            btn_delete.Location = new Point(39, 266);
+            btn_delete.Location = new Point(104, 362);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(112, 138);
             btn_delete.TabIndex = 82;
@@ -932,7 +933,7 @@
             lb_PriceCouple.BackColor = Color.Transparent;
             lb_PriceCouple.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PriceCouple.ForeColor = Color.White;
-            lb_PriceCouple.Location = new Point(934, 584);
+            lb_PriceCouple.Location = new Point(999, 680);
             lb_PriceCouple.Name = "lb_PriceCouple";
             lb_PriceCouple.Size = new Size(80, 25);
             lb_PriceCouple.TabIndex = 99;
@@ -944,7 +945,7 @@
             couple.BackColor = Color.Transparent;
             couple.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             couple.ForeColor = Color.White;
-            couple.Location = new Point(934, 618);
+            couple.Location = new Point(999, 714);
             couple.Name = "couple";
             couple.Size = new Size(90, 23);
             couple.TabIndex = 98;
@@ -953,7 +954,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.IndianRed;
-            pictureBox1.Location = new Point(864, 600);
+            pictureBox1.Location = new Point(929, 696);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(51, 41);
             pictureBox1.TabIndex = 97;
@@ -962,7 +963,7 @@
             // pic_yellow
             // 
             pic_yellow.BackColor = Color.Moccasin;
-            pic_yellow.Location = new Point(621, 600);
+            pic_yellow.Location = new Point(686, 696);
             pic_yellow.Name = "pic_yellow";
             pic_yellow.Size = new Size(51, 41);
             pic_yellow.TabIndex = 100;
@@ -972,7 +973,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1234, 667);
+            ClientSize = new Size(1400, 850);
             Controls.Add(pic_yellow);
             Controls.Add(lb_PriceCouple);
             Controls.Add(couple);

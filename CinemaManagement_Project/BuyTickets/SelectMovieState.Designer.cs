@@ -130,10 +130,11 @@
             // 
             // pic_background
             // 
+            pic_background.Dock = DockStyle.Fill;
             pic_background.Image = (Image)resources.GetObject("pic_background.Image");
-            pic_background.Location = new Point(-1, -3);
+            pic_background.Location = new Point(0, 0);
             pic_background.Name = "pic_background";
-            pic_background.Size = new Size(1296, 667);
+            pic_background.Size = new Size(1400, 850);
             pic_background.SizeMode = PictureBoxSizeMode.StretchImage;
             pic_background.TabIndex = 0;
             pic_background.TabStop = false;
@@ -145,7 +146,7 @@
             lab_Title1.BackColor = SystemColors.ActiveCaptionText;
             lab_Title1.Font = new Font("Segoe UI Black", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_Title1.ForeColor = Color.Transparent;
-            lab_Title1.Location = new Point(477, 27);
+            lab_Title1.Location = new Point(521, 89);
             lab_Title1.Name = "lab_Title1";
             lab_Title1.Size = new Size(333, 45);
             lab_Title1.TabIndex = 5;
@@ -165,7 +166,7 @@
             panel_Movie1.Controls.Add(lab_Detail1_Money);
             panel_Movie1.Controls.Add(lab_Detail1_Name);
             panel_Movie1.Cursor = Cursors.Hand;
-            panel_Movie1.Location = new Point(31, 139);
+            panel_Movie1.Location = new Point(84, 244);
             panel_Movie1.Name = "panel_Movie1";
             panel_Movie1.Size = new Size(255, 373);
             panel_Movie1.TabIndex = 15;
@@ -274,7 +275,7 @@
             panel_Movie2.Controls.Add(lab_Detail2_Money);
             panel_Movie2.Controls.Add(lab_Detail2_Name);
             panel_Movie2.Cursor = Cursors.Hand;
-            panel_Movie2.Location = new Point(350, 139);
+            panel_Movie2.Location = new Point(403, 244);
             panel_Movie2.Name = "panel_Movie2";
             panel_Movie2.Size = new Size(255, 373);
             panel_Movie2.TabIndex = 16;
@@ -383,7 +384,7 @@
             panel_Movie3.Controls.Add(lab_Detail3_Money);
             panel_Movie3.Controls.Add(lab_Detail3_Name);
             panel_Movie3.Cursor = Cursors.Hand;
-            panel_Movie3.Location = new Point(687, 139);
+            panel_Movie3.Location = new Point(740, 244);
             panel_Movie3.Name = "panel_Movie3";
             panel_Movie3.Size = new Size(255, 373);
             panel_Movie3.TabIndex = 17;
@@ -491,7 +492,7 @@
             panel_Movie4.Controls.Add(lab_Detail4_Money);
             panel_Movie4.Controls.Add(lab_Detail4_Name);
             panel_Movie4.Cursor = Cursors.Hand;
-            panel_Movie4.Location = new Point(1012, 139);
+            panel_Movie4.Location = new Point(1065, 244);
             panel_Movie4.Name = "panel_Movie4";
             panel_Movie4.Size = new Size(255, 373);
             panel_Movie4.TabIndex = 18;
@@ -593,7 +594,7 @@
             btn_edit4.Cursor = Cursors.Hand;
             btn_edit4.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_edit4.ForeColor = SystemColors.ActiveCaptionText;
-            btn_edit4.Location = new Point(1081, 589);
+            btn_edit4.Location = new Point(1134, 694);
             btn_edit4.Name = "btn_edit4";
             btn_edit4.Size = new Size(142, 39);
             btn_edit4.TabIndex = 51;
@@ -608,7 +609,7 @@
             lab_NameOfMovie1.BackColor = Color.Black;
             lab_NameOfMovie1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lab_NameOfMovie1.ForeColor = Color.White;
-            lab_NameOfMovie1.Location = new Point(20, 532);
+            lab_NameOfMovie1.Location = new Point(73, 637);
             lab_NameOfMovie1.Name = "lab_NameOfMovie1";
             lab_NameOfMovie1.Size = new Size(266, 28);
             lab_NameOfMovie1.TabIndex = 19;
@@ -620,7 +621,7 @@
             lab_NameOfMovie2.BackColor = Color.Black;
             lab_NameOfMovie2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lab_NameOfMovie2.ForeColor = Color.White;
-            lab_NameOfMovie2.Location = new Point(416, 532);
+            lab_NameOfMovie2.Location = new Point(469, 637);
             lab_NameOfMovie2.Name = "lab_NameOfMovie2";
             lab_NameOfMovie2.Size = new Size(107, 28);
             lab_NameOfMovie2.TabIndex = 20;
@@ -632,7 +633,7 @@
             lab_NameOfMovie3.BackColor = Color.Black;
             lab_NameOfMovie3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lab_NameOfMovie3.ForeColor = Color.White;
-            lab_NameOfMovie3.Location = new Point(700, 532);
+            lab_NameOfMovie3.Location = new Point(753, 637);
             lab_NameOfMovie3.Name = "lab_NameOfMovie3";
             lab_NameOfMovie3.Size = new Size(230, 28);
             lab_NameOfMovie3.TabIndex = 21;
@@ -644,7 +645,7 @@
             lab_NameOfMovie4.BackColor = Color.Black;
             lab_NameOfMovie4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lab_NameOfMovie4.ForeColor = Color.White;
-            lab_NameOfMovie4.Location = new Point(1081, 532);
+            lab_NameOfMovie4.Location = new Point(1134, 637);
             lab_NameOfMovie4.Name = "lab_NameOfMovie4";
             lab_NameOfMovie4.Size = new Size(132, 28);
             lab_NameOfMovie4.TabIndex = 22;
@@ -656,7 +657,7 @@
             btn_Book1.Cursor = Cursors.Hand;
             btn_Book1.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Book1.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Book1.Location = new Point(63, 578);
+            btn_Book1.Location = new Point(116, 683);
             btn_Book1.Name = "btn_Book1";
             btn_Book1.Size = new Size(162, 50);
             btn_Book1.TabIndex = 23;
@@ -670,7 +671,7 @@
             btn_Book2.Cursor = Cursors.Hand;
             btn_Book2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Book2.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Book2.Location = new Point(390, 578);
+            btn_Book2.Location = new Point(443, 683);
             btn_Book2.Name = "btn_Book2";
             btn_Book2.Size = new Size(162, 50);
             btn_Book2.TabIndex = 24;
@@ -684,7 +685,7 @@
             btn_Book3.Cursor = Cursors.Hand;
             btn_Book3.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Book3.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Book3.Location = new Point(740, 578);
+            btn_Book3.Location = new Point(793, 683);
             btn_Book3.Name = "btn_Book3";
             btn_Book3.Size = new Size(162, 50);
             btn_Book3.TabIndex = 25;
@@ -698,7 +699,7 @@
             btn_Book4.Cursor = Cursors.Hand;
             btn_Book4.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Book4.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Book4.Location = new Point(1069, 578);
+            btn_Book4.Location = new Point(1122, 683);
             btn_Book4.Name = "btn_Book4";
             btn_Book4.Size = new Size(162, 50);
             btn_Book4.TabIndex = 26;
@@ -710,7 +711,7 @@
             // 
             pic_Movie1.Cursor = Cursors.Hand;
             pic_Movie1.Image = (Image)resources.GetObject("pic_Movie1.Image");
-            pic_Movie1.Location = new Point(31, 139);
+            pic_Movie1.Location = new Point(84, 244);
             pic_Movie1.Name = "pic_Movie1";
             pic_Movie1.Size = new Size(255, 373);
             pic_Movie1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -723,7 +724,7 @@
             // 
             pic_Movie2.Cursor = Cursors.Hand;
             pic_Movie2.Image = (Image)resources.GetObject("pic_Movie2.Image");
-            pic_Movie2.Location = new Point(350, 139);
+            pic_Movie2.Location = new Point(403, 244);
             pic_Movie2.Name = "pic_Movie2";
             pic_Movie2.Size = new Size(255, 373);
             pic_Movie2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -735,7 +736,7 @@
             // 
             pic_Movie3.Cursor = Cursors.Hand;
             pic_Movie3.Image = (Image)resources.GetObject("pic_Movie3.Image");
-            pic_Movie3.Location = new Point(687, 139);
+            pic_Movie3.Location = new Point(740, 244);
             pic_Movie3.Name = "pic_Movie3";
             pic_Movie3.Size = new Size(255, 373);
             pic_Movie3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -747,7 +748,7 @@
             // 
             pic_Movie4.Cursor = Cursors.Hand;
             pic_Movie4.Image = (Image)resources.GetObject("pic_Movie4.Image");
-            pic_Movie4.Location = new Point(1012, 139);
+            pic_Movie4.Location = new Point(1065, 244);
             pic_Movie4.Name = "pic_Movie4";
             pic_Movie4.Size = new Size(255, 373);
             pic_Movie4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -761,7 +762,7 @@
             btn_Edit_Movie.Cursor = Cursors.Hand;
             btn_Edit_Movie.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Edit_Movie.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Edit_Movie.Location = new Point(964, 22);
+            btn_Edit_Movie.Location = new Point(1058, 35);
             btn_Edit_Movie.Name = "btn_Edit_Movie";
             btn_Edit_Movie.Size = new Size(303, 50);
             btn_Edit_Movie.TabIndex = 30;
@@ -776,7 +777,7 @@
             btn_Apply.Cursor = Cursors.Hand;
             btn_Apply.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Apply.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Apply.Location = new Point(498, 578);
+            btn_Apply.Location = new Point(551, 755);
             btn_Apply.Name = "btn_Apply";
             btn_Apply.Size = new Size(303, 50);
             btn_Apply.TabIndex = 31;
@@ -787,7 +788,7 @@
             // 
             // tbx_1
             // 
-            tbx_1.Location = new Point(20, 532);
+            tbx_1.Location = new Point(73, 637);
             tbx_1.Multiline = true;
             tbx_1.Name = "tbx_1";
             tbx_1.Size = new Size(266, 28);
@@ -797,7 +798,7 @@
             // 
             // tbx_2
             // 
-            tbx_2.Location = new Point(345, 532);
+            tbx_2.Location = new Point(398, 637);
             tbx_2.Multiline = true;
             tbx_2.Name = "tbx_2";
             tbx_2.Size = new Size(266, 28);
@@ -807,7 +808,7 @@
             // 
             // tbx_3
             // 
-            tbx_3.Location = new Point(687, 532);
+            tbx_3.Location = new Point(740, 637);
             tbx_3.Multiline = true;
             tbx_3.Name = "tbx_3";
             tbx_3.Size = new Size(266, 28);
@@ -817,7 +818,7 @@
             // 
             // tbx_4
             // 
-            tbx_4.Location = new Point(1005, 532);
+            tbx_4.Location = new Point(1058, 637);
             tbx_4.Multiline = true;
             tbx_4.Name = "tbx_4";
             tbx_4.Size = new Size(266, 28);
@@ -831,7 +832,7 @@
             btn_AddPic1.Cursor = Cursors.Hand;
             btn_AddPic1.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_AddPic1.ForeColor = SystemColors.ActiveCaptionText;
-            btn_AddPic1.Location = new Point(83, 100);
+            btn_AddPic1.Location = new Point(136, 205);
             btn_AddPic1.Name = "btn_AddPic1";
             btn_AddPic1.Size = new Size(142, 33);
             btn_AddPic1.TabIndex = 36;
@@ -846,7 +847,7 @@
             btn_AddPic2.Cursor = Cursors.Hand;
             btn_AddPic2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_AddPic2.ForeColor = SystemColors.ActiveCaptionText;
-            btn_AddPic2.Location = new Point(410, 100);
+            btn_AddPic2.Location = new Point(463, 205);
             btn_AddPic2.Name = "btn_AddPic2";
             btn_AddPic2.Size = new Size(142, 33);
             btn_AddPic2.TabIndex = 37;
@@ -861,7 +862,7 @@
             btn_AddPic3.Cursor = Cursors.Hand;
             btn_AddPic3.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_AddPic3.ForeColor = SystemColors.ActiveCaptionText;
-            btn_AddPic3.Location = new Point(740, 100);
+            btn_AddPic3.Location = new Point(793, 205);
             btn_AddPic3.Name = "btn_AddPic3";
             btn_AddPic3.Size = new Size(142, 33);
             btn_AddPic3.TabIndex = 38;
@@ -876,7 +877,7 @@
             btn_AddPic4.Cursor = Cursors.Hand;
             btn_AddPic4.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_AddPic4.ForeColor = SystemColors.ActiveCaptionText;
-            btn_AddPic4.Location = new Point(1069, 104);
+            btn_AddPic4.Location = new Point(1122, 209);
             btn_AddPic4.Name = "btn_AddPic4";
             btn_AddPic4.Size = new Size(142, 33);
             btn_AddPic4.TabIndex = 39;
@@ -907,7 +908,7 @@
             btn_blurred1.Cursor = Cursors.Hand;
             btn_blurred1.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_blurred1.ForeColor = SystemColors.ActiveCaptionText;
-            btn_blurred1.Location = new Point(102, 56);
+            btn_blurred1.Location = new Point(155, 161);
             btn_blurred1.Name = "btn_blurred1";
             btn_blurred1.Size = new Size(112, 38);
             btn_blurred1.TabIndex = 40;
@@ -922,7 +923,7 @@
             btn_blurred2.Cursor = Cursors.Hand;
             btn_blurred2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_blurred2.ForeColor = SystemColors.ActiveCaptionText;
-            btn_blurred2.Location = new Point(425, 56);
+            btn_blurred2.Location = new Point(478, 161);
             btn_blurred2.Name = "btn_blurred2";
             btn_blurred2.Size = new Size(112, 38);
             btn_blurred2.TabIndex = 41;
@@ -937,7 +938,7 @@
             btn_blurred3.Cursor = Cursors.Hand;
             btn_blurred3.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_blurred3.ForeColor = SystemColors.ActiveCaptionText;
-            btn_blurred3.Location = new Point(757, 56);
+            btn_blurred3.Location = new Point(810, 161);
             btn_blurred3.Name = "btn_blurred3";
             btn_blurred3.Size = new Size(112, 38);
             btn_blurred3.TabIndex = 42;
@@ -952,7 +953,7 @@
             btn_blurred4.Cursor = Cursors.Hand;
             btn_blurred4.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_blurred4.ForeColor = SystemColors.ActiveCaptionText;
-            btn_blurred4.Location = new Point(1081, 56);
+            btn_blurred4.Location = new Point(1134, 161);
             btn_blurred4.Name = "btn_blurred4";
             btn_blurred4.Size = new Size(112, 38);
             btn_blurred4.TabIndex = 43;
@@ -983,7 +984,7 @@
             btn_Trailer1.Cursor = Cursors.Hand;
             btn_Trailer1.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Trailer1.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Trailer1.Location = new Point(83, 97);
+            btn_Trailer1.Location = new Point(136, 202);
             btn_Trailer1.Name = "btn_Trailer1";
             btn_Trailer1.Size = new Size(142, 39);
             btn_Trailer1.TabIndex = 44;
@@ -997,7 +998,7 @@
             btn_Trailer2.Cursor = Cursors.Hand;
             btn_Trailer2.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Trailer2.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Trailer2.Location = new Point(410, 98);
+            btn_Trailer2.Location = new Point(463, 203);
             btn_Trailer2.Name = "btn_Trailer2";
             btn_Trailer2.Size = new Size(142, 39);
             btn_Trailer2.TabIndex = 45;
@@ -1011,7 +1012,7 @@
             btn_Trailer3.Cursor = Cursors.Hand;
             btn_Trailer3.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Trailer3.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Trailer3.Location = new Point(740, 97);
+            btn_Trailer3.Location = new Point(793, 202);
             btn_Trailer3.Name = "btn_Trailer3";
             btn_Trailer3.Size = new Size(142, 39);
             btn_Trailer3.TabIndex = 46;
@@ -1025,7 +1026,7 @@
             btn_Trailer4.Cursor = Cursors.Hand;
             btn_Trailer4.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Trailer4.ForeColor = SystemColors.ActiveCaptionText;
-            btn_Trailer4.Location = new Point(1069, 98);
+            btn_Trailer4.Location = new Point(1122, 203);
             btn_Trailer4.Name = "btn_Trailer4";
             btn_Trailer4.Size = new Size(142, 39);
             btn_Trailer4.TabIndex = 47;
@@ -1041,7 +1042,7 @@
             pn_SelectTheater.Controls.Add(btn_Book);
             pn_SelectTheater.Controls.Add(comboBox1);
             pn_SelectTheater.Controls.Add(lb_SelectTheater);
-            pn_SelectTheater.Location = new Point(366, 139);
+            pn_SelectTheater.Location = new Point(419, 244);
             pn_SelectTheater.Name = "pn_SelectTheater";
             pn_SelectTheater.Size = new Size(564, 207);
             pn_SelectTheater.TabIndex = 22;
@@ -1100,7 +1101,7 @@
             btn_SignOut.Cursor = Cursors.Hand;
             btn_SignOut.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             btn_SignOut.ForeColor = SystemColors.ActiveCaptionText;
-            btn_SignOut.Location = new Point(31, 22);
+            btn_SignOut.Location = new Point(35, 35);
             btn_SignOut.Name = "btn_SignOut";
             btn_SignOut.Size = new Size(180, 39);
             btn_SignOut.TabIndex = 48;
@@ -1114,7 +1115,7 @@
             btn_edit1.Cursor = Cursors.Hand;
             btn_edit1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_edit1.ForeColor = SystemColors.ActiveCaptionText;
-            btn_edit1.Location = new Point(72, 589);
+            btn_edit1.Location = new Point(125, 694);
             btn_edit1.Name = "btn_edit1";
             btn_edit1.Size = new Size(142, 39);
             btn_edit1.TabIndex = 49;
@@ -1129,7 +1130,7 @@
             btn_edit2.Cursor = Cursors.Hand;
             btn_edit2.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_edit2.ForeColor = SystemColors.ActiveCaptionText;
-            btn_edit2.Location = new Point(410, 589);
+            btn_edit2.Location = new Point(463, 694);
             btn_edit2.Name = "btn_edit2";
             btn_edit2.Size = new Size(142, 39);
             btn_edit2.TabIndex = 50;
@@ -1144,7 +1145,7 @@
             btn_edit3.Cursor = Cursors.Hand;
             btn_edit3.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_edit3.ForeColor = SystemColors.ActiveCaptionText;
-            btn_edit3.Location = new Point(740, 589);
+            btn_edit3.Location = new Point(793, 694);
             btn_edit3.Name = "btn_edit3";
             btn_edit3.Size = new Size(142, 39);
             btn_edit3.TabIndex = 51;
@@ -1157,7 +1158,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1294, 664);
+            ClientSize = new Size(1400, 850);
             Controls.Add(btn_edit4);
             Controls.Add(btn_edit3);
             Controls.Add(btn_edit2);

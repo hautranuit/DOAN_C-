@@ -116,7 +116,7 @@
             lb_CusInfo.Cursor = Cursors.Hand;
             lb_CusInfo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_CusInfo.ForeColor = Color.Yellow;
-            lb_CusInfo.Location = new Point(35, 29);
+            lb_CusInfo.Location = new Point(73, 97);
             lb_CusInfo.Name = "lb_CusInfo";
             lb_CusInfo.Size = new Size(253, 64);
             lb_CusInfo.TabIndex = 67;
@@ -130,7 +130,7 @@
             lb_PayInfo.Cursor = Cursors.Hand;
             lb_PayInfo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_PayInfo.ForeColor = Color.White;
-            lb_PayInfo.Location = new Point(284, 29);
+            lb_PayInfo.Location = new Point(322, 97);
             lb_PayInfo.Name = "lb_PayInfo";
             lb_PayInfo.Size = new Size(167, 64);
             lb_PayInfo.TabIndex = 68;
@@ -144,7 +144,7 @@
             lb_TicketInfo.Cursor = Cursors.Hand;
             lb_TicketInfo.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lb_TicketInfo.ForeColor = Color.White;
-            lb_TicketInfo.Location = new Point(451, 29);
+            lb_TicketInfo.Location = new Point(489, 97);
             lb_TicketInfo.Name = "lb_TicketInfo";
             lb_TicketInfo.Size = new Size(253, 64);
             lb_TicketInfo.TabIndex = 69;
@@ -154,14 +154,14 @@
             // 
             // panel1
             // 
-            panel1.Location = new Point(270, 56);
+            panel1.Location = new Point(308, 124);
             panel1.Name = "panel1";
             panel1.Size = new Size(52, 10);
             panel1.TabIndex = 70;
             // 
             // panel2
             // 
-            panel2.Location = new Point(439, 56);
+            panel2.Location = new Point(477, 124);
             panel2.Name = "panel2";
             panel2.Size = new Size(52, 10);
             panel2.TabIndex = 71;
@@ -179,7 +179,7 @@
             pn_CusInfo.Controls.Add(tbx_Email);
             pn_CusInfo.Controls.Add(tbx_PhoneNumber);
             pn_CusInfo.Controls.Add(tbx_Name);
-            pn_CusInfo.Location = new Point(28, 116);
+            pn_CusInfo.Location = new Point(66, 184);
             pn_CusInfo.Name = "pn_CusInfo";
             pn_CusInfo.Size = new Size(671, 544);
             pn_CusInfo.TabIndex = 72;
@@ -479,7 +479,7 @@
             panel4.Controls.Add(lb_Address1);
             panel4.Controls.Add(lb_Age);
             panel4.Controls.Add(lb_Movie);
-            panel4.Location = new Point(705, 104);
+            panel4.Location = new Point(743, 172);
             panel4.Name = "panel4";
             panel4.Size = new Size(564, 544);
             panel4.TabIndex = 74;
@@ -750,7 +750,7 @@
             pn_Voucher.Controls.Add(pn_Voucher2);
             pn_Voucher.Controls.Add(textBox1);
             pn_Voucher.Controls.Add(label1);
-            pn_Voucher.Location = new Point(367, 114);
+            pn_Voucher.Location = new Point(405, 182);
             pn_Voucher.Name = "pn_Voucher";
             pn_Voucher.Size = new Size(581, 450);
             pn_Voucher.TabIndex = 75;
@@ -943,7 +943,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1307, 685);
+            ClientSize = new Size(1400, 850);
             Controls.Add(pn_Voucher);
             Controls.Add(pn_CusInfo);
             Controls.Add(panel2);

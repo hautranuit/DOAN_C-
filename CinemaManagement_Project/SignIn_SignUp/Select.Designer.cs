@@ -40,7 +40,7 @@
             btn_MovieMana.FlatStyle = FlatStyle.Flat;
             btn_MovieMana.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btn_MovieMana.ForeColor = Color.AliceBlue;
-            btn_MovieMana.Location = new Point(96, 144);
+            btn_MovieMana.Location = new Point(429, 372);
             btn_MovieMana.Margin = new Padding(3, 4, 3, 4);
             btn_MovieMana.Name = "btn_MovieMana";
             btn_MovieMana.Size = new Size(238, 44);
@@ -55,7 +55,7 @@
             btn_PaymentMana.FlatStyle = FlatStyle.Flat;
             btn_PaymentMana.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btn_PaymentMana.ForeColor = Color.AliceBlue;
-            btn_PaymentMana.Location = new Point(414, 144);
+            btn_PaymentMana.Location = new Point(736, 372);
             btn_PaymentMana.Margin = new Padding(3, 4, 3, 4);
             btn_PaymentMana.Name = "btn_PaymentMana";
             btn_PaymentMana.Size = new Size(238, 44);
@@ -70,7 +70,7 @@
             btn_SignOut.Cursor = Cursors.Hand;
             btn_SignOut.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             btn_SignOut.ForeColor = Color.AliceBlue;
-            btn_SignOut.Location = new Point(283, 245);
+            btn_SignOut.Location = new Point(609, 513);
             btn_SignOut.Name = "btn_SignOut";
             btn_SignOut.Size = new Size(180, 39);
             btn_SignOut.TabIndex = 49;
@@ -84,7 +84,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(750, 317);
+            ClientSize = new Size(1400, 850);
             Controls.Add(btn_SignOut);
             Controls.Add(btn_PaymentMana);
             Controls.Add(btn_MovieMana);

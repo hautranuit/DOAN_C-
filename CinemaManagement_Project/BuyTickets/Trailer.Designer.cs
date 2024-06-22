@@ -261,7 +261,7 @@
             // axWindowsMediaPlayer1
             // 
             axWindowsMediaPlayer1.Enabled = true;
-            axWindowsMediaPlayer1.Location = new Point(260, 340);
+            axWindowsMediaPlayer1.Location = new Point(307, 360);
             axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             axWindowsMediaPlayer1.OcxState = (AxHost.State)resources.GetObject("axWindowsMediaPlayer1.OcxState");
             axWindowsMediaPlayer1.Size = new Size(800, 450);
@@ -320,7 +320,7 @@
             pic_return.BackColor = Color.Transparent;
             pic_return.Cursor = Cursors.Hand;
             pic_return.Image = (Image)resources.GetObject("pic_return.Image");
-            pic_return.Location = new Point(1237, 12);
+            pic_return.Location = new Point(1323, 12);
             pic_return.Name = "pic_return";
             pic_return.Size = new Size(65, 65);
             pic_return.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -334,7 +334,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1306, 837);
+            ClientSize = new Size(1400, 850);
             Controls.Add(pic_return);
             Controls.Add(axWindowsMediaPlayer1);
             Controls.Add(lb_Synopsis);

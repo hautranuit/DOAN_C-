@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CinemaManagement_Project.Pay
 {
@@ -15,11 +16,27 @@ namespace CinemaManagement_Project.Pay
 
         // Dictionary to store combo quantities
         private Dictionary<string, Tuple<int, int>> comboQuantities = new Dictionary<string, Tuple<int, int>>();
+
+        private Chart chart1;
         public PaymentManagement()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            InitializeChart();
             LoadTicketData();
+            btn_Theater_Click(null, null); // Load voucher chart by default
+        }
+        private void InitializeChart()
+        {
+            chart1 = new Chart();
+            chart1.Size = new Size(350, 350); // Set the size of the chart
+            chart1.Location = new Point(500, 450); // Position it to the top-right corner with some padding
+            chart1.Anchor = AnchorStyles.Top | AnchorStyles.Right; // Ensure it stays in place when the form resizes
+
+            ChartArea chartArea = new ChartArea();
+            chart1.ChartAreas.Add(chartArea);
+
+            this.Controls.Add(chart1);
         }
         private void LoadTicketData()
         {
@@ -100,6 +117,7 @@ namespace CinemaManagement_Project.Pay
 
             // Load voucher data from Vouchers.txt
             LoadVoucherData();
+
         }
 
 
@@ -175,6 +193,7 @@ namespace CinemaManagement_Project.Pay
             string cleanedPrice = price.Replace("VND", "").Replace(",", "").Trim();
             return decimal.TryParse(cleanedPrice, out decimal result) ? result : 0;
         }
+
         private void LoadVoucherData()
         {
             string vouchersFilePath = "Vouchers.txt";
@@ -238,6 +257,145 @@ namespace CinemaManagement_Project.Pay
             FormUpdateTicketsAndVouchers form = new FormUpdateTicketsAndVouchers();
             this.Close();
             form.Show();
+        }
+        private void UpdateChart(SeriesChartType chartType, Dictionary<string, decimal> data, string title, bool isRevenueChart = false)
+        {
+            chart1.Series.Clear();
+            Series series = new Series
+            {
+                Name = "Data",
+                ChartType = chartType
+            };
+
+            decimal totalValue = data.Values.Sum();
+
+            foreach (var kvp in data)
+            {
+                if (kvp.Value > 0) // Chỉ thêm mục có giá trị lớn hơn 0
+                {
+                    double percentage = (double)kvp.Value / (double)totalValue * 100;
+                    DataPoint point = new DataPoint
+                    {
+                        AxisLabel = kvp.Key,
+                        YValues = new double[] { (double)kvp.Value },
+                        Label = isRevenueChart ? $"{kvp.Key}: {kvp.Value:N0} VND ({percentage:F1}%)" : $"{kvp.Key}: {kvp.Value} ({percentage:F1}%)"
+                    };
+                    series.Points.Add(point);
+                }
+            }
+
+            chart1.Series.Add(series);
+
+            // Đặt tiêu đề biểu đồ
+            chart1.Titles.Clear();
+            Title chartTitle = new Title
+            {
+                Text = title,
+                Font = new Font("Segoe UI Semibold", 10.8f, FontStyle.Bold),
+                ForeColor = Color.White
+            };
+            chart1.Titles.Add(chartTitle);
+
+            // Đặt màu nền cho biểu đồ
+            chart1.BackColor = Color.Indigo;
+            chart1.ChartAreas[0].BackColor = Color.Indigo;
+
+            // Đặt màu nền cho khu vực vẽ
+            chart1.ChartAreas[0].BackColor = Color.Indigo;
+
+            // Đặt nhãn dữ liệu
+            series.IsValueShownAsLabel = true;
+
+            chart1.Invalidate();
+        }
+
+
+
+        private void btn_Theater_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> ticketData = new Dictionary<string, int>();
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text.StartsWith("Vé Rạp"))
+                {
+                    string name = item.Text;
+                    int soldCount = int.Parse(item.SubItems[2].Text);
+                    if (soldCount > 0) // Chỉ thêm mục có giá trị lớn hơn 0
+                    {
+                        ticketData[name] = soldCount;
+                    }
+                }
+            }
+
+            UpdateChart(SeriesChartType.Pie, ticketData.ToDictionary(x => x.Key, x => (decimal)x.Value), "Biểu đồ biểu thị số vé đã bán theo từng rạp");
+        }
+
+        private void btn_Voucher_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> voucherData = new Dictionary<string, int>();
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text.StartsWith("Giảm") || item.Text.StartsWith("C'"))
+                {
+                    string name = item.Text;
+                    int usedCount = int.Parse(item.SubItems[2].Text);
+                    if (usedCount > 0) // Chỉ thêm mục có giá trị lớn hơn 0
+                    {
+                        voucherData[name] = usedCount;
+                    }
+                }
+            }
+
+            UpdateChart(SeriesChartType.Pie, voucherData.ToDictionary(x => x.Key, x => (decimal)x.Value), "Biểu đồ biểu thị số Voucher đã dùng theo từng loại");
+        }
+
+        private void btn_Combo_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> comboData = new Dictionary<string, int>();
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text.StartsWith("COMBO"))
+                {
+                    string name = item.Text;
+                    int soldCount = int.Parse(item.SubItems[2].Text);
+                    if (soldCount > 0) // Chỉ thêm mục có giá trị lớn hơn 0
+                    {
+                        comboData[name] = soldCount;
+                    }
+                }
+            }
+
+            UpdateChart(SeriesChartType.Pie, comboData.ToDictionary(x => x.Key, x => (decimal)x.Value), "Biểu đồ biểu thị số Combo đã bán theo từng loại");
+        }
+
+        private void btn_Revenue_Click(object sender, EventArgs e)
+        {
+            decimal totalTicketRevenue = 0;
+            decimal totalComboRevenue = 0;
+
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (item.Text.StartsWith("Vé Rạp"))
+                {
+                    string revenueText = item.SubItems[4].Text;
+                    decimal revenue = ParsePrice(revenueText);
+                    totalTicketRevenue += revenue;
+                }
+                else if (item.Text.StartsWith("COMBO"))
+                {
+                    string revenueText = item.SubItems[4].Text;
+                    decimal revenue = ParsePrice(revenueText);
+                    totalComboRevenue += revenue;
+                }
+            }
+
+            Dictionary<string, decimal> revenueData = new Dictionary<string, decimal>
+    {
+        { "Doanh thu từ bán vé", totalTicketRevenue },
+        { "Doanh thu từ bán combo", totalComboRevenue }
+    };
+
+            UpdateChart(SeriesChartType.Pie, revenueData, "Biểu đồ biểu thị doanh thu từ việc bán vé và combo", true);
         }
     }
 }

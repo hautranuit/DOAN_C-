@@ -18,7 +18,6 @@ namespace CinemaManagement_Project.BuyTickets
         public Trailer(int selectedMovieId)
         {  
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
             movieId = selectedMovieId;
             LoadTrailerInfo();            
         }
@@ -57,7 +56,7 @@ namespace CinemaManagement_Project.BuyTickets
         }
 
         private void Trailer_Load(object sender, EventArgs e)
-        {
+        {            
             pic_Movie.Image = picMovie.Image;
             axWindowsMediaPlayer1.stretchToFit = true;
         }

@@ -60,7 +60,7 @@
             // 
             btn_Update.BackColor = Color.Yellow;
             btn_Update.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_Update.Location = new Point(349, 479);
+            btn_Update.Location = new Point(663, 758);
             btn_Update.Name = "btn_Update";
             btn_Update.Size = new Size(111, 44);
             btn_Update.TabIndex = 0;
@@ -70,84 +70,84 @@
             // 
             // tbx_TicketTheater1
             // 
-            tbx_TicketTheater1.Location = new Point(220, 26);
+            tbx_TicketTheater1.Location = new Point(517, 190);
             tbx_TicketTheater1.Name = "tbx_TicketTheater1";
             tbx_TicketTheater1.Size = new Size(125, 27);
             tbx_TicketTheater1.TabIndex = 1;
             // 
             // tbx_TicketTheater2
             // 
-            tbx_TicketTheater2.Location = new Point(220, 97);
+            tbx_TicketTheater2.Location = new Point(517, 261);
             tbx_TicketTheater2.Name = "tbx_TicketTheater2";
             tbx_TicketTheater2.Size = new Size(125, 27);
             tbx_TicketTheater2.TabIndex = 2;
             // 
             // tbx_TicketTheater3
             // 
-            tbx_TicketTheater3.Location = new Point(220, 177);
+            tbx_TicketTheater3.Location = new Point(517, 341);
             tbx_TicketTheater3.Name = "tbx_TicketTheater3";
             tbx_TicketTheater3.Size = new Size(125, 27);
             tbx_TicketTheater3.TabIndex = 3;
             // 
             // tbx_Combo1
             // 
-            tbx_Combo1.Location = new Point(676, 26);
+            tbx_Combo1.Location = new Point(973, 190);
             tbx_Combo1.Name = "tbx_Combo1";
             tbx_Combo1.Size = new Size(125, 27);
             tbx_Combo1.TabIndex = 4;
             // 
             // tbx_Combo2
             // 
-            tbx_Combo2.Location = new Point(676, 97);
+            tbx_Combo2.Location = new Point(973, 261);
             tbx_Combo2.Name = "tbx_Combo2";
             tbx_Combo2.Size = new Size(125, 27);
             tbx_Combo2.TabIndex = 5;
             // 
             // tbx_Combo3
             // 
-            tbx_Combo3.Location = new Point(676, 177);
+            tbx_Combo3.Location = new Point(973, 341);
             tbx_Combo3.Name = "tbx_Combo3";
             tbx_Combo3.Size = new Size(125, 27);
             tbx_Combo3.TabIndex = 6;
             // 
             // tbx_Vouchers1
             // 
-            tbx_Vouchers1.Location = new Point(220, 253);
+            tbx_Vouchers1.Location = new Point(517, 417);
             tbx_Vouchers1.Name = "tbx_Vouchers1";
             tbx_Vouchers1.Size = new Size(125, 27);
             tbx_Vouchers1.TabIndex = 7;
             // 
             // tbx_Vouchers2
             // 
-            tbx_Vouchers2.Location = new Point(220, 335);
+            tbx_Vouchers2.Location = new Point(517, 499);
             tbx_Vouchers2.Name = "tbx_Vouchers2";
             tbx_Vouchers2.Size = new Size(125, 27);
             tbx_Vouchers2.TabIndex = 8;
             // 
             // tbx_Vouchers3
             // 
-            tbx_Vouchers3.Location = new Point(220, 421);
+            tbx_Vouchers3.Location = new Point(517, 585);
             tbx_Vouchers3.Name = "tbx_Vouchers3";
             tbx_Vouchers3.Size = new Size(125, 27);
             tbx_Vouchers3.TabIndex = 9;
             // 
             // tbx_Combo4
             // 
-            tbx_Combo4.Location = new Point(676, 253);
+            tbx_Combo4.Location = new Point(973, 417);
             tbx_Combo4.Name = "tbx_Combo4";
             tbx_Combo4.Size = new Size(125, 27);
             tbx_Combo4.TabIndex = 10;
             // 
             // tbx_Combo5
             // 
-            tbx_Combo5.Location = new Point(676, 335);
+            tbx_Combo5.Location = new Point(973, 499);
             tbx_Combo5.Name = "tbx_Combo5";
             tbx_Combo5.Size = new Size(125, 27);
             tbx_Combo5.TabIndex = 11;
             // 
             // tbx_Combo6
             // 
-            tbx_Combo6.Location = new Point(676, 421);
+            tbx_Combo6.Location = new Point(973, 585);
             tbx_Combo6.Name = "tbx_Combo6";
             tbx_Combo6.Size = new Size(125, 27);
             tbx_Combo6.TabIndex = 12;
@@ -158,7 +158,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(50, 30);
+            label10.Location = new Point(347, 194);
             label10.Name = "label10";
             label10.Size = new Size(158, 23);
             label10.TabIndex = 88;
@@ -170,7 +170,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(50, 98);
+            label1.Location = new Point(347, 262);
             label1.Name = "label1";
             label1.Size = new Size(160, 23);
             label1.TabIndex = 89;
@@ -182,7 +182,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(50, 181);
+            label2.Location = new Point(347, 345);
             label2.Name = "label2";
             label2.Size = new Size(160, 23);
             label2.TabIndex = 90;
@@ -194,7 +194,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(19, 257);
+            label3.Location = new Point(316, 421);
             label3.Name = "label3";
             label3.Size = new Size(195, 23);
             label3.TabIndex = 91;
@@ -206,7 +206,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(19, 339);
+            label4.Location = new Point(316, 503);
             label4.Name = "label4";
             label4.Size = new Size(197, 23);
             label4.TabIndex = 92;
@@ -218,7 +218,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(21, 425);
+            label5.Location = new Point(318, 589);
             label5.Name = "label5";
             label5.Size = new Size(197, 23);
             label5.TabIndex = 93;
@@ -230,7 +230,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(440, 30);
+            label6.Location = new Point(737, 194);
             label6.Name = "label6";
             label6.Size = new Size(220, 23);
             label6.TabIndex = 94;
@@ -242,7 +242,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(415, 101);
+            label7.Location = new Point(712, 265);
             label7.Name = "label7";
             label7.Size = new Size(241, 23);
             label7.TabIndex = 95;
@@ -254,7 +254,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(428, 181);
+            label8.Location = new Point(725, 345);
             label8.Name = "label8";
             label8.Size = new Size(228, 23);
             label8.TabIndex = 96;
@@ -266,7 +266,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(407, 257);
+            label9.Location = new Point(704, 421);
             label9.Name = "label9";
             label9.Size = new Size(249, 23);
             label9.TabIndex = 97;
@@ -278,7 +278,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(390, 339);
+            label11.Location = new Point(687, 503);
             label11.Name = "label11";
             label11.Size = new Size(270, 23);
             label11.TabIndex = 98;
@@ -290,7 +290,7 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(403, 425);
+            label12.Location = new Point(700, 589);
             label12.Name = "label12";
             label12.Size = new Size(257, 23);
             label12.TabIndex = 99;
@@ -302,7 +302,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(842, 535);
+            ClientSize = new Size(1400, 850);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label9);

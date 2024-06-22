@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentManagement));
-            ListViewItem listViewItem1 = new ListViewItem(new string[] { "Vé Rạp 1" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem2 = new ListViewItem(new string[] { "Vé Rạp 2" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem3 = new ListViewItem(new string[] { "Vé Rạp 3" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem4 = new ListViewItem(new string[] { "Voucher" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem5 = new ListViewItem(new string[] { "ComboSolo" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem6 = new ListViewItem(new string[] { "ComboCouple" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem7 = new ListViewItem(new string[] { "ComboParty" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem8 = new ListViewItem(new string[] { "Combo2NganSolo" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem9 = new ListViewItem(new string[] { "Combo2NganCouple" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
-            ListViewItem listViewItem10 = new ListViewItem(new string[] { "Combo2NganParty" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem11 = new ListViewItem(new string[] { "Vé Rạp 1" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem12 = new ListViewItem(new string[] { "Vé Rạp 2" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem13 = new ListViewItem(new string[] { "Vé Rạp 3" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem14 = new ListViewItem(new string[] { "Voucher" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem15 = new ListViewItem(new string[] { "ComboSolo" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem16 = new ListViewItem(new string[] { "ComboCouple" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem17 = new ListViewItem(new string[] { "ComboParty" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem18 = new ListViewItem(new string[] { "Combo2NganSolo" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem19 = new ListViewItem(new string[] { "Combo2NganCouple" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
+            ListViewItem listViewItem20 = new ListViewItem(new string[] { "Combo2NganParty" }, -1, Color.White, Color.Empty, new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point));
             listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
@@ -47,6 +47,10 @@
             columnHeader5 = new ColumnHeader();
             btn_Back = new Button();
             btn_Edit = new Button();
+            btn_Theater = new Button();
+            btn_Voucher = new Button();
+            btn_Combo = new Button();
+            btn_Revenue = new Button();
             SuspendLayout();
             // 
             // listView1
@@ -57,8 +61,8 @@
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
             listView1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             listView1.ForeColor = Color.White;
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2, listViewItem3, listViewItem4, listViewItem5, listViewItem6, listViewItem7, listViewItem8, listViewItem9, listViewItem10 });
-            listView1.Location = new Point(12, 50);
+            listView1.Items.AddRange(new ListViewItem[] { listViewItem11, listViewItem12, listViewItem13, listViewItem14, listViewItem15, listViewItem16, listViewItem17, listViewItem18, listViewItem19, listViewItem20 });
+            listView1.Location = new Point(216, 23);
             listView1.Name = "listView1";
             listView1.Size = new Size(990, 415);
             listView1.TabIndex = 0;
@@ -95,7 +99,7 @@
             btn_Back.BackColor = Color.Silver;
             btn_Back.Cursor = Cursors.Hand;
             btn_Back.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_Back.Location = new Point(370, 502);
+            btn_Back.Location = new Point(12, 794);
             btn_Back.Name = "btn_Back";
             btn_Back.Size = new Size(111, 44);
             btn_Back.TabIndex = 1;
@@ -108,7 +112,7 @@
             btn_Edit.BackColor = Color.Yellow;
             btn_Edit.Cursor = Cursors.Hand;
             btn_Edit.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_Edit.Location = new Point(534, 502);
+            btn_Edit.Location = new Point(1095, 444);
             btn_Edit.Name = "btn_Edit";
             btn_Edit.Size = new Size(111, 44);
             btn_Edit.TabIndex = 2;
@@ -116,13 +120,69 @@
             btn_Edit.UseVisualStyleBackColor = false;
             btn_Edit.Click += btn_Edit_Click;
             // 
+            // btn_Theater
+            // 
+            btn_Theater.BackColor = Color.Yellow;
+            btn_Theater.Cursor = Cursors.Hand;
+            btn_Theater.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Theater.Location = new Point(193, 484);
+            btn_Theater.Name = "btn_Theater";
+            btn_Theater.Size = new Size(158, 44);
+            btn_Theater.TabIndex = 3;
+            btn_Theater.Text = "Theo Rạp";
+            btn_Theater.UseVisualStyleBackColor = false;
+            btn_Theater.Click += btn_Theater_Click;
+            // 
+            // btn_Voucher
+            // 
+            btn_Voucher.BackColor = Color.Yellow;
+            btn_Voucher.Cursor = Cursors.Hand;
+            btn_Voucher.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Voucher.Location = new Point(193, 558);
+            btn_Voucher.Name = "btn_Voucher";
+            btn_Voucher.Size = new Size(158, 44);
+            btn_Voucher.TabIndex = 4;
+            btn_Voucher.Text = "Theo Voucher";
+            btn_Voucher.UseVisualStyleBackColor = false;
+            btn_Voucher.Click += btn_Voucher_Click;
+            // 
+            // btn_Combo
+            // 
+            btn_Combo.BackColor = Color.Yellow;
+            btn_Combo.Cursor = Cursors.Hand;
+            btn_Combo.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Combo.Location = new Point(193, 631);
+            btn_Combo.Name = "btn_Combo";
+            btn_Combo.Size = new Size(158, 44);
+            btn_Combo.TabIndex = 5;
+            btn_Combo.Text = "Theo Combo";
+            btn_Combo.UseVisualStyleBackColor = false;
+            btn_Combo.Click += btn_Combo_Click;
+            // 
+            // btn_Revenue
+            // 
+            btn_Revenue.BackColor = Color.Yellow;
+            btn_Revenue.Cursor = Cursors.Hand;
+            btn_Revenue.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Revenue.Location = new Point(193, 704);
+            btn_Revenue.Name = "btn_Revenue";
+            btn_Revenue.Size = new Size(158, 44);
+            btn_Revenue.TabIndex = 6;
+            btn_Revenue.Text = "Theo Doanh Thu";
+            btn_Revenue.UseVisualStyleBackColor = false;
+            btn_Revenue.Click += btn_Revenue_Click;
+            // 
             // PaymentManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1017, 558);
+            ClientSize = new Size(1400, 850);
+            Controls.Add(btn_Revenue);
+            Controls.Add(btn_Combo);
+            Controls.Add(btn_Voucher);
+            Controls.Add(btn_Theater);
             Controls.Add(btn_Edit);
             Controls.Add(btn_Back);
             Controls.Add(listView1);
@@ -142,5 +202,9 @@
         private ColumnHeader columnHeader5;
         private Button btn_Back;
         private Button btn_Edit;
+        private Button btn_Theater;
+        private Button btn_Voucher;
+        private Button btn_Combo;
+        private Button btn_Revenue;
     }
 }

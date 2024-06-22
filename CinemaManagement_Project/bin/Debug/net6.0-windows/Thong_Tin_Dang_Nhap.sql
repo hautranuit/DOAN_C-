@@ -21,7 +21,7 @@ CREATE TABLE Movies (
 );
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (1, '?ÀO, PH? VÀ PIANO (T13)', '45000 ?', 'R?p 1,2,3', 'Vi?t Nam');
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (2, 'MAI (T18)', '100000 ?', 'R?p 2,3', 'Vi?t Nam');
-INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (3, 'GẶP LẠI CHỊ BẦU (T18)', '70000 đ', 'RẠP 1', 'Việt Nam');
+INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (3, 'GẶP LẠI CHỊ BẦU (T18)', '70000 đ', 'RẠP 1,3', 'Việt Nam');
 INSERT INTO Movies (Id, Name, Price, Theater, Country) VALUES (4, 'TAROT (T18)', '90000 ?', 'R?p 3', 'Hoa K?');
 	SELECT * FROM Movies;
 
